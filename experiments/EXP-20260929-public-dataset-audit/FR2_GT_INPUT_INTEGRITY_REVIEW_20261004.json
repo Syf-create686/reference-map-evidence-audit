@@ -1,0 +1,41 @@
+{
+  "schema": "fr2_GT_input_integrity_review_v1",
+  "date": "2026-10-04",
+  "observed_utc": "2026-10-04T14:04:17.662793+00:00",
+  "status": "OFFLINE_GT_PARTIAL_COVERAGE_WITH_DUPLICATE_RETAINED",
+  "groundtruth_sha256": "0d8e0119a4e9592b886c5ca954472c3270c01814dd2059fbe196d5c24c8f3d17",
+  "full_paired_RGB_D_count": 2965,
+  "nearest_GT_available_count": 2260,
+  "GT_missing_count": 705,
+  "duplicated_timestamps": {
+    "1311868229.576": [
+      {
+        "line": 10862,
+        "pose": [
+          1.4054,
+          0.9615,
+          1.3677,
+          -0.0136,
+          0.8959,
+          -0.4384,
+          0.0707
+        ]
+      },
+      {
+        "line": 10863,
+        "pose": [
+          1.4044,
+          0.9614,
+          1.3683,
+          -0.0177,
+          0.8973,
+          -0.4353,
+          0.0703
+        ]
+      }
+    ]
+  },
+  "nearest_pairs_affected_by_duplicate": [],
+  "policy": "No interpolation, no averaging or source deletion; unmatched or ambiguous GT remains UNKNOWN_GT. Original input roles unchanged, GT never online. Current nearest pairs do not select duplicated timestamp.",
+  "SLAM_executed_at_review": false
+}

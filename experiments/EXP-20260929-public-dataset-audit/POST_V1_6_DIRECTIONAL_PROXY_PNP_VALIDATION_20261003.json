@@ -1,0 +1,918 @@
+{
+  "checks": {
+    "all_condition_solve_success_gate": true,
+    "wide_proxy_greater_than_clustered": true,
+    "wide_rotation_error_lower_than_clustered": true
+  },
+  "claim_boundary": {
+    "does_not_support": [
+      "confidence or covariance calibration",
+      "formal observability",
+      "event detection",
+      "real-scene or cross-camera generalization",
+      "robustness to image noise or correspondence outliers"
+    ],
+    "groundtruth_or_proxy_used_by_solver": false,
+    "supports": "local descriptive relation between bearing geometry and independent PnP rotation behavior under the declared synthetic conditions"
+  },
+  "protocol": {
+    "bearing_layouts": {
+      "clustered_bearing": "normalized x/y Gaussian sigma 0.01",
+      "horizontal_line": "normalized x uniform [-0.50,0.50], normalized y Gaussian sigma 0.005",
+      "vertical_line": "normalized x Gaussian sigma 0.005, normalized y uniform [-0.35,0.35]",
+      "wide_bearing": "normalized x uniform [-0.50,0.50], normalized y uniform [-0.35,0.35]"
+    },
+    "date": "2026-10-03",
+    "decision": {
+      "fail": "Remove the third axis from the core incremental-value claim and reassess whether a two-axis protocol is sufficient.",
+      "no_event_or_recovery_claim": true,
+      "no_threshold_tuning": true,
+      "pass": "The proxy may remain a descriptive directional-geometry axis with the recorded boundaries; it is not confidence, covariance, or formal observability."
+    },
+    "nominal": {
+      "camera": {
+        "cx": 433.2039794921875,
+        "cy": 249.4730224609375,
+        "distortion": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "fx": 611.4509887695312,
+        "fy": 611.4857177734375,
+        "height": 480,
+        "width": 848
+      },
+      "depth_range_m": [
+        1.8,
+        2.2
+      ],
+      "layout": "wide_bearing",
+      "outlier_fraction": 0.0,
+      "pixel_noise_sigma": 1.0,
+      "point_count": 100
+    },
+    "one_factor_sweeps": [
+      {
+        "name": "bearing_layout",
+        "values": [
+          "wide_bearing",
+          "clustered_bearing",
+          "horizontal_line",
+          "vertical_line"
+        ]
+      },
+      {
+        "name": "point_count",
+        "values": [
+          25,
+          50,
+          100,
+          200
+        ]
+      },
+      {
+        "name": "pixel_noise_sigma",
+        "values": [
+          0.25,
+          0.5,
+          1.0,
+          2.0,
+          4.0
+        ]
+      },
+      {
+        "name": "outlier_fraction",
+        "values": [
+          0.0,
+          0.05,
+          0.1,
+          0.2
+        ]
+      },
+      {
+        "name": "uniform_focal_scale",
+        "values": [
+          0.5,
+          1.0,
+          2.0
+        ]
+      },
+      {
+        "name": "fy_over_nominal_fy",
+        "values": [
+          0.75,
+          1.0,
+          1.25
+        ]
+      }
+    ],
+    "outputs": [
+      "per-trial proxy",
+      "rotation error in degrees",
+      "translation error in meters",
+      "solve success",
+      "condition median, RMSE, 2.5th percentile, and 97.5th percentile",
+      "Spearman rho without frame-level or trial-level significance claims"
+    ],
+    "predeclared_checks": {
+      "boundary_intrinsics": "report uniform focal-scale invariance of the ratio and any anisotropic-intrinsic dependence",
+      "boundary_noise": "report error growth although the geometry-only proxy is unchanged for paired geometry",
+      "boundary_outliers": "report error growth although the geometry-only proxy does not encode corrupted match measurements",
+      "boundary_point_count": "report whether error changes with count while the normalized spectral proxy remains similar",
+      "geometry_response": "median proxy for wide_bearing must exceed clustered_bearing",
+      "independent_rotation_response": "median rotation error for wide_bearing must be lower than clustered_bearing at nominal settings",
+      "minimum_solve_success_fraction_per_condition": 0.95
+    },
+    "proxy": {
+      "formula": "lambda_min(H_rr)/lambda_max(H_rr) from the same pinhole rotational Jacobian block as the runtime implementation",
+      "uses_no_groundtruth_pose_error": true,
+      "uses_no_noisy_image_measurement": true
+    },
+    "purpose": "Test whether the rotational-block proxy responds to bearing geometry in an independently solved PnP problem, while exposing point-count, image-noise, outlier, and camera-intrinsic boundaries.",
+    "schema": "directional_proxy_pnp_validation_v1",
+    "scientific_role": "BOUNDED_SYNTHETIC_METHOD_JUSTIFICATION",
+    "seed": 20261003,
+    "solver": {
+      "flag": "SOLVEPNP_ITERATIVE",
+      "implementation": "cv2.solvePnP",
+      "initial_guess": false,
+      "outlier_policy": "For the outlier sweep, replace the declared fraction of image observations with uniform image coordinates; do not change the proxy input geometry.",
+      "ransac": false,
+      "valid_trial": "solvePnP returns true and finite rotation/translation vectors"
+    },
+    "status": "FROZEN_BEFORE_EXECUTION",
+    "trials_per_condition": 200,
+    "true_pose": {
+      "rotation_vector_rad": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "translation_m": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "schema": "directional_proxy_pnp_validation_result_v1",
+  "software": {
+    "numpy": "1.26.4",
+    "opencv": "4.8.1",
+    "scipy": "1.11.4"
+  },
+  "status": "PASS_DESCRIPTIVE_PROXY_WITH_BOUNDARIES",
+  "summaries": {
+    "bearing_layout": {
+      "clustered_bearing": {
+        "directional_proxy": {
+          "count": 200,
+          "max": 0.00027099342305851,
+          "median": 0.00019894876360116072,
+          "min": 0.00013665097075293045,
+          "q025": 0.00016353019582341873,
+          "q975": 0.0002365310322617656,
+          "rmse": 0.00019979229175702142
+        },
+        "rotation_error_deg": {
+          "count": 200,
+          "max": 179.9964888594345,
+          "median": 164.32312808958534,
+          "min": 0.1479902622878242,
+          "q025": 0.2854008998609693,
+          "q975": 179.9047891844601,
+          "rmse": 142.10462104468755
+        },
+        "solve_success_fraction": 1.0,
+        "spearman_proxy_vs_rotation_error": 0.034788869721743054,
+        "translation_error_m": {
+          "count": 200,
+          "max": 19527471.45794728,
+          "median": 2.049826782366564,
+          "min": 0.009801000843059739,
+          "q025": 0.011666598405164734,
+          "q975": 87.62282109030978,
+          "rmse": 1381083.4992271261
+        },
+        "trial_count": 200
+      },
+      "horizontal_line": {
+        "directional_proxy": {
+          "count": 200,
+          "max": 0.08426683549583563,
+          "median": 0.07073652745789671,
+          "min": 0.05648743365602688,
+          "q025": 0.061038615624468884,
+          "q975": 0.08030920368963039,
+          "rmse": 0.07082785627038157
+        },
+        "rotation_error_deg": {
+          "count": 200,
+          "max": 127.5442343525433,
+          "median": 0.15914684310936728,
+          "min": 0.03318283243891663,
+          "q025": 0.03849148349487947,
+          "q975": 0.37668463742417035,
+          "rmse": 9.020802845183532
+        },
+        "solve_success_fraction": 1.0,
+        "spearman_proxy_vs_rotation_error": 0.006520663016575415,
+        "translation_error_m": {
+          "count": 200,
+          "max": 1.9646710629715645,
+          "median": 0.005760673841943115,
+          "min": 0.0011150532864894365,
+          "q025": 0.0015572699360646017,
+          "q975": 0.013435856028693544,
+          "rmse": 0.1390908862379772
+        },
+        "trial_count": 200
+      },
+      "vertical_line": {
+        "directional_proxy": {
+          "count": 200,
+          "max": 0.0469026042860263,
+          "median": 0.037068130156851536,
+          "min": 0.026179557253451984,
+          "q025": 0.030775008336860272,
+          "q975": 0.04458709303480465,
+          "rmse": 0.03755457812777158
+        },
+        "rotation_error_deg": {
+          "count": 200,
+          "max": 179.96986867460905,
+          "median": 0.20151022696167675,
+          "min": 0.015151635829107632,
+          "q025": 0.057494378849899976,
+          "q975": 179.89191589428674,
+          "rmse": 49.530445154167104
+        },
+        "solve_success_fraction": 1.0,
+        "spearman_proxy_vs_rotation_error": -0.0024540613515337886,
+        "translation_error_m": {
+          "count": 200,
+          "max": 4.159444647020871,
+          "median": 0.0072471657214312635,
+          "min": 0.0010768884235915603,
+          "q025": 0.0018138689440461337,
+          "q975": 2.0919487768738896,
+          "rmse": 0.7616061767057285
+        },
+        "trial_count": 200
+      },
+      "wide_bearing": {
+        "directional_proxy": {
+          "count": 200,
+          "max": 0.12004176394521666,
+          "median": 0.10478499157169316,
+          "min": 0.08575824519988323,
+          "q025": 0.09272014955830041,
+          "q975": 0.1153983796516002,
+          "rmse": 0.10469000558418061
+        },
+        "rotation_error_deg": {
+          "count": 200,
+          "max": 0.2877740886016832,
+          "median": 0.11204676329139245,
+          "min": 0.004002855439978134,
+          "q025": 0.024831783639217397,
+          "q975": 0.2588469672953971,
+          "rmse": 0.13424248383646764
+        },
+        "solve_success_fraction": 1.0,
+        "spearman_proxy_vs_rotation_error": -0.07459386484662119,
+        "translation_error_m": {
+          "count": 200,
+          "max": 0.010592174734894709,
+          "median": 0.004218902444197458,
+          "min": 0.000376546145368936,
+          "q025": 0.0008825616409036804,
+          "q975": 0.009299805052875513,
+          "rmse": 0.004937934548186954
+        },
+        "trial_count": 200
+      }
+    },
+    "fy_over_nominal_fy": {
+      "0.75": {
+        "directional_proxy": {
+          "count": 200,
+          "max": 0.08560445868930851,
+          "median": 0.07453923605751057,
+          "min": 0.06462555488065388,
+          "q025": 0.06674626330442814,
+          "q975": 0.08114094039389283,
+          "rmse": 0.07434434744633282
+        },
+        "rotation_error_deg": {
+          "count": 200,
+          "max": 0.3871279566743566,
+          "median": 0.12311384306018822,
+          "min": 0.016378199896124702,
+          "q025": 0.036156376846389546,
+          "q975": 0.3016984225563749,
+          "rmse": 0.1517605958041529
+        },
+        "solve_success_fraction": 1.0,
+        "spearman_proxy_vs_rotation_error": -0.04643666091652292,
+        "translation_error_m": {
+          "count": 200,
+          "max": 0.014008023798963445,
+          "median": 0.004546602764181663,
+          "min": 0.0006149910269612654,
+          "q025": 0.0014855339568911803,
+          "q975": 0.010902761452799831,
+          "rmse": 0.00553466701534916
+        },
+        "trial_count": 200
+      },
+      "1.0": {
+        "directional_proxy": {
+          "count": 200,
+          "max": 0.12076581024510785,
+          "median": 0.10535158224231128,
+          "min": 0.08907441423607552,
+          "q025": 0.09274244820992587,
+          "q975": 0.1159400782329432,
+          "rmse": 0.1049837629735905
+        },
+        "rotation_error_deg": {
+          "count": 200,
+          "max": 0.3678238401842262,
+          "median": 0.11159830016563488,
+          "min": 0.01631622077726128,
+          "q025": 0.03649031058373857,
+          "q975": 0.25990565627762646,
+          "rmse": 0.13539980556065837
+        },
+        "solve_success_fraction": 1.0,
+        "spearman_proxy_vs_rotation_error": -0.08087302182554566,
+        "translation_error_m": {
+          "count": 200,
+          "max": 0.013305225930250164,
+          "median": 0.004087161612053672,
+          "min": 0.0007505187045836573,
+          "q025": 0.0013683516913303288,
+          "q975": 0.009261457877102326,
+          "rmse": 0.004969058460454819
+        },
+        "trial_count": 200
+      },
+      "1.25": {
+        "directional_proxy": {
+          "count": 200,
+          "max": 0.12306391219426056,
+          "median": 0.10114332083831123,
+          "min": 0.07950482916019543,
+          "q025": 0.0862308233043909,
+          "q975": 0.11396588792374829,
+          "rmse": 0.10103744129908648
+        },
+        "rotation_error_deg": {
+          "count": 200,
+          "max": 0.33822545052250325,
+          "median": 0.09877936210497024,
+          "min": 0.008652031941678632,
+          "q025": 0.029590568384226846,
+          "q975": 0.23769963737260003,
+          "rmse": 0.12122476931682538
+        },
+        "solve_success_fraction": 1.0,
+        "spearman_proxy_vs_rotation_error": -0.10236555913897849,
+        "translation_error_m": {
+          "count": 200,
+          "max": 0.01223246861021952,
+          "median": 0.0036922278778781844,
+          "min": 0.00040868877491538077,
+          "q025": 0.001347497572032215,
+          "q975": 0.008631006171004561,
+          "rmse": 0.004470843316937213
+        },
+        "trial_count": 200
+      }
+    },
+    "outlier_fraction": {
+      "0.0": {
+        "directional_proxy": {
+          "count": 200,
+          "max": 0.11598789684960478,
+          "median": 0.10453410750090417,
+          "min": 0.08866542962958762,
+          "q025": 0.09374088684165441,
+          "q975": 0.11383638480254686,
+          "rmse": 0.10431716357868026
+        },
+        "rotation_error_deg": {
+          "count": 200,
+          "max": 0.3591062318779379,
+          "median": 0.11732410945317537,
+          "min": 0.01565463005074715,
+          "q025": 0.033412122515764885,
+          "q975": 0.2892678114797018,
+          "rmse": 0.14298330825920047
+        },
+        "solve_success_fraction": 1.0,
+        "spearman_proxy_vs_rotation_error": -0.06574514362859073,
+        "translation_error_m": {
+          "count": 200,
+          "max": 0.012371347984122151,
+          "median": 0.00442802895546832,
+          "min": 0.0008098863241999991,
+          "q025": 0.0014652669268827255,
+          "q975": 0.009991257188084492,
+          "rmse": 0.005227853073203926
+        },
+        "trial_count": 200
+      },
+      "0.05": {
+        "directional_proxy": {
+          "count": 200,
+          "max": 0.11598789684960478,
+          "median": 0.10453410750090417,
+          "min": 0.08866542962958762,
+          "q025": 0.09374088684165441,
+          "q975": 0.11383638480254686,
+          "rmse": 0.10431716357868026
+        },
+        "rotation_error_deg": {
+          "count": 200,
+          "max": 179.98042015901413,
+          "median": 176.0659955725076,
+          "min": 0.026973313955898633,
+          "q025": 1.254889210382773,
+          "q975": 179.89698615566462,
+          "rmse": 146.69375456922006
+        },
+        "solve_success_fraction": 1.0,
+        "spearman_proxy_vs_rotation_error": 6.000150003750095e-05,
+        "translation_error_m": {
+          "count": 200,
+          "max": 2556491389784818.0,
+          "median": 4.125464918469493,
+          "min": 0.04706708132660668,
+          "q025": 0.10924565372509662,
+          "q975": 27987198630.9113,
+          "rmse": 180771284702716.97
+        },
+        "trial_count": 200
+      },
+      "0.1": {
+        "directional_proxy": {
+          "count": 200,
+          "max": 0.11598789684960478,
+          "median": 0.10453410750090417,
+          "min": 0.08866542962958762,
+          "q025": 0.09374088684165441,
+          "q975": 0.11383638480254686,
+          "rmse": 0.10431716357868026
+        },
+        "rotation_error_deg": {
+          "count": 200,
+          "max": 179.9754166607714,
+          "median": 161.36753466528597,
+          "min": 0.30629847792573506,
+          "q025": 1.9233560861434644,
+          "q975": 179.75858635345452,
+          "rmse": 131.81704613689084
+        },
+        "solve_success_fraction": 1.0,
+        "spearman_proxy_vs_rotation_error": -0.10902572564314109,
+        "translation_error_m": {
+          "count": 200,
+          "max": 8854750194146859.0,
+          "median": 4.159634437082682,
+          "min": 0.10393745294526709,
+          "q025": 0.20675145616162138,
+          "q975": 61980356850.796616,
+          "rmse": 665630442247114.6
+        },
+        "trial_count": 200
+      },
+      "0.2": {
+        "directional_proxy": {
+          "count": 200,
+          "max": 0.11598789684960478,
+          "median": 0.10453410750090417,
+          "min": 0.08866542962958762,
+          "q025": 0.09374088684165441,
+          "q975": 0.11383638480254686,
+          "rmse": 0.10431716357868026
+        },
+        "rotation_error_deg": {
+          "count": 200,
+          "max": 179.89951848287117,
+          "median": 140.0999146055425,
+          "min": 0.5233965699591956,
+          "q025": 1.7965835888450308,
+          "q975": 179.38294391496214,
+          "rmse": 127.47770565556583
+        },
+        "solve_success_fraction": 1.0,
+        "spearman_proxy_vs_rotation_error": 0.010129753243831096,
+        "translation_error_m": {
+          "count": 200,
+          "max": 66260114961430.555,
+          "median": 4.2170045903309115,
+          "min": 0.19651248839556698,
+          "q025": 0.37615268537136487,
+          "q975": 950890681.1691521,
+          "rmse": 4685298365226.842
+        },
+        "trial_count": 200
+      }
+    },
+    "pixel_noise_sigma": {
+      "0.25": {
+        "directional_proxy": {
+          "count": 200,
+          "max": 0.12118028077993226,
+          "median": 0.10296567162482237,
+          "min": 0.08911181370124538,
+          "q025": 0.09179093899193842,
+          "q975": 0.11501347029401543,
+          "rmse": 0.10358243457885404
+        },
+        "rotation_error_deg": {
+          "count": 200,
+          "max": 0.08714279353576183,
+          "median": 0.02948002997493064,
+          "min": 0.0025048947639530568,
+          "q025": 0.008196004886900699,
+          "q975": 0.06801610981912036,
+          "rmse": 0.03564026572527945
+        },
+        "solve_success_fraction": 1.0,
+        "spearman_proxy_vs_rotation_error": -0.12988674716867923,
+        "translation_error_m": {
+          "count": 200,
+          "max": 0.003064849967502512,
+          "median": 0.0011189837114392977,
+          "min": 0.00021468440229395795,
+          "q025": 0.0003341922262209733,
+          "q975": 0.002544355636599974,
+          "rmse": 0.0013185426410025633
+        },
+        "trial_count": 200
+      },
+      "0.5": {
+        "directional_proxy": {
+          "count": 200,
+          "max": 0.12118028077993226,
+          "median": 0.10296567162482237,
+          "min": 0.08911181370124538,
+          "q025": 0.09179093899193842,
+          "q975": 0.11501347029401543,
+          "rmse": 0.10358243457885404
+        },
+        "rotation_error_deg": {
+          "count": 200,
+          "max": 0.1744532946226779,
+          "median": 0.058951644083271276,
+          "min": 0.005015780007170153,
+          "q025": 0.016390569933958682,
+          "q975": 0.13598259826993575,
+          "rmse": 0.0712839412364412
+        },
+        "solve_success_fraction": 1.0,
+        "spearman_proxy_vs_rotation_error": -0.1300217505437636,
+        "translation_error_m": {
+          "count": 200,
+          "max": 0.006135759218479007,
+          "median": 0.0022385498260759857,
+          "min": 0.00042960212850277495,
+          "q025": 0.0006681677179449643,
+          "q975": 0.005089373635586472,
+          "rmse": 0.0026372232127683365
+        },
+        "trial_count": 200
+      },
+      "1.0": {
+        "directional_proxy": {
+          "count": 200,
+          "max": 0.12118028077993226,
+          "median": 0.10296567162482237,
+          "min": 0.08911181370124538,
+          "q025": 0.09179093899193842,
+          "q975": 0.11501347029401543,
+          "rmse": 0.10358243457885404
+        },
+        "rotation_error_deg": {
+          "count": 200,
+          "max": 0.349569720490285,
+          "median": 0.1178694704182254,
+          "min": 0.010055901360858105,
+          "q025": 0.032775592698958175,
+          "q975": 0.2717658288368873,
+          "rmse": 0.14258182024547708
+        },
+        "solve_success_fraction": 1.0,
+        "spearman_proxy_vs_rotation_error": -0.1294457361434036,
+        "translation_error_m": {
+          "count": 200,
+          "max": 0.012295455189867955,
+          "median": 0.004479651714248826,
+          "min": 0.0008601444260273214,
+          "q025": 0.0013354723745793765,
+          "q975": 0.010181453118987415,
+          "rmse": 0.005275005946980768
+        },
+        "trial_count": 200
+      },
+      "2.0": {
+        "directional_proxy": {
+          "count": 200,
+          "max": 0.12118028077993226,
+          "median": 0.10296567162482237,
+          "min": 0.08911181370124538,
+          "q025": 0.09179093899193842,
+          "q975": 0.11501347029401543,
+          "rmse": 0.10358243457885404
+        },
+        "rotation_error_deg": {
+          "count": 200,
+          "max": 0.7017287370677473,
+          "median": 0.2358126720396017,
+          "min": 0.02021215705593005,
+          "q025": 0.06553068683244806,
+          "q975": 0.5427272535990024,
+          "rmse": 0.28522172060329953
+        },
+        "solve_success_fraction": 1.0,
+        "spearman_proxy_vs_rotation_error": -0.1298372459311483,
+        "translation_error_m": {
+          "count": 200,
+          "max": 0.024684192048548242,
+          "median": 0.008945702914081106,
+          "min": 0.0017241054364371552,
+          "q025": 0.0026675234288749917,
+          "q975": 0.02037417550085487,
+          "rmse": 0.010552310169505147
+        },
+        "trial_count": 200
+      },
+      "4.0": {
+        "directional_proxy": {
+          "count": 200,
+          "max": 0.12118028077993226,
+          "median": 0.10296567162482237,
+          "min": 0.08911181370124538,
+          "q025": 0.09179093899193842,
+          "q975": 0.11501347029401543,
+          "rmse": 0.10358243457885404
+        },
+        "rotation_error_deg": {
+          "count": 200,
+          "max": 1.413283637097913,
+          "median": 0.47228933785682514,
+          "min": 0.040849997136855824,
+          "q025": 0.13099280156361054,
+          "q975": 1.084945906594863,
+          "rmse": 0.5706933864208326
+        },
+        "solve_success_fraction": 1.0,
+        "spearman_proxy_vs_rotation_error": -0.12948473711842798,
+        "translation_error_m": {
+          "count": 200,
+          "max": 0.049720830662629605,
+          "median": 0.017974900399582768,
+          "min": 0.0034639214033625495,
+          "q025": 0.005321607293284075,
+          "q975": 0.04071490788237263,
+          "rmse": 0.02111425757557726
+        },
+        "trial_count": 200
+      }
+    },
+    "point_count": {
+      "100": {
+        "directional_proxy": {
+          "count": 200,
+          "max": 0.11720622542580111,
+          "median": 0.1043100979522093,
+          "min": 0.08774915271180564,
+          "q025": 0.09394707676713816,
+          "q975": 0.11536102070373173,
+          "rmse": 0.10463249680371381
+        },
+        "rotation_error_deg": {
+          "count": 200,
+          "max": 0.3232503967254502,
+          "median": 0.11557503674407564,
+          "min": 0.011016479016573419,
+          "q025": 0.028064906046481358,
+          "q975": 0.27987754476367827,
+          "rmse": 0.14128396253013092
+        },
+        "solve_success_fraction": 1.0,
+        "spearman_proxy_vs_rotation_error": 0.028733218330458266,
+        "translation_error_m": {
+          "count": 200,
+          "max": 0.01200796595947887,
+          "median": 0.00425604032908872,
+          "min": 0.00029411184960087723,
+          "q025": 0.0009535076665769539,
+          "q975": 0.010063329336610504,
+          "rmse": 0.005173567666194756
+        },
+        "trial_count": 200
+      },
+      "200": {
+        "directional_proxy": {
+          "count": 200,
+          "max": 0.1142249822011427,
+          "median": 0.10502707462497553,
+          "min": 0.09341565494454282,
+          "q025": 0.09700745856729565,
+          "q975": 0.11298561800084056,
+          "rmse": 0.1050984973807926
+        },
+        "rotation_error_deg": {
+          "count": 200,
+          "max": 0.24672237383296272,
+          "median": 0.08342611117595547,
+          "min": 0.00836212610584731,
+          "q025": 0.018916476896314007,
+          "q975": 0.191778070794337,
+          "rmse": 0.09852392686067632
+        },
+        "solve_success_fraction": 1.0,
+        "spearman_proxy_vs_rotation_error": 0.06335558388959725,
+        "translation_error_m": {
+          "count": 200,
+          "max": 0.009091209732346537,
+          "median": 0.0031422313208902923,
+          "min": 0.0002545414906287114,
+          "q025": 0.0007336447525738092,
+          "q975": 0.0068371291497897994,
+          "rmse": 0.0036241540118842363
+        },
+        "trial_count": 200
+      },
+      "25": {
+        "directional_proxy": {
+          "count": 200,
+          "max": 0.13896614010547986,
+          "median": 0.1002331761732059,
+          "min": 0.058098865948927554,
+          "q025": 0.07615933910647817,
+          "q975": 0.12349177279477708,
+          "rmse": 0.1015020885472007
+        },
+        "rotation_error_deg": {
+          "count": 200,
+          "max": 0.7283339836525887,
+          "median": 0.2364685117281325,
+          "min": 0.04895410913293033,
+          "q025": 0.06538408629008445,
+          "q975": 0.6140968737998608,
+          "rmse": 0.2985095815256709
+        },
+        "solve_success_fraction": 1.0,
+        "spearman_proxy_vs_rotation_error": -0.053222830570764275,
+        "translation_error_m": {
+          "count": 200,
+          "max": 0.026727890033866067,
+          "median": 0.008794275345832,
+          "min": 0.0014946234656151205,
+          "q025": 0.002319215343894286,
+          "q975": 0.023232194863853667,
+          "rmse": 0.010997066809286164
+        },
+        "trial_count": 200
+      },
+      "50": {
+        "directional_proxy": {
+          "count": 200,
+          "max": 0.12118606733125255,
+          "median": 0.10400810293819399,
+          "min": 0.07600377275668513,
+          "q025": 0.08414627812327932,
+          "q975": 0.11831369939684853,
+          "rmse": 0.10350338582453528
+        },
+        "rotation_error_deg": {
+          "count": 200,
+          "max": 0.4879480561646654,
+          "median": 0.16330645180379644,
+          "min": 0.03216987047621457,
+          "q025": 0.0459318586260476,
+          "q975": 0.36904935008951906,
+          "rmse": 0.1937028825550021
+        },
+        "solve_success_fraction": 1.0,
+        "spearman_proxy_vs_rotation_error": -0.011313282832070804,
+        "translation_error_m": {
+          "count": 200,
+          "max": 0.017338255182448338,
+          "median": 0.006128169356083351,
+          "min": 0.0010078493281893066,
+          "q025": 0.0014008431782605096,
+          "q975": 0.013913373198277939,
+          "rmse": 0.0071716161991272655
+        },
+        "trial_count": 200
+      }
+    },
+    "uniform_focal_scale": {
+      "0.5": {
+        "directional_proxy": {
+          "count": 200,
+          "max": 0.11873347658616677,
+          "median": 0.10407239233250323,
+          "min": 0.09019717880439732,
+          "q025": 0.09452047789367812,
+          "q975": 0.11624766372339222,
+          "rmse": 0.10418483463774181
+        },
+        "rotation_error_deg": {
+          "count": 200,
+          "max": 0.6437967029005018,
+          "median": 0.22504150696935332,
+          "min": 0.02126729278140351,
+          "q025": 0.05692473136333378,
+          "q975": 0.5014103820596216,
+          "rmse": 0.27183567140948184
+        },
+        "solve_success_fraction": 1.0,
+        "spearman_proxy_vs_rotation_error": -0.002640066001650042,
+        "translation_error_m": {
+          "count": 200,
+          "max": 0.02263303219726748,
+          "median": 0.008234712537507412,
+          "min": 0.0004359470164331831,
+          "q025": 0.0019058317111782434,
+          "q975": 0.018346494169660166,
+          "rmse": 0.00996640041824761
+        },
+        "trial_count": 200
+      },
+      "1.0": {
+        "directional_proxy": {
+          "count": 200,
+          "max": 0.11873347658616677,
+          "median": 0.10407239233250323,
+          "min": 0.09019717880439732,
+          "q025": 0.09452047789367812,
+          "q975": 0.11624766372339222,
+          "rmse": 0.10418483463774181
+        },
+        "rotation_error_deg": {
+          "count": 200,
+          "max": 0.3217409945048185,
+          "median": 0.11240166396670975,
+          "min": 0.010623943626139725,
+          "q025": 0.028448335656998065,
+          "q975": 0.24903410463233452,
+          "rmse": 0.13591862412922615
+        },
+        "solve_success_fraction": 1.0,
+        "spearman_proxy_vs_rotation_error": -0.002805070126753169,
+        "translation_error_m": {
+          "count": 200,
+          "max": 0.01131210591819391,
+          "median": 0.004102840233020454,
+          "min": 0.00021844749585693259,
+          "q025": 0.0009525376593160905,
+          "q975": 0.009159226561226096,
+          "rmse": 0.004983137793995757
+        },
+        "trial_count": 200
+      },
+      "2.0": {
+        "directional_proxy": {
+          "count": 200,
+          "max": 0.11873347658616677,
+          "median": 0.10407239233250323,
+          "min": 0.09019717880439732,
+          "q025": 0.09452047789367812,
+          "q975": 0.11624766372339222,
+          "rmse": 0.10418483463774181
+        },
+        "rotation_error_deg": {
+          "count": 200,
+          "max": 0.16082482044853802,
+          "median": 0.05623005642015089,
+          "min": 0.00530956099126039,
+          "q025": 0.01422067330720444,
+          "q975": 0.12448542071370929,
+          "rmse": 0.06796008804927613
+        },
+        "solve_success_fraction": 1.0,
+        "spearman_proxy_vs_rotation_error": -0.0025050626265656645,
+        "translation_error_m": {
+          "count": 200,
+          "max": 0.0056547038003983505,
+          "median": 0.002044928623556678,
+          "min": 0.00010934424010366015,
+          "q025": 0.00047617585833169046,
+          "q975": 0.004576014470793553,
+          "rmse": 0.002491572701843691
+        },
+        "trial_count": 200
+      }
+    }
+  }
+}

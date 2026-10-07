@@ -1,0 +1,1051 @@
+{
+  "analysis_parameters": {
+    "minimum_weak_axes": 2,
+    "quantiles": "linear interpolation on sorted sample at q=0.25, 0.5, 0.75",
+    "strict_joint_candidate_threshold": 0.8,
+    "temporal_confirm_frames": 3
+  },
+  "axis_order": [
+    "association_ratio",
+    "geometric_retention_ratio",
+    "directional_geometry_proxy"
+  ],
+  "cases": [
+    {
+      "case": "tum_window0",
+      "observation": {
+        "axis_statistics": {
+          "association_ratio": {
+            "available_count": 29,
+            "maximum": 0.6928429423459245,
+            "median": 0.5592039800995025,
+            "minimum": 0.5368525896414342,
+            "missing_count": 1,
+            "q1": 0.5487077534791253,
+            "q3": 0.5695825049701789
+          },
+          "directional_geometry_proxy": {
+            "available_count": 29,
+            "maximum": 0.0844945237,
+            "median": 0.0832495242,
+            "minimum": 0.0812227651,
+            "missing_count": 1,
+            "q1": 0.0829464346,
+            "q3": 0.083935149
+          },
+          "geometric_retention_ratio": {
+            "available_count": 29,
+            "maximum": 0.8784,
+            "median": 0.8434163701067615,
+            "minimum": 0.8214904679376083,
+            "missing_count": 1,
+            "q1": 0.8359511343804538,
+            "q3": 0.8571428571428571
+          }
+        },
+        "record_count": 30,
+        "tracking_state_counts": {
+          "1": 1,
+          "2": 29
+        }
+      },
+      "reference": {
+        "axis_statistics": {
+          "association_ratio": {
+            "available_count": 29,
+            "maximum": 0.6928429423459245,
+            "median": 0.5592039800995025,
+            "minimum": 0.5368525896414342,
+            "missing_count": 1,
+            "q1": 0.5487077534791253,
+            "q3": 0.5695825049701789
+          },
+          "directional_geometry_proxy": {
+            "available_count": 29,
+            "maximum": 0.0844945237,
+            "median": 0.0832495242,
+            "minimum": 0.0812227651,
+            "missing_count": 1,
+            "q1": 0.0829464346,
+            "q3": 0.083935149
+          },
+          "geometric_retention_ratio": {
+            "available_count": 29,
+            "maximum": 0.8784,
+            "median": 0.8434163701067615,
+            "minimum": 0.8214904679376083,
+            "missing_count": 1,
+            "q1": 0.8359511343804538,
+            "q3": 0.8571428571428571
+          }
+        },
+        "record_count": 30
+      },
+      "scope": "Descriptive existing-data reanalysis only; candidates are not events, alarms, or detection outcomes.",
+      "sources": {
+        "observation": {
+          "identifier": "/home/syf/tum_external_diag_directional_proxy_20261002/window0/orb_slam3.log",
+          "sha256": "a478775adc6bebfb522384bda29615983920d8b5db9cdc6ccd1619d9c6132996"
+        },
+        "reference": {
+          "identifier": "/home/syf/tum_external_diag_directional_proxy_20261002/window0/orb_slam3.log",
+          "sha256": "a478775adc6bebfb522384bda29615983920d8b5db9cdc6ccd1619d9c6132996"
+        }
+      },
+      "strict_joint_candidate": {
+        "candidate_coverage_of_all_records": 0.0,
+        "candidate_coverage_of_valid_three_axis_records": 0.0,
+        "candidate_frame_count": 0,
+        "candidate_run_count": 0,
+        "candidate_runs": [],
+        "confirmation_rule": "3 consecutive valid candidate records; UNKNOWN breaks continuity",
+        "confirmed_segment_count": 0,
+        "confirmed_segments": [],
+        "minimum_weak_axes": 2,
+        "threshold": 0.8,
+        "unknown_count": 1,
+        "valid_three_axis_count": 29,
+        "weak_axis_rule": "At least two of three reference-normalized axes are at or below threshold."
+      }
+    },
+    {
+      "case": "tum_window2",
+      "observation": {
+        "axis_statistics": {
+          "association_ratio": {
+            "available_count": 29,
+            "maximum": 0.6573982125124131,
+            "median": 0.5667330677290837,
+            "minimum": 0.48807157057654077,
+            "missing_count": 1,
+            "q1": 0.5094715852442672,
+            "q3": 0.6093439363817097
+          },
+          "directional_geometry_proxy": {
+            "available_count": 29,
+            "maximum": 0.0886125267,
+            "median": 0.0846102387,
+            "minimum": 0.0811296031,
+            "missing_count": 1,
+            "q1": 0.0829469636,
+            "q3": 0.0855173022
+          },
+          "geometric_retention_ratio": {
+            "available_count": 29,
+            "maximum": 0.8880484114977307,
+            "median": 0.8518518518518519,
+            "minimum": 0.794921875,
+            "missing_count": 1,
+            "q1": 0.8224852071005917,
+            "q3": 0.8598949211908932
+          }
+        },
+        "record_count": 30,
+        "tracking_state_counts": {
+          "1": 1,
+          "2": 29
+        }
+      },
+      "reference": {
+        "axis_statistics": {
+          "association_ratio": {
+            "available_count": 29,
+            "maximum": 0.6928429423459245,
+            "median": 0.5592039800995025,
+            "minimum": 0.5368525896414342,
+            "missing_count": 1,
+            "q1": 0.5487077534791253,
+            "q3": 0.5695825049701789
+          },
+          "directional_geometry_proxy": {
+            "available_count": 29,
+            "maximum": 0.0844945237,
+            "median": 0.0832495242,
+            "minimum": 0.0812227651,
+            "missing_count": 1,
+            "q1": 0.0829464346,
+            "q3": 0.083935149
+          },
+          "geometric_retention_ratio": {
+            "available_count": 29,
+            "maximum": 0.8784,
+            "median": 0.8434163701067615,
+            "minimum": 0.8214904679376083,
+            "missing_count": 1,
+            "q1": 0.8359511343804538,
+            "q3": 0.8571428571428571
+          }
+        },
+        "record_count": 30
+      },
+      "scope": "Descriptive existing-data reanalysis only; candidates are not events, alarms, or detection outcomes.",
+      "sources": {
+        "observation": {
+          "identifier": "/home/syf/tum_external_diag_directional_proxy_20261002/window2/orb_slam3.log",
+          "sha256": "061b8459fa5a56e9eb99af669fc781cd384d9b5bde76e01a83770662729ba6c8"
+        },
+        "reference": {
+          "identifier": "/home/syf/tum_external_diag_directional_proxy_20261002/window0/orb_slam3.log",
+          "sha256": "a478775adc6bebfb522384bda29615983920d8b5db9cdc6ccd1619d9c6132996"
+        }
+      },
+      "strict_joint_candidate": {
+        "candidate_coverage_of_all_records": 0.0,
+        "candidate_coverage_of_valid_three_axis_records": 0.0,
+        "candidate_frame_count": 0,
+        "candidate_run_count": 0,
+        "candidate_runs": [],
+        "confirmation_rule": "3 consecutive valid candidate records; UNKNOWN breaks continuity",
+        "confirmed_segment_count": 0,
+        "confirmed_segments": [],
+        "minimum_weak_axes": 2,
+        "threshold": 0.8,
+        "unknown_count": 1,
+        "valid_three_axis_count": 29,
+        "weak_axis_rule": "At least two of three reference-normalized axes are at or below threshold."
+      }
+    },
+    {
+      "case": "tum_window4",
+      "observation": {
+        "axis_statistics": {
+          "association_ratio": {
+            "available_count": 29,
+            "maximum": 0.6832669322709163,
+            "median": 0.5797819623389494,
+            "minimum": 0.48807157057654077,
+            "missing_count": 1,
+            "q1": 0.5621890547263682,
+            "q3": 0.6013916500994035
+          },
+          "directional_geometry_proxy": {
+            "available_count": 29,
+            "maximum": 0.0939169079,
+            "median": 0.0884837285,
+            "minimum": 0.0829246864,
+            "missing_count": 1,
+            "q1": 0.0866058841,
+            "q3": 0.0902686715
+          },
+          "geometric_retention_ratio": {
+            "available_count": 29,
+            "maximum": 0.8892128279883382,
+            "median": 0.8411371237458194,
+            "minimum": 0.7571669477234402,
+            "missing_count": 1,
+            "q1": 0.8264604810996563,
+            "q3": 0.8561643835616438
+          }
+        },
+        "record_count": 30,
+        "tracking_state_counts": {
+          "1": 1,
+          "2": 29
+        }
+      },
+      "reference": {
+        "axis_statistics": {
+          "association_ratio": {
+            "available_count": 29,
+            "maximum": 0.6928429423459245,
+            "median": 0.5592039800995025,
+            "minimum": 0.5368525896414342,
+            "missing_count": 1,
+            "q1": 0.5487077534791253,
+            "q3": 0.5695825049701789
+          },
+          "directional_geometry_proxy": {
+            "available_count": 29,
+            "maximum": 0.0844945237,
+            "median": 0.0832495242,
+            "minimum": 0.0812227651,
+            "missing_count": 1,
+            "q1": 0.0829464346,
+            "q3": 0.083935149
+          },
+          "geometric_retention_ratio": {
+            "available_count": 29,
+            "maximum": 0.8784,
+            "median": 0.8434163701067615,
+            "minimum": 0.8214904679376083,
+            "missing_count": 1,
+            "q1": 0.8359511343804538,
+            "q3": 0.8571428571428571
+          }
+        },
+        "record_count": 30
+      },
+      "scope": "Descriptive existing-data reanalysis only; candidates are not events, alarms, or detection outcomes.",
+      "sources": {
+        "observation": {
+          "identifier": "/home/syf/tum_external_diag_directional_proxy_20261002/window4/orb_slam3.log",
+          "sha256": "01d9769378bac349c295df685228b7d24202fa8828b11ecdbaedecf3d70dacbe"
+        },
+        "reference": {
+          "identifier": "/home/syf/tum_external_diag_directional_proxy_20261002/window0/orb_slam3.log",
+          "sha256": "a478775adc6bebfb522384bda29615983920d8b5db9cdc6ccd1619d9c6132996"
+        }
+      },
+      "strict_joint_candidate": {
+        "candidate_coverage_of_all_records": 0.0,
+        "candidate_coverage_of_valid_three_axis_records": 0.0,
+        "candidate_frame_count": 0,
+        "candidate_run_count": 0,
+        "candidate_runs": [],
+        "confirmation_rule": "3 consecutive valid candidate records; UNKNOWN breaks continuity",
+        "confirmed_segment_count": 0,
+        "confirmed_segments": [],
+        "minimum_weak_axes": 2,
+        "threshold": 0.8,
+        "unknown_count": 1,
+        "valid_three_axis_count": 29,
+        "weak_axis_rule": "At least two of three reference-normalized axes are at or below threshold."
+      }
+    },
+    {
+      "case": "openloris_office1_4_reference",
+      "observation": {
+        "axis_statistics": {
+          "association_ratio": {
+            "available_count": 29,
+            "maximum": 0.6956869009584664,
+            "median": 0.5497215592680986,
+            "minimum": 0.4756195043964828,
+            "missing_count": 1,
+            "q1": 0.5239234449760766,
+            "q3": 0.5630990415335463
+          },
+          "directional_geometry_proxy": {
+            "available_count": 29,
+            "maximum": 0.12832588,
+            "median": 0.107540131,
+            "minimum": 0.0790405944,
+            "missing_count": 1,
+            "q1": 0.100274749,
+            "q3": 0.125024468
+          },
+          "geometric_retention_ratio": {
+            "available_count": 29,
+            "maximum": 0.8367346938775511,
+            "median": 0.74235807860262,
+            "minimum": 0.5623229461756374,
+            "missing_count": 1,
+            "q1": 0.7177650429799427,
+            "q3": 0.7730061349693251
+          }
+        },
+        "record_count": 30,
+        "tracking_state_counts": {
+          "1": 1,
+          "2": 29
+        }
+      },
+      "reference": {
+        "axis_statistics": {
+          "association_ratio": {
+            "available_count": 29,
+            "maximum": 0.6956869009584664,
+            "median": 0.5497215592680986,
+            "minimum": 0.4756195043964828,
+            "missing_count": 1,
+            "q1": 0.5239234449760766,
+            "q3": 0.5630990415335463
+          },
+          "directional_geometry_proxy": {
+            "available_count": 29,
+            "maximum": 0.12832588,
+            "median": 0.107540131,
+            "minimum": 0.0790405944,
+            "missing_count": 1,
+            "q1": 0.100274749,
+            "q3": 0.125024468
+          },
+          "geometric_retention_ratio": {
+            "available_count": 29,
+            "maximum": 0.8367346938775511,
+            "median": 0.74235807860262,
+            "minimum": 0.5623229461756374,
+            "missing_count": 1,
+            "q1": 0.7177650429799427,
+            "q3": 0.7730061349693251
+          }
+        },
+        "record_count": 30
+      },
+      "scope": "Descriptive existing-data reanalysis only; candidates are not events, alarms, or detection outcomes.",
+      "sources": {
+        "observation": {
+          "identifier": "/home/syf/openloris_external/office1-4_vm_bundle_v2/diag_run_directional_proxy_20261002/orb_slam3.log",
+          "sha256": "6b2a274690b12d1df57b5af5b8a11427cbecd639bdb949b74a3eb267114683dd"
+        },
+        "reference": {
+          "identifier": "/home/syf/openloris_external/office1-4_vm_bundle_v2/diag_run_directional_proxy_20261002/orb_slam3.log",
+          "sha256": "6b2a274690b12d1df57b5af5b8a11427cbecd639bdb949b74a3eb267114683dd"
+        }
+      },
+      "strict_joint_candidate": {
+        "candidate_coverage_of_all_records": 0.03333333333333333,
+        "candidate_coverage_of_valid_three_axis_records": 0.034482758620689655,
+        "candidate_frame_count": 1,
+        "candidate_run_count": 1,
+        "candidate_runs": [
+          {
+            "end_record_index": 6,
+            "length": 1,
+            "start_record_index": 6
+          }
+        ],
+        "confirmation_rule": "3 consecutive valid candidate records; UNKNOWN breaks continuity",
+        "confirmed_segment_count": 0,
+        "confirmed_segments": [],
+        "minimum_weak_axes": 2,
+        "threshold": 0.8,
+        "unknown_count": 1,
+        "valid_three_axis_count": 29,
+        "weak_axis_rule": "At least two of three reference-normalized axes are at or below threshold."
+      }
+    },
+    {
+      "case": "openloris_office1_4_window56",
+      "observation": {
+        "axis_statistics": {
+          "association_ratio": {
+            "available_count": 29,
+            "maximum": 0.6939586645468998,
+            "median": 0.5960159362549801,
+            "minimum": 0.4940047961630695,
+            "missing_count": 1,
+            "q1": 0.5705179282868525,
+            "q3": 0.6244019138755981
+          },
+          "directional_geometry_proxy": {
+            "available_count": 29,
+            "maximum": 0.100415252,
+            "median": 0.0816758722,
+            "minimum": 0.0717775449,
+            "missing_count": 1,
+            "q1": 0.079019241,
+            "q3": 0.0884358808
+          },
+          "geometric_retention_ratio": {
+            "available_count": 29,
+            "maximum": 0.8840399002493765,
+            "median": 0.7564259485924113,
+            "minimum": 0.6426470588235295,
+            "missing_count": 1,
+            "q1": 0.7123098201936376,
+            "q3": 0.8020698576972833
+          }
+        },
+        "record_count": 30,
+        "tracking_state_counts": {
+          "1": 1,
+          "2": 29
+        }
+      },
+      "reference": {
+        "axis_statistics": {
+          "association_ratio": {
+            "available_count": 29,
+            "maximum": 0.6956869009584664,
+            "median": 0.5497215592680986,
+            "minimum": 0.4756195043964828,
+            "missing_count": 1,
+            "q1": 0.5239234449760766,
+            "q3": 0.5630990415335463
+          },
+          "directional_geometry_proxy": {
+            "available_count": 29,
+            "maximum": 0.12832588,
+            "median": 0.107540131,
+            "minimum": 0.0790405944,
+            "missing_count": 1,
+            "q1": 0.100274749,
+            "q3": 0.125024468
+          },
+          "geometric_retention_ratio": {
+            "available_count": 29,
+            "maximum": 0.8367346938775511,
+            "median": 0.74235807860262,
+            "minimum": 0.5623229461756374,
+            "missing_count": 1,
+            "q1": 0.7177650429799427,
+            "q3": 0.7730061349693251
+          }
+        },
+        "record_count": 30
+      },
+      "scope": "Descriptive existing-data reanalysis only; candidates are not events, alarms, or detection outcomes.",
+      "sources": {
+        "observation": {
+          "identifier": "/home/syf/openloris_external/office1-4_vm_bundle_v2/diag_window56_directional_proxy_20261002/orb_slam3.log",
+          "sha256": "14d1f23828f38a513a625e7af428df6c3640d66215f08c5d32c6b28540fa46cb"
+        },
+        "reference": {
+          "identifier": "/home/syf/openloris_external/office1-4_vm_bundle_v2/diag_run_directional_proxy_20261002/orb_slam3.log",
+          "sha256": "6b2a274690b12d1df57b5af5b8a11427cbecd639bdb949b74a3eb267114683dd"
+        }
+      },
+      "strict_joint_candidate": {
+        "candidate_coverage_of_all_records": 0.0,
+        "candidate_coverage_of_valid_three_axis_records": 0.0,
+        "candidate_frame_count": 0,
+        "candidate_run_count": 0,
+        "candidate_runs": [],
+        "confirmation_rule": "3 consecutive valid candidate records; UNKNOWN breaks continuity",
+        "confirmed_segment_count": 0,
+        "confirmed_segments": [],
+        "minimum_weak_axes": 2,
+        "threshold": 0.8,
+        "unknown_count": 1,
+        "valid_three_axis_count": 29,
+        "weak_axis_rule": "At least two of three reference-normalized axes are at or below threshold."
+      }
+    },
+    {
+      "case": "openloris_office1_5_reference",
+      "observation": {
+        "axis_statistics": {
+          "association_ratio": {
+            "available_count": 29,
+            "maximum": 0.5502392344497608,
+            "median": 0.5095693779904307,
+            "minimum": 0.4768370607028754,
+            "missing_count": 1,
+            "q1": 0.4992012779552716,
+            "q3": 0.5235059760956176
+          },
+          "directional_geometry_proxy": {
+            "available_count": 29,
+            "maximum": 0.131361857,
+            "median": 0.125649676,
+            "minimum": 0.11594145,
+            "missing_count": 1,
+            "q1": 0.118615024,
+            "q3": 0.127977505
+          },
+          "geometric_retention_ratio": {
+            "available_count": 29,
+            "maximum": 0.8343558282208589,
+            "median": 0.6651017214397497,
+            "minimum": 0.5426229508196722,
+            "missing_count": 1,
+            "q1": 0.5901386748844376,
+            "q3": 0.7312
+          }
+        },
+        "record_count": 30,
+        "tracking_state_counts": {
+          "1": 1,
+          "2": 29
+        }
+      },
+      "reference": {
+        "axis_statistics": {
+          "association_ratio": {
+            "available_count": 29,
+            "maximum": 0.5502392344497608,
+            "median": 0.5095693779904307,
+            "minimum": 0.4768370607028754,
+            "missing_count": 1,
+            "q1": 0.4992012779552716,
+            "q3": 0.5235059760956176
+          },
+          "directional_geometry_proxy": {
+            "available_count": 29,
+            "maximum": 0.131361857,
+            "median": 0.125649676,
+            "minimum": 0.11594145,
+            "missing_count": 1,
+            "q1": 0.118615024,
+            "q3": 0.127977505
+          },
+          "geometric_retention_ratio": {
+            "available_count": 29,
+            "maximum": 0.8343558282208589,
+            "median": 0.6651017214397497,
+            "minimum": 0.5426229508196722,
+            "missing_count": 1,
+            "q1": 0.5901386748844376,
+            "q3": 0.7312
+          }
+        },
+        "record_count": 30
+      },
+      "scope": "Descriptive existing-data reanalysis only; candidates are not events, alarms, or detection outcomes.",
+      "sources": {
+        "observation": {
+          "identifier": "/home/syf/openloris_external/office1-5_vm_bundle_v2/diag_run_directional_proxy_20261002/orb_slam3.log",
+          "sha256": "b27317bd021c22a94e5cba3bb5b0da9018d58178674d332144e30a266fbd4cc4"
+        },
+        "reference": {
+          "identifier": "/home/syf/openloris_external/office1-5_vm_bundle_v2/diag_run_directional_proxy_20261002/orb_slam3.log",
+          "sha256": "b27317bd021c22a94e5cba3bb5b0da9018d58178674d332144e30a266fbd4cc4"
+        }
+      },
+      "strict_joint_candidate": {
+        "candidate_coverage_of_all_records": 0.0,
+        "candidate_coverage_of_valid_three_axis_records": 0.0,
+        "candidate_frame_count": 0,
+        "candidate_run_count": 0,
+        "candidate_runs": [],
+        "confirmation_rule": "3 consecutive valid candidate records; UNKNOWN breaks continuity",
+        "confirmed_segment_count": 0,
+        "confirmed_segments": [],
+        "minimum_weak_axes": 2,
+        "threshold": 0.8,
+        "unknown_count": 1,
+        "valid_three_axis_count": 29,
+        "weak_axis_rule": "At least two of three reference-normalized axes are at or below threshold."
+      }
+    },
+    {
+      "case": "openloris_office1_5_window57",
+      "observation": {
+        "axis_statistics": {
+          "association_ratio": {
+            "available_count": 29,
+            "maximum": 0.3487957181088314,
+            "median": 0.2857142857142857,
+            "minimum": 0.2589605734767025,
+            "missing_count": 1,
+            "q1": 0.27537593984962405,
+            "q3": 0.31210191082802546
+          },
+          "directional_geometry_proxy": {
+            "available_count": 29,
+            "maximum": 0.0890392363,
+            "median": 0.076243028,
+            "minimum": 0.057779558,
+            "missing_count": 1,
+            "q1": 0.0747905672,
+            "q3": 0.0786194131
+          },
+          "geometric_retention_ratio": {
+            "available_count": 29,
+            "maximum": 0.6706948640483383,
+            "median": 0.5249169435215947,
+            "minimum": 0.43252595155709345,
+            "missing_count": 1,
+            "q1": 0.48366013071895425,
+            "q3": 0.5877192982456141
+          }
+        },
+        "record_count": 30,
+        "tracking_state_counts": {
+          "1": 1,
+          "2": 29
+        }
+      },
+      "reference": {
+        "axis_statistics": {
+          "association_ratio": {
+            "available_count": 29,
+            "maximum": 0.5502392344497608,
+            "median": 0.5095693779904307,
+            "minimum": 0.4768370607028754,
+            "missing_count": 1,
+            "q1": 0.4992012779552716,
+            "q3": 0.5235059760956176
+          },
+          "directional_geometry_proxy": {
+            "available_count": 29,
+            "maximum": 0.131361857,
+            "median": 0.125649676,
+            "minimum": 0.11594145,
+            "missing_count": 1,
+            "q1": 0.118615024,
+            "q3": 0.127977505
+          },
+          "geometric_retention_ratio": {
+            "available_count": 29,
+            "maximum": 0.8343558282208589,
+            "median": 0.6651017214397497,
+            "minimum": 0.5426229508196722,
+            "missing_count": 1,
+            "q1": 0.5901386748844376,
+            "q3": 0.7312
+          }
+        },
+        "record_count": 30
+      },
+      "scope": "Descriptive existing-data reanalysis only; candidates are not events, alarms, or detection outcomes.",
+      "sources": {
+        "observation": {
+          "identifier": "/home/syf/openloris_external/office1-5_vm_bundle_v2/diag_window57_directional_proxy_20261002/orb_slam3.log",
+          "sha256": "2337d7f83c3483fb156f9846f867e7d4210b2e167b7e55d542b78bc47102f36f"
+        },
+        "reference": {
+          "identifier": "/home/syf/openloris_external/office1-5_vm_bundle_v2/diag_run_directional_proxy_20261002/orb_slam3.log",
+          "sha256": "b27317bd021c22a94e5cba3bb5b0da9018d58178674d332144e30a266fbd4cc4"
+        }
+      },
+      "strict_joint_candidate": {
+        "candidate_coverage_of_all_records": 0.9666666666666667,
+        "candidate_coverage_of_valid_three_axis_records": 1.0,
+        "candidate_frame_count": 29,
+        "candidate_run_count": 1,
+        "candidate_runs": [
+          {
+            "end_record_index": 29,
+            "length": 29,
+            "start_record_index": 1
+          }
+        ],
+        "confirmation_rule": "3 consecutive valid candidate records; UNKNOWN breaks continuity",
+        "confirmed_segment_count": 1,
+        "confirmed_segments": [
+          {
+            "end_record_index": 29,
+            "length": 29,
+            "start_record_index": 1
+          }
+        ],
+        "minimum_weak_axes": 2,
+        "threshold": 0.8,
+        "unknown_count": 1,
+        "valid_three_axis_count": 29,
+        "weak_axis_rule": "At least two of three reference-normalized axes are at or below threshold."
+      }
+    },
+    {
+      "case": "openloris_office1_5_window58",
+      "observation": {
+        "axis_statistics": {
+          "association_ratio": {
+            "available_count": 29,
+            "maximum": 0.34177215189873417,
+            "median": 0.3021978021978022,
+            "minimum": 0.24786324786324787,
+            "missing_count": 1,
+            "q1": 0.2879061371841155,
+            "q3": 0.31210762331838565
+          },
+          "directional_geometry_proxy": {
+            "available_count": 29,
+            "maximum": 0.134464934,
+            "median": 0.0851605609,
+            "minimum": 0.0672909617,
+            "missing_count": 1,
+            "q1": 0.0748635679,
+            "q3": 0.103572875
+          },
+          "geometric_retention_ratio": {
+            "available_count": 29,
+            "maximum": 0.7002967359050445,
+            "median": 0.5589041095890411,
+            "minimum": 0.3841059602649007,
+            "missing_count": 1,
+            "q1": 0.5222551928783383,
+            "q3": 0.6055045871559633
+          }
+        },
+        "record_count": 30,
+        "tracking_state_counts": {
+          "1": 1,
+          "2": 29
+        }
+      },
+      "reference": {
+        "axis_statistics": {
+          "association_ratio": {
+            "available_count": 29,
+            "maximum": 0.5502392344497608,
+            "median": 0.5095693779904307,
+            "minimum": 0.4768370607028754,
+            "missing_count": 1,
+            "q1": 0.4992012779552716,
+            "q3": 0.5235059760956176
+          },
+          "directional_geometry_proxy": {
+            "available_count": 29,
+            "maximum": 0.131361857,
+            "median": 0.125649676,
+            "minimum": 0.11594145,
+            "missing_count": 1,
+            "q1": 0.118615024,
+            "q3": 0.127977505
+          },
+          "geometric_retention_ratio": {
+            "available_count": 29,
+            "maximum": 0.8343558282208589,
+            "median": 0.6651017214397497,
+            "minimum": 0.5426229508196722,
+            "missing_count": 1,
+            "q1": 0.5901386748844376,
+            "q3": 0.7312
+          }
+        },
+        "record_count": 30
+      },
+      "scope": "Descriptive existing-data reanalysis only; candidates are not events, alarms, or detection outcomes.",
+      "sources": {
+        "observation": {
+          "identifier": "/home/syf/openloris_external/office1-5_vm_bundle_v2/diag_window58_directional_proxy_20261002/orb_slam3.log",
+          "sha256": "a9d0af1f77f685032c494796ac21e8fc7823487aae63eac234683967a8c1e047"
+        },
+        "reference": {
+          "identifier": "/home/syf/openloris_external/office1-5_vm_bundle_v2/diag_run_directional_proxy_20261002/orb_slam3.log",
+          "sha256": "b27317bd021c22a94e5cba3bb5b0da9018d58178674d332144e30a266fbd4cc4"
+        }
+      },
+      "strict_joint_candidate": {
+        "candidate_coverage_of_all_records": 0.8,
+        "candidate_coverage_of_valid_three_axis_records": 0.8275862068965517,
+        "candidate_frame_count": 24,
+        "candidate_run_count": 3,
+        "candidate_runs": [
+          {
+            "end_record_index": 19,
+            "length": 19,
+            "start_record_index": 1
+          },
+          {
+            "end_record_index": 24,
+            "length": 2,
+            "start_record_index": 23
+          },
+          {
+            "end_record_index": 29,
+            "length": 3,
+            "start_record_index": 27
+          }
+        ],
+        "confirmation_rule": "3 consecutive valid candidate records; UNKNOWN breaks continuity",
+        "confirmed_segment_count": 2,
+        "confirmed_segments": [
+          {
+            "end_record_index": 19,
+            "length": 19,
+            "start_record_index": 1
+          },
+          {
+            "end_record_index": 29,
+            "length": 3,
+            "start_record_index": 27
+          }
+        ],
+        "minimum_weak_axes": 2,
+        "threshold": 0.8,
+        "unknown_count": 1,
+        "valid_three_axis_count": 29,
+        "weak_axis_rule": "At least two of three reference-normalized axes are at or below threshold."
+      }
+    },
+    {
+      "case": "openloris_office1_7_reference",
+      "observation": {
+        "axis_statistics": {
+          "association_ratio": {
+            "available_count": 29,
+            "maximum": 0.5353159851301115,
+            "median": 0.3851080864691753,
+            "minimum": 0.37170263788968827,
+            "missing_count": 1,
+            "q1": 0.38221153846153844,
+            "q3": 0.3896
+          },
+          "directional_geometry_proxy": {
+            "available_count": 29,
+            "maximum": 0.0815459192,
+            "median": 0.079592973,
+            "minimum": 0.0782203451,
+            "missing_count": 1,
+            "q1": 0.0787576586,
+            "q3": 0.0805155709
+          },
+          "geometric_retention_ratio": {
+            "available_count": 29,
+            "maximum": 0.9097222222222222,
+            "median": 0.8375,
+            "minimum": 0.8157349896480331,
+            "missing_count": 1,
+            "q1": 0.8243801652892562,
+            "q3": 0.8463157894736842
+          }
+        },
+        "record_count": 30,
+        "tracking_state_counts": {
+          "1": 1,
+          "2": 29
+        }
+      },
+      "reference": {
+        "axis_statistics": {
+          "association_ratio": {
+            "available_count": 29,
+            "maximum": 0.5353159851301115,
+            "median": 0.3851080864691753,
+            "minimum": 0.37170263788968827,
+            "missing_count": 1,
+            "q1": 0.38221153846153844,
+            "q3": 0.3896
+          },
+          "directional_geometry_proxy": {
+            "available_count": 29,
+            "maximum": 0.0815459192,
+            "median": 0.079592973,
+            "minimum": 0.0782203451,
+            "missing_count": 1,
+            "q1": 0.0787576586,
+            "q3": 0.0805155709
+          },
+          "geometric_retention_ratio": {
+            "available_count": 29,
+            "maximum": 0.9097222222222222,
+            "median": 0.8375,
+            "minimum": 0.8157349896480331,
+            "missing_count": 1,
+            "q1": 0.8243801652892562,
+            "q3": 0.8463157894736842
+          }
+        },
+        "record_count": 30
+      },
+      "scope": "Descriptive existing-data reanalysis only; candidates are not events, alarms, or detection outcomes.",
+      "sources": {
+        "observation": {
+          "identifier": "/home/syf/openloris_external/office1-7_vm_bundle_v2/diag_run_directional_proxy_20261002/orb_slam3.log",
+          "sha256": "4071c2a449977b83e2d55c2c1d4a877cc3009331e0cee2751315d031ca14ca94"
+        },
+        "reference": {
+          "identifier": "/home/syf/openloris_external/office1-7_vm_bundle_v2/diag_run_directional_proxy_20261002/orb_slam3.log",
+          "sha256": "4071c2a449977b83e2d55c2c1d4a877cc3009331e0cee2751315d031ca14ca94"
+        }
+      },
+      "strict_joint_candidate": {
+        "candidate_coverage_of_all_records": 0.0,
+        "candidate_coverage_of_valid_three_axis_records": 0.0,
+        "candidate_frame_count": 0,
+        "candidate_run_count": 0,
+        "candidate_runs": [],
+        "confirmation_rule": "3 consecutive valid candidate records; UNKNOWN breaks continuity",
+        "confirmed_segment_count": 0,
+        "confirmed_segments": [],
+        "minimum_weak_axes": 2,
+        "threshold": 0.8,
+        "unknown_count": 1,
+        "valid_three_axis_count": 29,
+        "weak_axis_rule": "At least two of three reference-normalized axes are at or below threshold."
+      }
+    },
+    {
+      "case": "openloris_office1_7_window61",
+      "observation": {
+        "axis_statistics": {
+          "association_ratio": {
+            "available_count": 29,
+            "maximum": 0.6148325358851675,
+            "median": 0.4912420382165605,
+            "minimum": 0.4145367412140575,
+            "missing_count": 1,
+            "q1": 0.46325878594249204,
+            "q3": 0.5087859424920128
+          },
+          "directional_geometry_proxy": {
+            "available_count": 29,
+            "maximum": 0.0957190394,
+            "median": 0.0439666398,
+            "minimum": 0.0302315801,
+            "missing_count": 1,
+            "q1": 0.0353993475,
+            "q3": 0.0530981757
+          },
+          "geometric_retention_ratio": {
+            "available_count": 29,
+            "maximum": 0.8290322580645161,
+            "median": 0.7067395264116576,
+            "minimum": 0.496551724137931,
+            "missing_count": 1,
+            "q1": 0.6129541864139021,
+            "q3": 0.7735042735042735
+          }
+        },
+        "record_count": 30,
+        "tracking_state_counts": {
+          "1": 1,
+          "2": 29
+        }
+      },
+      "reference": {
+        "axis_statistics": {
+          "association_ratio": {
+            "available_count": 29,
+            "maximum": 0.5353159851301115,
+            "median": 0.3851080864691753,
+            "minimum": 0.37170263788968827,
+            "missing_count": 1,
+            "q1": 0.38221153846153844,
+            "q3": 0.3896
+          },
+          "directional_geometry_proxy": {
+            "available_count": 29,
+            "maximum": 0.0815459192,
+            "median": 0.079592973,
+            "minimum": 0.0782203451,
+            "missing_count": 1,
+            "q1": 0.0787576586,
+            "q3": 0.0805155709
+          },
+          "geometric_retention_ratio": {
+            "available_count": 29,
+            "maximum": 0.9097222222222222,
+            "median": 0.8375,
+            "minimum": 0.8157349896480331,
+            "missing_count": 1,
+            "q1": 0.8243801652892562,
+            "q3": 0.8463157894736842
+          }
+        },
+        "record_count": 30
+      },
+      "scope": "Descriptive existing-data reanalysis only; candidates are not events, alarms, or detection outcomes.",
+      "sources": {
+        "observation": {
+          "identifier": "/home/syf/openloris_external/office1-7_vm_bundle_v2/diag_window61_directional_proxy_20261002/orb_slam3.log",
+          "sha256": "d733e8c472a011bbfc809cc9fc7f775c3d2124d531bece09d2e92a89226cd372"
+        },
+        "reference": {
+          "identifier": "/home/syf/openloris_external/office1-7_vm_bundle_v2/diag_run_directional_proxy_20261002/orb_slam3.log",
+          "sha256": "4071c2a449977b83e2d55c2c1d4a877cc3009331e0cee2751315d031ca14ca94"
+        }
+      },
+      "strict_joint_candidate": {
+        "candidate_coverage_of_all_records": 0.3333333333333333,
+        "candidate_coverage_of_valid_three_axis_records": 0.3448275862068966,
+        "candidate_frame_count": 10,
+        "candidate_run_count": 2,
+        "candidate_runs": [
+          {
+            "end_record_index": 18,
+            "length": 2,
+            "start_record_index": 17
+          },
+          {
+            "end_record_index": 29,
+            "length": 8,
+            "start_record_index": 22
+          }
+        ],
+        "confirmation_rule": "3 consecutive valid candidate records; UNKNOWN breaks continuity",
+        "confirmed_segment_count": 1,
+        "confirmed_segments": [
+          {
+            "end_record_index": 29,
+            "length": 8,
+            "start_record_index": 22
+          }
+        ],
+        "minimum_weak_axes": 2,
+        "threshold": 0.8,
+        "unknown_count": 1,
+        "valid_three_axis_count": 29,
+        "weak_axis_rule": "At least two of three reference-normalized axes are at or below threshold."
+      }
+    }
+  ],
+  "claim_boundary": "No event detection, validated threshold, mechanism causality, or cross-source generalization claim follows from this artifact.",
+  "groundtruth_used": false,
+  "status": "PASS_DESCRIPTIVE_PROXY_WINDOW_STATISTICS",
+  "unknown_policy": "A missing axis is UNKNOWN, cannot become a candidate, and breaks temporal continuity."
+}

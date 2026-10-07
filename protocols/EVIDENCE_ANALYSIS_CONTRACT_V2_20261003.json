@@ -1,0 +1,94 @@
+{
+  "schema": "evidence_analysis_contract_v2",
+  "version": "2.0.0",
+  "date": "2026-10-03",
+  "status": "FROZEN_BEFORE_NEW_REFERENCE_MAP_RESULTS",
+  "scope": "Post-V1.6 offline evidence analysis. Historical V1 artifacts remain immutable and retain their original identity.",
+  "research_question": "Does separately reporting association support, geometric retention, and a rotational-block spectral proxy add reproducible explanatory information about reference-map localization outcomes beyond count-only, simple fusion, and a fair external challenger, and where does that information fail?",
+  "required_system_identity": {
+    "reference_map_claim": "The localization run must load a frozen atlas built from a different declared traversal and must remain in the loaded map identity.",
+    "fresh_atlas_run": "A run that initializes an atlas from scratch is eligible only for exploratory RGB-D SLAM evidence analysis.",
+    "map_validation_fields": [
+      "atlas SHA-256",
+      "map-build input manifest SHA-256",
+      "revisit input manifest SHA-256",
+      "loaded map id/keyframe/map-point counts before and after",
+      "localization-only activation result",
+      "no online ground truth"
+    ]
+  },
+  "input_population": {
+    "unit": "ordered RGB-depth input pair",
+    "identity": "frame_id is the zero-based input-loop index and timestamp_s is the RGB timestamp",
+    "continuity": "Temporal confirmation requires consecutive input frame_id values; missing evidence, missing input, and run/reset boundaries cannot be bridged.",
+    "denominators": [
+      "input pairs",
+      "submitted inputs",
+      "returned poses",
+      "GT-paired inputs",
+      "complete three-axis evidence"
+    ]
+  },
+  "axes": {
+    "association_support": "map_associations / extracted_features",
+    "geometric_retention": "geometric_inliers / map_associations",
+    "directional_proxy": "lambda_min(H_rr) / lambda_max(H_rr)"
+  },
+  "axis_validity": "A defined axis is finite and in [0,1]. The directional proxy additionally requires at least 6 valid points, positive finite median depth, ordered nonnegative finite eigenvalues, a positive maximum, and agreement between the logged ratio and eigenvalue ratio.",
+  "reference_normalization": {
+    "eligible_values": "finite values in [0,1], including a valid zero observation",
+    "reference_statistic": "median over all eligible values",
+    "validity_gate": "The reference median must be finite and strictly positive; otherwise the relative axis and joint candidate are UNKNOWN.",
+    "reason": "Zero is a valid absence of evidence but division by a zero reference median is undefined. This resolves the V1 prose/code mismatch without deleting zero evidence."
+  },
+  "missingness": {
+    "evidence_missing": "One or more axis values are unavailable or invalid.",
+    "estimate_missing": "No returned pose maps to the input timestamp.",
+    "gt_pair_missing": "No GT sample is associated within the frozen tolerance.",
+    "native_lost": "Native tracking state explicitly reports lost.",
+    "rule": "These states remain distinct, may overlap, and are never recoded as normal or automatically as a degradation event."
+  },
+  "candidate_display": {
+    "threshold": 0.8,
+    "minimum_weak_axes": 2,
+    "confirmation_frames": 3,
+    "identity": "exploratory strict joint candidate",
+    "prohibited_identity": "event, alarm, truth label, confidence calibration, or recovery request"
+  },
+  "external_endpoints": {
+    "primary": [
+      "input and returned-pose coverage",
+      "first-pose-anchored translation APE",
+      "first-pose-anchored SO(3) angle APE"
+    ],
+    "secondary": [
+      "one-input-step translation RPE",
+      "one-input-step SO(3) angle RPE",
+      "reason-coded UNKNOWN"
+    ],
+    "boundary": "First-pose anchoring measures relative short-window consistency, not global map-frame localization accuracy. Ground truth is offline only."
+  },
+  "comparison_contract": {
+    "internal": [
+      "association support only",
+      "association plus geometry",
+      "full three-axis representation",
+      "predeclared simple scalar fusions"
+    ],
+    "external_minimum": "At least one non-synonymous standard or literature-compatible challenger evaluated on the same eligible inputs and external endpoints.",
+    "ferranti_full_method": "Requires inlier count, query-image coverage, database-image coverage, training labels, and group-disjoint training/evaluation. It cannot be called reproduced when any required component is absent.",
+    "available_proxy": "The existing 4x3 query-image spatial entropy/occupancy marker is a literature-inspired query spatial-distribution proxy, not Ferranti et al.'s coverage score."
+  },
+  "analysis_units": {
+    "replication": "independent sequence or acquisition run",
+    "repeated_observation": "frame",
+    "inference_rule": "Do not use frames as independent replicates or pool framewise p-values across source-correlated runs."
+  },
+  "claim_gates": {
+    "incremental_information": "Must be demonstrated on predeclared independent reference-map evaluation groups using an external endpoint and a fair challenger; internal candidate coverage is insufficient.",
+    "proxy_method_value": "Must be supported by independent pose-perturbation behavior and declared counterexamples; formula response alone is insufficient.",
+    "unknown_value": "Must quantify how complete-input accounting changes conclusions relative to returned-pose-only reporting.",
+    "failure": "If these gates fail, narrow or reject the contribution before manuscript reconstruction; do not tune tau to rescue it."
+  },
+  "retrospective_boundary": "All analyses using records observed before this freeze are retrospective. A future group is independent only if its identity and analysis role are frozen before its localization/evidence result is inspected."
+}

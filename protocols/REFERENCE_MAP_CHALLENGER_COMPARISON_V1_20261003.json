@@ -1,0 +1,62 @@
+{
+  "schema": "reference_map_challenger_comparison_v1",
+  "date": "2026-10-03",
+  "status": "FROZEN_BEFORE_NUMERICAL_COMPARISON",
+  "scientific_role": "RETROSPECTIVE_DEVELOPMENT_COMPARISON_ON_ALREADY_SEEN_REFERENCE_MAP_PILOT",
+  "population": {
+    "sequence": "office1-3",
+    "required_support_state": "MAP_SUPPORTED",
+    "expected_frame_count": 143,
+    "frame_is_independent_replicate": false,
+    "paper_validation_role": false
+  },
+  "inputs": {
+    "frame_ledger": "experiments/EXP-20260929-public-dataset-audit/POST_V1_6_REFERENCE_MAP_PILOT_FRAME_LEDGER_20261003.csv",
+    "frame_ledger_sha256": "a7de46e1ae081f0364314ee996c62701c61ced540feb267d5f099768f7c11f69",
+    "pilot_audit": "experiments/EXP-20260929-public-dataset-audit/POST_V1_6_REFERENCE_MAP_PILOT_AUDIT_20261003.json",
+    "pilot_audit_sha256": "6ae27a5c674f994cf347b457593a68f608dd8d0e18a73dbc03eb724f3eb3ee0d",
+    "support_audit": "experiments/EXP-20260929-public-dataset-audit/POST_V1_6_REFERENCE_MAP_SUPPORT_REPLAY_AUDIT_20261003.json",
+    "support_audit_sha256": "e34e9673e9c38f47a87cbe770069026c138c8ef0c4dc9561d2d368bb951f36c7"
+  },
+  "features": {
+    "native_axes": [
+      "association_support",
+      "geometric_retention",
+      "directional_proxy"
+    ],
+    "literature_inspired_challenger": "spatial_entropy_proxy",
+    "supplemental_spatial_proxy": "grid_occupancy_proxy",
+    "fixed_fusions": [
+      "support_geometry_arithmetic_mean_relative",
+      "three_axis_min_relative",
+      "three_axis_arithmetic_mean_relative",
+      "three_axis_geometric_mean_relative"
+    ],
+    "normalization": "divide s/g/d by their office1-1 build medians recorded in the pilot audit; spatial proxies remain in native [0,1] coordinates"
+  },
+  "challenger_identity": {
+    "label": "literature-inspired query spatial-distribution proxy",
+    "not_label": "Ferranti et al. confidence model reproduction",
+    "reason": "Exact query/database neighborhood coverage, trained logistic model, and independent pose-correctness training groups are unavailable."
+  },
+  "outcomes": [
+    "translation_error_m",
+    "rotation_error_deg_so3",
+    "rpe_1frame_translation_m",
+    "rpe_1frame_rotation_deg"
+  ],
+  "analysis": {
+    "rank_association": "Spearman rho; no p-value",
+    "quartile_contrast": "ceil(25% of available rows), lowest versus highest feature values with input-index tie break",
+    "time_confound": "Spearman rho between each feature/outcome and input_index",
+    "missing_policy": "same-frame complete-case per feature/outcome; report every denominator",
+    "winner_selection": false,
+    "threshold_tuning": false,
+    "model_training": false
+  },
+  "decision_boundary": {
+    "permitted": "Assess whether the challenger is numerically executable and whether current development data show an obvious redundancy or contradiction.",
+    "prohibited": "Claim superiority, incremental predictive value, statistical significance, generalization, or detector performance from one contiguous run.",
+    "negative_result": "If the spatial challenger matches or exceeds the three-axis summaries, retain that result and narrow novelty; do not tune a fusion."
+  }
+}

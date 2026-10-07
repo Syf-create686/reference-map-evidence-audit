@@ -1,0 +1,238 @@
+{
+  "status": "PASS_DIRECTIONAL_PROXY_REPLAY_EXISTING_WINDOWS",
+  "windows": {
+    "w56": {
+      "record_count_total": 30,
+      "proxy_record_count": 29,
+      "frame_ids_with_proxy": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "association_ratio": {
+        "min": 0.4940047961630695,
+        "mean": 0.5965650615304642,
+        "max": 0.6939586645468998
+      },
+      "geometric_retention_ratio": {
+        "min": 0.6426470588235295,
+        "mean": 0.7601681033768276,
+        "max": 0.8840399002493765
+      },
+      "old_raw_ratio": {
+        "min": 0.00860097911,
+        "mean": 0.01592191995275862,
+        "max": 0.0231393185
+      },
+      "new_proxy": {
+        "min": 0.0717775449,
+        "mean": 0.08315660161379311,
+        "max": 0.100415252
+      },
+      "median_depth_m": 2.33093834,
+      "groundtruth_used": false,
+      "event_threshold_used": false
+    },
+    "w57": {
+      "record_count_total": 30,
+      "proxy_record_count": 29,
+      "frame_ids_with_proxy": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "association_ratio": {
+        "min": 0.2589605734767025,
+        "mean": 0.2937378418547708,
+        "max": 0.3487957181088314
+      },
+      "geometric_retention_ratio": {
+        "min": 0.43252595155709345,
+        "mean": 0.5336282627948724,
+        "max": 0.6706948640483383
+      },
+      "old_raw_ratio": {
+        "min": 0.0119509306,
+        "mean": 0.019734442455172415,
+        "max": 0.0279077701
+      },
+      "new_proxy": {
+        "min": 0.057779558,
+        "mean": 0.07581764524482759,
+        "max": 0.0890392363
+      },
+      "median_depth_m": 1.00596356,
+      "groundtruth_used": false,
+      "event_threshold_used": false
+    },
+    "w58": {
+      "record_count_total": 30,
+      "proxy_record_count": 29,
+      "frame_ids_with_proxy": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "association_ratio": {
+        "min": 0.24786324786324787,
+        "mean": 0.2982464907477833,
+        "max": 0.34177215189873417
+      },
+      "geometric_retention_ratio": {
+        "min": 0.3841059602649007,
+        "mean": 0.5623668616611631,
+        "max": 0.7002967359050445
+      },
+      "old_raw_ratio": {
+        "min": 0.0145004131,
+        "mean": 0.025676990441379312,
+        "max": 0.0434578694
+      },
+      "new_proxy": {
+        "min": 0.0672909617,
+        "mean": 0.09194548654482759,
+        "max": 0.134464934
+      },
+      "median_depth_m": 1.0306145,
+      "groundtruth_used": false,
+      "event_threshold_used": false
+    },
+    "w61": {
+      "record_count_total": 30,
+      "proxy_record_count": 29,
+      "frame_ids_with_proxy": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "association_ratio": {
+        "min": 0.4145367412140575,
+        "mean": 0.4910264885212107,
+        "max": 0.6148325358851675
+      },
+      "geometric_retention_ratio": {
+        "min": 0.496551724137931,
+        "mean": 0.6898917006355366,
+        "max": 0.8290322580645161
+      },
+      "old_raw_ratio": {
+        "min": 0.00291392137,
+        "mean": 0.011493324406206897,
+        "max": 0.0226897988
+      },
+      "new_proxy": {
+        "min": 0.0302315801,
+        "mean": 0.046816310096551725,
+        "max": 0.0957190394
+      },
+      "median_depth_m": 2.3692894,
+      "groundtruth_used": false,
+      "event_threshold_used": false
+    }
+  },
+  "scope": "Existing preselected OpenLORIS windows only; descriptive replay; no threshold or event evaluation."
+}

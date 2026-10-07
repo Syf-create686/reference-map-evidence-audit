@@ -1,0 +1,93 @@
+{
+  "schema": "phase_6_public_sequence_admission_protocol_v1",
+  "status": "FROZEN_BEFORE_EXECUTION",
+  "date": "2026-10-02",
+  "purpose": "Admit sequence-disjoint existing OpenLORIS RGB-D inputs only for descriptive Route A evidence strengthening; not event-detector development or performance evaluation.",
+  "hard_boundaries": {
+    "internal_review_hold_no_submission": true,
+    "groundtruth_online_forbidden": true,
+    "no_b1": true,
+    "no_real_robot": true,
+    "no_active_recovery": true,
+    "no_formal_event_detector": true,
+    "no_slam_algorithm_change": true,
+    "no_threshold_or_temporal_tuning": true
+  },
+  "frozen_runtime": {
+    "source_sha256": "fbd907205374897ecfe9903df9da3f7c219f0e7f20fabf3c932b956ad2690703",
+    "runner_sha256": "220776df7995a7d0ce27e6d8d8340f6c7bf263f9d172720a663b0204345466a9",
+    "vocabulary_sha256": "f8dd027f7a6cb88129821341194d7f2c75b77b3394257ddd0d2229863d1a3570",
+    "camera_config_sha256": "1e48f0a503850822488e16b61d40ce75864f397063b33bfbf30335ebead419bf",
+    "canonical_marker": "M2_DIAG_DIRECTIONAL_PROXY",
+    "axis_definition": "protocols/S_G_DEFINITION_V1.json",
+    "proxy_definition": "protocols/DIRECTIONAL_GEOMETRY_PROXY_DEFINITION_V1.json"
+  },
+  "admission_population": [
+    {
+      "id": "openloris-office1-1-window0",
+      "sequence_id": "office1-1",
+      "window_index": 0,
+      "source_dir": "/home/syf/openloris_external/office1-1_vm_bundle_v3/source",
+      "input_manifest_sha256": "bad711206ba9ba87245064d2821d66f984507e669ccd2958c867d6120890abf4",
+      "association_sha256": "3c1a356624ba299b5a56fbd87575a91b86e6d9534f228912fe2cbf9734ab3ab1"
+    },
+    {
+      "id": "openloris-office1-2-window0",
+      "sequence_id": "office1-2",
+      "window_index": 0,
+      "source_dir": "/home/syf/openloris_external/office1-2_vm_bundle_v1/source",
+      "input_manifest_sha256": "e8661af7f86c2b8274957006b5c5c0523c1529fc1dfaf769912a73ab7992ba94",
+      "association_sha256": "da2ba55d334793c8433f3eabbd4755f7aa87f76e248469eb401d89fac8812b93"
+    },
+    {
+      "id": "openloris-office1-6-window0",
+      "sequence_id": "office1-6",
+      "window_index": 0,
+      "source_dir": "/home/syf/openloris_external/office1-6_vm_bundle_v2/source",
+      "input_manifest_sha256": "0e3fc77dce17b21f38d21ef40d2d4165c05d40d890e10caca2ae2f6436c746c1",
+      "association_sha256": "57ecdd88fbbb584da1cda9f2b0905a1188d25e9a85f12114a3a217b1e270bb21"
+    }
+  ],
+  "eligibility_before_each_run": {
+    "expected_pair_count": 30,
+    "expected_color_file_count": 30,
+    "expected_depth_file_count": 30,
+    "input_and_association_hash_match": true,
+    "runner_and_config_hash_match": true,
+    "gazebo_gt_not_in_online_invocation": true,
+    "output_identity_new_and_empty": true
+  },
+  "single_factor_execution": {
+    "varying_factor": "predeclared sequence identity only",
+    "fixed_factors": [
+      "input pairing procedure",
+      "runner",
+      "vocabulary",
+      "camera configuration",
+      "canonical diagnostic source",
+      "reference normalization definition",
+      "exploratory candidate display parameters"
+    ],
+    "run_order": [
+      "openloris-office1-1-window0",
+      "openloris-office1-2-window0",
+      "openloris-office1-6-window0"
+    ]
+  },
+  "required_outputs_per_run": [
+    "run manifest with source, runner, vocabulary, and camera-config hashes",
+    "native frame log count",
+    "native evidence log count",
+    "canonical directional-proxy log count",
+    "trajectory presence or explicit failure/UNKNOWN reason",
+    "offline-only GT-use declaration"
+  ],
+  "decision_rules": {
+    "success": "All three predeclared runs complete their admission audit; their evidence is descriptive, sequence-disjoint within the OpenLORIS source domain, and may be added to a new data-role manifest without a detector claim.",
+    "one_run_failure": "Record the failure identity and reason; continue only if the remaining predeclared run is unaffected and no configuration change is made.",
+    "same_fault_twice": "Stop further runs and audit the runner/protocol before any retry.",
+    "input_or_runtime_hash_mismatch": "Do not run; mark that candidate INELIGIBLE and do not substitute another sequence based on expected result.",
+    "all_runs_complete": "Evaluate only after all predeclared identities have been audited; do not select inclusion from candidate coverage or trajectory outcome."
+  },
+  "claim_boundary_after_completion": "The result can strengthen descriptive sequence-disjoint evidence within one public dataset family. It cannot establish independent cross-dataset generalization, detector performance, causal degradation labels, or a validated threshold."
+}

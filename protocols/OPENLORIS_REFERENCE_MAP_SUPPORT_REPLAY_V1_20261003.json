@@ -1,0 +1,51 @@
+{
+  "schema": "openloris_reference_map_support_replay_v1",
+  "date": "2026-10-03",
+  "status": "FROZEN_BEFORE_EXECUTION",
+  "scientific_role": "DIAGNOSTIC_REPLAY_OF_ALREADY_SEEN_INPUT",
+  "purpose": "Validate the finite-pose versus map-supported-pose output schema with the existing tracking-health logger; do not estimate method effectiveness.",
+  "run": {
+    "sequence_id": "office1-3",
+    "pair_count": 360,
+    "association_sha256": "368fed9ca212b552c306cdff2c31a8507a3f0a358d5676db7d83fbdf17a930c1",
+    "dataset_path": "/home/syf/openloris_reference_map_pilot_20261003/input/office1-3",
+    "reference_atlas_path": "/home/syf/openloris_reference_map_pilot_20261003/run_build_office1_1/T0_reference.osa",
+    "reference_atlas_sha256": "f85090befa59d78be8def29e12b66c006c7a3ff56cbf7cb8f67806d867f9f921",
+    "output_path": "/home/syf/openloris_reference_map_pilot_20261003/run_revisit_office1_3_support_replay01"
+  },
+  "runtime": {
+    "entry_path": "/home/syf/openloris_reference_map_pilot_20261003/build/m1_rgbd",
+    "entry_sha256": "7c7e59e3e831c86dc4ef6dc239c5120084bbed8788f086b8ae9f694044ae8a19",
+    "orb_root": "/home/syf/ORB_SLAM3_m2_0_directional_proxy_20261002",
+    "library_sha256": "71324eedbd89decb5064652d8cefc8e35c055c7a4e704f6f2be1f60454951ce6",
+    "vocabulary_sha256": "f8dd027f7a6cb88129821341194d7f2c75b77b3394257ddd0d2229863d1a3570",
+    "settings_path": "/home/syf/openloris_external/runner/protocols/OPENLORIS_D435I_RGBD_ORB3.yaml",
+    "settings_sha256": "1e48f0a503850822488e16b61d40ce75864f397063b33bfbf30335ebead419bf",
+    "mode": "revisit",
+    "atlas_stem": "T0_reference",
+    "timeout_sec": 300
+  },
+  "diagnostics": {
+    "tracking_health_env": "ORB_SLAM3_TRACKING_HEALTH_CSV",
+    "relocalization_audit_env": "ORB_SLAM3_RELOCALIZATION_AUDIT_CSV",
+    "pose_support_definition": "protocols/REFERENCE_MAP_POSE_SUPPORT_DEFINITION_V1_20261003.json",
+    "required_tracking_health_rows": 360
+  },
+  "hard_boundaries": {
+    "groundtruth_online": false,
+    "input_or_algorithm_change": false,
+    "threshold_or_parameter_tuning": false,
+    "independent_test_claim": false,
+    "formal_detector_or_recovery": false,
+    "maximum_execution_count": 1
+  },
+  "pass_conditions": [
+    "all frozen hashes match",
+    "return code is zero",
+    "360 inputs are submitted",
+    "360 tracking-health rows map one-to-one to input timestamps",
+    "atlas SHA and every map summary remain unchanged",
+    "support classifier accounts for every input as MAP_SUPPORTED, VO_FALLBACK, INVALID_OR_LOST, or UNKNOWN"
+  ],
+  "failure_rule": "Retain the output and stop. Do not retry, tune, or substitute an input in this replay protocol."
+}

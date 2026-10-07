@@ -1,0 +1,178 @@
+{
+  "interpretation": {
+    "depth_scaled_ratio_is_scale_invariant": true,
+    "online_orbslam_or_gt_used": false,
+    "raw_ratio_is_scale_invariant": false,
+    "rotation_block_proxy_orders_cluster_below_wide": true,
+    "supports_event_detection_claim": false
+  },
+  "protocol": {
+    "acceptance": {
+      "clustered_bearing_lower_than_wide_bearing": true,
+      "depth_scaled_scale_invariance_max_abs_delta": 1e-10,
+      "rotation_block_scale_invariance_max_abs_delta": 1e-10
+    },
+    "camera_model": "normalized_pinhole_fx_fy_1",
+    "configurations": [
+      "wide_bearing",
+      "clustered_bearing",
+      "horizontal_line",
+      "vertical_line"
+    ],
+    "date": "2026-10-02",
+    "depth_m": 2.0,
+    "global_scale_factors": [
+      0.5,
+      1.0,
+      2.0,
+      5.0
+    ],
+    "metrics": [
+      "raw_six_dof_singular_ratio",
+      "depth_scaled_six_dof_singular_ratio",
+      "rotation_block_singular_ratio"
+    ],
+    "online_orbslam_or_gt_used": false,
+    "point_count": 100,
+    "purpose": "Controlled geometric response validation only; not event detection or localization performance.",
+    "schema": "directional_geometry_proxy_synthetic_validation_v1",
+    "seed": 20261002,
+    "status": "FROZEN_BEFORE_EXECUTION"
+  },
+  "results": {
+    "clustered_bearing": {
+      "scale_metrics": {
+        "0.5": {
+          "depth_scaled_six_dof_singular_ratio": 2.8872520796561882e-05,
+          "median_depth_m": 1.014433169122966,
+          "raw_six_dof_singular_ratio": 2.8928178446573908e-05,
+          "rotation_block_singular_ratio": 5.887743800709802e-05
+        },
+        "1.0": {
+          "depth_scaled_six_dof_singular_ratio": 2.8872520796561882e-05,
+          "median_depth_m": 2.028866338245932,
+          "raw_six_dof_singular_ratio": 1.1555273076571342e-05,
+          "rotation_block_singular_ratio": 5.887743800709802e-05
+        },
+        "2.0": {
+          "depth_scaled_six_dof_singular_ratio": 2.8872520796561882e-05,
+          "median_depth_m": 4.057732676491864,
+          "raw_six_dof_singular_ratio": 3.3956406100410924e-06,
+          "rotation_block_singular_ratio": 5.887743800709802e-05
+        },
+        "5.0": {
+          "depth_scaled_six_dof_singular_ratio": 2.8872520796561855e-05,
+          "median_depth_m": 10.14433169122966,
+          "raw_six_dof_singular_ratio": 5.713533352441514e-07,
+          "rotation_block_singular_ratio": 5.887743800709802e-05
+        }
+      }
+    },
+    "horizontal_line": {
+      "scale_metrics": {
+        "0.5": {
+          "depth_scaled_six_dof_singular_ratio": 0.0007500895489753574,
+          "median_depth_m": 0.9875987676234634,
+          "raw_six_dof_singular_ratio": 0.0007509277426059695,
+          "rotation_block_singular_ratio": 0.07937337113410567
+        },
+        "1.0": {
+          "depth_scaled_six_dof_singular_ratio": 0.0007500895489753574,
+          "median_depth_m": 1.9751975352469269,
+          "raw_six_dof_singular_ratio": 0.0004590319664942803,
+          "rotation_block_singular_ratio": 0.07937337113410567
+        },
+        "2.0": {
+          "depth_scaled_six_dof_singular_ratio": 0.0007500895489753574,
+          "median_depth_m": 3.9503950704938537,
+          "raw_six_dof_singular_ratio": 0.00015547795963563845,
+          "rotation_block_singular_ratio": 0.07937337113410567
+        },
+        "5.0": {
+          "depth_scaled_six_dof_singular_ratio": 0.0007500895489754093,
+          "median_depth_m": 9.875987676234633,
+          "raw_six_dof_singular_ratio": 2.7327904101379057e-05,
+          "rotation_block_singular_ratio": 0.07937337113410557
+        }
+      }
+    },
+    "vertical_line": {
+      "scale_metrics": {
+        "0.5": {
+          "depth_scaled_six_dof_singular_ratio": 0.000720611600847383,
+          "median_depth_m": 1.000142952459396,
+          "raw_six_dof_singular_ratio": 0.0007206036721568274,
+          "rotation_block_singular_ratio": 0.0704571851781661
+        },
+        "1.0": {
+          "depth_scaled_six_dof_singular_ratio": 0.000720611600847383,
+          "median_depth_m": 2.000285904918792,
+          "raw_six_dof_singular_ratio": 0.00044045079640918437,
+          "rotation_block_singular_ratio": 0.0704571851781661
+        },
+        "2.0": {
+          "depth_scaled_six_dof_singular_ratio": 0.000720611600847383,
+          "median_depth_m": 4.000571809837584,
+          "raw_six_dof_singular_ratio": 0.00014917130083183543,
+          "rotation_block_singular_ratio": 0.0704571851781661
+        },
+        "5.0": {
+          "depth_scaled_six_dof_singular_ratio": 0.0007206116008474751,
+          "median_depth_m": 10.001429524593963,
+          "raw_six_dof_singular_ratio": 2.6218435975900562e-05,
+          "rotation_block_singular_ratio": 0.07045718517816586
+        }
+      }
+    },
+    "wide_bearing": {
+      "scale_metrics": {
+        "0.5": {
+          "depth_scaled_six_dof_singular_ratio": 0.0025868101333889277,
+          "median_depth_m": 0.9873577512798792,
+          "raw_six_dof_singular_ratio": 0.002591906698291305,
+          "rotation_block_singular_ratio": 0.1335939140117559
+        },
+        "1.0": {
+          "depth_scaled_six_dof_singular_ratio": 0.0025868101333889277,
+          "median_depth_m": 1.9747155025597585,
+          "raw_six_dof_singular_ratio": 0.001523114503670087,
+          "rotation_block_singular_ratio": 0.1335939140117559
+        },
+        "2.0": {
+          "depth_scaled_six_dof_singular_ratio": 0.0025868101333889277,
+          "median_depth_m": 3.949431005119517,
+          "raw_six_dof_singular_ratio": 0.0005062803422960732,
+          "rotation_block_singular_ratio": 0.1335939140117559
+        },
+        "5.0": {
+          "depth_scaled_six_dof_singular_ratio": 0.0025868101333888734,
+          "median_depth_m": 9.873577512798793,
+          "raw_six_dof_singular_ratio": 8.840738288982218e-05,
+          "rotation_block_singular_ratio": 0.13359391401175602
+        }
+      }
+    }
+  },
+  "scale_invariance_max_delta": {
+    "depth_scaled_six_dof_singular_ratio": {
+      "clustered_bearing": 2.710505431213761e-20,
+      "horizontal_line": 5.193328406205566e-17,
+      "vertical_line": 9.204876444401933e-17,
+      "wide_bearing": 5.421010862427522e-17
+    },
+    "raw_six_dof_singular_ratio": {
+      "clustered_bearing": 2.8356825111329756e-05,
+      "horizontal_line": 0.0007235998385045904,
+      "vertical_line": 0.0006943852361809269,
+      "wide_bearing": 0.002503499315401483
+    },
+    "rotation_block_singular_ratio": {
+      "clustered_bearing": 0.0,
+      "horizontal_line": 9.71445146547012e-17,
+      "vertical_line": 2.3592239273284576e-16,
+      "wide_bearing": 1.1102230246251565e-16
+    }
+  },
+  "schema": "directional_geometry_proxy_synthetic_validation_result_v1",
+  "status": "PASS_CONTROLLED_GEOMETRIC_RESPONSE"
+}

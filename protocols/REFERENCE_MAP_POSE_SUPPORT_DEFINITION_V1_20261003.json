@@ -1,0 +1,83 @@
+{
+  "schema": "reference_map_pose_support_definition_v1",
+  "date": "2026-10-03",
+  "status": "FROZEN_BEFORE_DIAGNOSTIC_REPLAY",
+  "scope": "Offline identity and coverage audit for ORB-SLAM3 localization-only reference-map runs.",
+  "non_claims": [
+    "Map-supported pose does not imply accurate pose.",
+    "Finite system pose does not imply current-frame reference-map support.",
+    "Stable map identity does not imply successful relocalization.",
+    "This definition is not an event detector or recovery rule."
+  ],
+  "required_inputs": {
+    "complete_rgbd_associations": "one ordered row per attempted input",
+    "input_status_csv": "adapter output after each TrackRGBD call",
+    "tracking_health_csv": "ORB_SLAM3_TRACKING_HEALTH_CSV enabled before System construction",
+    "entrypoint_evidence_json": "run-level input/submission/pose counts",
+    "atlas_identity": "frozen atlas SHA-256 and initial map ID/keyframe/map-point summary"
+  },
+  "join_policy": {
+    "primary_key": "ordered input index with strictly increasing RGB timestamp",
+    "health_timestamp_tolerance_sec": 0.00001,
+    "native_frame_id": "retained as a separate global ORB frame identity; never assumed to restart at zero after atlas load",
+    "missing_or_duplicate_health_row": "UNKNOWN; never map-supported"
+  },
+  "states": {
+    "MAP_SUPPORTED": {
+      "conditions": [
+        "input submitted",
+        "finite system pose recorded",
+        "adapter state after TrackRGBD is OK",
+        "tracking-health state is OK",
+        "local_map_inliers >= 0, proving TrackLocalMap was evaluated",
+        "map ID/keyframes/map points equal the loaded initial summary"
+      ],
+      "meaning": "The returned pose was followed by successful current-frame local-map evaluation on the unchanged reference map."
+    },
+    "VO_FALLBACK": {
+      "conditions": [
+        "mode is localization-only revisit",
+        "finite system pose recorded",
+        "adapter state after TrackRGBD is OK",
+        "tracking-health row exists",
+        "local_map_inliers == -1",
+        "map identity remains unchanged"
+      ],
+      "meaning": "A finite localization-mode pose exists without current-frame local-map evaluation; it is excluded from map-supported coverage."
+    },
+    "INVALID_OR_LOST": {
+      "conditions": [
+        "image read failed, input not submitted, finite pose absent, or final tracking state is not OK"
+      ],
+      "meaning": "No valid finite system pose for this input."
+    },
+    "UNKNOWN": {
+      "conditions": [
+        "required health row is missing/duplicate/misaligned, map identity is unavailable, or fields are invalid"
+      ],
+      "meaning": "Support identity cannot be decided and is excluded from both supported and fallback counts."
+    }
+  },
+  "required_denominators": [
+    "complete RGB-D input pairs",
+    "submitted inputs",
+    "finite system poses",
+    "map-supported poses",
+    "VO-fallback poses",
+    "invalid/lost inputs",
+    "UNKNOWN support identities",
+    "offline GT-paired map-supported poses"
+  ],
+  "implementation_boundary": {
+    "tracking_health_local_map_inliers": "-1 denotes that TrackLocalMap was not evaluated; nonnegative values are written only when local-map evaluation was attempted.",
+    "relocalization_indicator": "last_relocalization_frame_id equal to current native frame ID may be reported descriptively but is not a pose-accuracy label.",
+    "groundtruth_online": false,
+    "algorithm_behavior_change": false
+  },
+  "failure_rules": {
+    "health_log_not_enabled": "Run is ineligible for reference-map support coverage.",
+    "health_row_count_mismatch": "Fail closed and audit the runner/parser before another formal run.",
+    "map_summary_change": "Hard map-identity failure.",
+    "majority_vo_fallback": "Retain the result; do not call finite-pose coverage reference-map localization coverage."
+  }
+}

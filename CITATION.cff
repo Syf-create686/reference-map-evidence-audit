@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: If you use this package, please cite the accompanying manuscript.
+title: >-
+  Reproduction package for Interpretable Evidence Auditing for Reference-map RGB-D
+  Localization
+authors:
+  - family-names: Song
+    given-names: Yifan
+    orcid: https://orcid.org/0009-0007-4234-4433
+    affiliation: Shandong Jianzhu University, Jinan, Shandong, China
+license: MIT

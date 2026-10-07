@@ -1,0 +1,278 @@
+{
+  "file_count": 54,
+  "files": [
+    {
+      "bytes": 32,
+      "path": ".gitignore",
+      "sha256": "80246f78c1ad74eee41b6851c44d202d3f64978113d0afdf6c831ed91427b5be"
+    },
+    {
+      "bytes": 388,
+      "path": "CITATION.cff",
+      "sha256": "bcc9a8ae41e1ab593a6e9cdccd90eb63945f22bb9e904c5df0baf1bc6083fb9e"
+    },
+    {
+      "bytes": 1426,
+      "path": "LICENSE",
+      "sha256": "99365136084a09b6c9f9d381466e1c91040ab9dacecca81b6851d7914d0fa220"
+    },
+    {
+      "bytes": 9190,
+      "path": "PROVENANCE.md",
+      "sha256": "e789949f76cde90896e190935b403b72153ecdbe3240074d35e1d21efe1e8148"
+    },
+    {
+      "bytes": 4879,
+      "path": "README.md",
+      "sha256": "07e7dda0e5425c1b6eb342ff8baeea3777a7154620a3d574e3e9b14eb402cd86"
+    },
+    {
+      "bytes": 6752,
+      "path": "experiments/EXP-20260929-public-dataset-audit/DIRECTIONAL_GEOMETRY_PROXY_SYNTHETIC_VALIDATION_20261002.json",
+      "sha256": "d5ec3fcd3638e1e1d076feaa6c685ca0522b6521d118eb2b42663bfb565b943b"
+    },
+    {
+      "bytes": 1141,
+      "path": "experiments/EXP-20260929-public-dataset-audit/FR2_GT_INPUT_INTEGRITY_REVIEW_20261004.json",
+      "sha256": "cd2ff542457bdc5847caa009d3953fb313240ba82524b5e339cdccc93a1878a5"
+    },
+    {
+      "bytes": 45404,
+      "path": "experiments/EXP-20260929-public-dataset-audit/PHASE_3_CANONICAL_PROXY_SENSITIVITY_20261002.json",
+      "sha256": "51554890b604aebd03d0c5f0c1295505511eac6e5aae2c02f401bafeecadc7ab"
+    },
+    {
+      "bytes": 24411,
+      "path": "experiments/EXP-20260929-public-dataset-audit/PHASE_3_CANONICAL_RULE_COMPARISON_20261002.json",
+      "sha256": "5134822a208fb5722df36639ce8e18f6cb31a854df387daf08b4e63c08bbf1ea"
+    },
+    {
+      "bytes": 36842,
+      "path": "experiments/EXP-20260929-public-dataset-audit/PHASE_3_PROXY_WINDOW_SPECIFICITY_20261002.json",
+      "sha256": "22a869630fd09fe7b693de51375856bb7479c2614e4f22622855ab0841ef338d"
+    },
+    {
+      "bytes": 21464,
+      "path": "experiments/EXP-20260929-public-dataset-audit/PHASE_6_RUN_01_PARSED_EVIDENCE_20261002.json",
+      "sha256": "b7a41e02a67259c81d52a0d49e8226362d2233052f58975658baf9a479657848"
+    },
+    {
+      "bytes": 21441,
+      "path": "experiments/EXP-20260929-public-dataset-audit/PHASE_6_RUN_02_PARSED_EVIDENCE_20261002.json",
+      "sha256": "fffdb5a70a35ae3d46536d0281511418f98bea61ef4ac970b3354eb821a73951"
+    },
+    {
+      "bytes": 21427,
+      "path": "experiments/EXP-20260929-public-dataset-audit/PHASE_6_RUN_03_PARSED_EVIDENCE_20261002.json",
+      "sha256": "5052d18249b52f0a8600041e7892519eb18b77ab01d7707b0d45ec64bd3fd07f"
+    },
+    {
+      "bytes": 4656,
+      "path": "experiments/EXP-20260929-public-dataset-audit/PHASE_B_DIRECTIONAL_PROXY_OPENLORIS_REPLAY_20261002.json",
+      "sha256": "9a9fae620d23a5e76c99e7dc30a6ccb368f9e469f899c7cc92f50bac31ef2ff2"
+    },
+    {
+      "bytes": 741,
+      "path": "experiments/EXP-20260929-public-dataset-audit/PHASE_B_DIRECTIONAL_PROXY_ORB_INTEGRATION_20261002.json",
+      "sha256": "e73d7ca75155a552a3b3663db17d966285ad1741aef30634259df6eeb1ec777f"
+    },
+    {
+      "bytes": 1620,
+      "path": "experiments/EXP-20260929-public-dataset-audit/PHASE_B_DIRECTIONAL_PROXY_RELATIVE_COMPARISON_20261002.json",
+      "sha256": "e750e6c2c25cbee4743c5e4aa9ea8a98ea2a53cbdbf93aab631d606ee5a172cb"
+    },
+    {
+      "bytes": 3420,
+      "path": "experiments/EXP-20260929-public-dataset-audit/PHASE_B_DIRECTIONAL_PROXY_TUM_REPLAY_20261002.json",
+      "sha256": "3ea838020d53c913b34f813316459255e9a580d0c47fc55387081acb0a036be6"
+    },
+    {
+      "bytes": 1861,
+      "path": "experiments/EXP-20260929-public-dataset-audit/POST_V1_6_CAFE_GT_PREFLIGHT_20261003.md",
+      "sha256": "c9ac986356845add30bc00ae40ec78f0fd46616196245b9e4f52fa06c97263c5"
+    },
+    {
+      "bytes": 4582,
+      "path": "experiments/EXP-20260929-public-dataset-audit/POST_V1_6_COMPARATOR_FEASIBILITY_20261003.md",
+      "sha256": "b613fa8ecac355762049e008b48c29bc2bb36fca3298fb1eabc1b87760d90e3d"
+    },
+    {
+      "bytes": 30101,
+      "path": "experiments/EXP-20260929-public-dataset-audit/POST_V1_6_DIRECTIONAL_PROXY_PNP_VALIDATION_20261003.json",
+      "sha256": "c2d21dc9102dcdea3bdfe3536dafabcfd0a62370c12add04eab9aa6e1e30ed43"
+    },
+    {
+      "bytes": 20432,
+      "path": "experiments/EXP-20260929-public-dataset-audit/POST_V1_6_ENDPOINT_RELATIONSHIPS_20261003.json",
+      "sha256": "94170c7f648b7b6a60e9e06862dc49ed08c2b7116940d30f1ef41b0c532bba56"
+    },
+    {
+      "bytes": 17976,
+      "path": "experiments/EXP-20260929-public-dataset-audit/POST_V1_6_EXISTING_ENDPOINT_AUDIT_20261003.json",
+      "sha256": "6e380966626ebf2437e0b76a35dee3d0939880b0d570782c10189f0c23d3c3e8"
+    },
+    {
+      "bytes": 18911,
+      "path": "experiments/EXP-20260929-public-dataset-audit/POST_V1_6_REFERENCE_MAP_CHALLENGER_COMPARISON_20261003.json",
+      "sha256": "6ebf8528b20780103c342b235deef007ff7ec311e619a2cd44cae4b45d1cf5aa"
+    },
+    {
+      "bytes": 4660,
+      "path": "experiments/EXP-20260929-public-dataset-audit/POST_V1_6_REFERENCE_MAP_CHALLENGER_RESULT_20261003.md",
+      "sha256": "df29aa534259e74dfd54137a90de3e7b4da2b1b6b00d01388e96bade68b61c99"
+    },
+    {
+      "bytes": 181048,
+      "path": "experiments/EXP-20260929-public-dataset-audit/post_v1_6_cafe_aligned_reference_map_inputs/cafe1-1_associations.txt",
+      "sha256": "051e04a6d59aaf1b6913c57de4d6bcb70dbb48036502fd47c1a6ccd7392dfa37"
+    },
+    {
+      "bytes": 285988,
+      "path": "experiments/EXP-20260929-public-dataset-audit/post_v1_6_cafe_aligned_reference_map_inputs/cafe1-2_associations.txt",
+      "sha256": "faa4fccb5818cf26b0d3d00e1b1a8e321933444963c57e1356f5a99feb250fea"
+    },
+    {
+      "bytes": 85754,
+      "path": "experiments/EXP-20260929-public-dataset-audit/post_v1_6_office_aligned_reference_map_inputs/office1-1_associations.txt",
+      "sha256": "4bbacf4d879e0650ab45a943f1cddc6f88d6e0cbd089b5f6448de5f32d7b81cb"
+    },
+    {
+      "bytes": 38160,
+      "path": "experiments/EXP-20260929-public-dataset-audit/post_v1_6_office_aligned_reference_map_inputs/office1-3_associations.txt",
+      "sha256": "012328daaa42aab917ccc5dfe99570350340f386bdfe029cb76a86b2f1a7d80e"
+    },
+    {
+      "bytes": 79282,
+      "path": "experiments/EXP-20260929-public-dataset-audit/post_v1_6_reference_map_pilot_inputs/office1-1_associations.txt",
+      "sha256": "795b8e8cc8fb6cc4b512dd3b6788f91e66d94e5ae12c095c92be325204ec2329"
+    },
+    {
+      "bytes": 35280,
+      "path": "experiments/EXP-20260929-public-dataset-audit/post_v1_6_reference_map_pilot_inputs/office1-3_associations.txt",
+      "sha256": "368fed9ca212b552c306cdff2c31a8507a3f0a358d5676db7d83fbdf17a930c1"
+    },
+    {
+      "bytes": 4110,
+      "path": "protocols/DIRECTIONAL_GEOMETRY_PROXY_DEFINITION_V1.json",
+      "sha256": "871d2557b2c003d26a65fde6673180b95da5b2ae1fbcba801427b8f2249854f2"
+    },
+    {
+      "bytes": 881,
+      "path": "protocols/DIRECTIONAL_GEOMETRY_PROXY_SYNTHETIC_VALIDATION_V1_20261002.json",
+      "sha256": "ca92ac5c4881d8be80dbef10c2afb295ff0a3aa2aa1516aa2601ea240145cdb5"
+    },
+    {
+      "bytes": 3984,
+      "path": "protocols/DIRECTIONAL_PROXY_PNP_VALIDATION_V1_20261003.json",
+      "sha256": "0fa87fc375951780085894f8e88d1e34f37aa7fe5fb4b4b157f3deef11cf11b0"
+    },
+    {
+      "bytes": 5844,
+      "path": "protocols/EVIDENCE_ANALYSIS_CONTRACT_V2_20261003.json",
+      "sha256": "e90bd85671196901791515db895eca159167be79001b2b33e529f90d15f3d960"
+    },
+    {
+      "bytes": 4167,
+      "path": "protocols/L2_REFERENCE_MAP_REVISIT_PROTOCOL_V1.md",
+      "sha256": "4e28caf95058fb2520265b78ded6cfafecadbc96e9f4a00df9c00414a6715726"
+    },
+    {
+      "bytes": 766,
+      "path": "protocols/OPENLORIS_CAFE_D435I_RGBD_ORB3_20261003.yaml",
+      "sha256": "6e631ffd14f63d57f41df43d205600db8dc0dfb3fab6e8f8dc9c8084be09fe6d"
+    },
+    {
+      "bytes": 776,
+      "path": "protocols/OPENLORIS_CAFE_D435I_RGBD_ORB3_20261003_CORRECTED.yaml",
+      "sha256": "bf6b48c83c276d692478fc625c3909568c9c886089c8d7883bcbd683f8ab27b5"
+    },
+    {
+      "bytes": 775,
+      "path": "protocols/OPENLORIS_D435I_RGBD_ORB3.yaml",
+      "sha256": "1e48f0a503850822488e16b61d40ce75864f397063b33bfbf30335ebead419bf"
+    },
+    {
+      "bytes": 2398,
+      "path": "protocols/OPENLORIS_OFFICE_E3_RGB_OCCLUSION_RUN_V2_20261004.json",
+      "sha256": "e06b545eb880e5faf5533f9c812322de69c17937267f4ee6caf98935dcf9fe22"
+    },
+    {
+      "bytes": 1076,
+      "path": "protocols/OPENLORIS_OFFICE_EVALUATION_V1.json",
+      "sha256": "72b8d50ab6edacd8e37b079a35dfb5f23ecc6ae2f68e8be94bdd28b67c622016"
+    },
+    {
+      "bytes": 2661,
+      "path": "protocols/OPENLORIS_REFERENCE_MAP_SUPPORT_REPLAY_V1_20261003.json",
+      "sha256": "a9b87fa0ad510dfdac8d8aeda1d533b8327239e58048b31d319c5f01e90b064d"
+    },
+    {
+      "bytes": 4661,
+      "path": "protocols/PHASE_6_PUBLIC_SEQUENCE_ADMISSION_PROTOCOL_V1_20261002.json",
+      "sha256": "eb512c1a4bde0747d8e66dea8344a270fa905ceb4e32e2c7c6cc338bc32ca5b5"
+    },
+    {
+      "bytes": 3145,
+      "path": "protocols/REFERENCE_MAP_CHALLENGER_COMPARISON_V1_20261003.json",
+      "sha256": "b6531ccb1007b5178210f9b9df188f5eff7098cbf038a41e2f5b34a877561d78"
+    },
+    {
+      "bytes": 3870,
+      "path": "protocols/REFERENCE_MAP_POSE_SUPPORT_DEFINITION_V1_20261003.json",
+      "sha256": "b8596dd565eaf15306184b0675be0f590508e77d17093f8ae69779204970ce9d"
+    },
+    {
+      "bytes": 12,
+      "path": "requirements.txt",
+      "sha256": "5054231563734dc5e4831c7362dba550bf480c9fb4df280829eecf53caacd0b5"
+    },
+    {
+      "bytes": 4230,
+      "path": "tools/audit_openloris_intervention_runtime.py",
+      "sha256": "6f03a19af19f04042ffe6f96904a6ee02c85ea0029cb3c3faa40f782c857c487"
+    },
+    {
+      "bytes": 22409,
+      "path": "tools/audit_openloris_reference_map_pilot.py",
+      "sha256": "a6b0f5cd5eb69d89a89fdc126ced4d689d216b03756d2a007d7981c9430161e9"
+    },
+    {
+      "bytes": 8083,
+      "path": "tools/classify_reference_map_pose_support.py",
+      "sha256": "2c6e202a71b6f8044f81c3386f0aba9aeb13c8e1cff9f38e24c5e5b3b9fd8294"
+    },
+    {
+      "bytes": 11893,
+      "path": "tools/compare_tum_reference_map_challenger.py",
+      "sha256": "18c2ba137585490c6485b954e533f9c818431e12ecfcb32746c0bbe9b3cd9765"
+    },
+    {
+      "bytes": 17119,
+      "path": "tools/compare_unified_reference_map_challenger.py",
+      "sha256": "7f1abbd5a6dd93e47078d797d84cb5b739c6f1dbddaebd8a41c5623d3682e6a4"
+    },
+    {
+      "bytes": 5172,
+      "path": "tools/evaluate_openloris_trajectory.py",
+      "sha256": "92394f6c69c6e132e6fb5f0518ce135a14b0001fc22be7d7e532d2e596e17f0d"
+    },
+    {
+      "bytes": 7810,
+      "path": "tools/evidence_contract_v2.py",
+      "sha256": "9efc71ce040f4068ebfda27ab4a26eaaed811659c77019cd532f9dcce22e6380"
+    },
+    {
+      "bytes": 8333,
+      "path": "tools/reconstruct_reference_map_input_status.py",
+      "sha256": "3e578301c3c0aa0b7d1a60cbc8c6b9ab295e4059c36d3bbe9bc6daa3f820adf7"
+    },
+    {
+      "bytes": 4216,
+      "path": "tools/summarize_reference_window_stats.py",
+      "sha256": "34b5a3baf958fdde258e2a8aa59bdb502df032e212c988f7272e241c8fff9137"
+    }
+  ],
+  "package": "minimal reproduction package - Interpretable Evidence Auditing for Reference-map RGB-D Localization",
+  "repository_branch_of_origin": "codex/warehouse2-handoff-20260909",
+  "total_bytes": 1137660
+}

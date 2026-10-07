@@ -1,0 +1,25 @@
+{
+  "schema": "openloris_office_evaluation_v1",
+  "truth_pose_convention": "T_world_base_link",
+  "estimate_pose_convention": "T_world_d400_color_optical_frame",
+  "truth_to_color_extrinsic": {
+    "parent_frame": "base_link",
+    "child_frame": "d400_color_optical_frame",
+    "T_parent_child": [
+      [0.0099792816252667338, 0.0065348103708624539, 0.9999288525348517, 0.226483684909],
+      [-0.9998201465484614, 0.016192923276330706, 0.009872371528334368, -0.0511419403565],
+      [-0.016127257115523985, -0.9998475311212125, 0.006695228804608445, 0.916],
+      [0.0, 0.0, 0.0, 1.0]
+    ],
+    "source": "OpenLORIS office1-1 trans_matrix.yaml",
+    "fitted_on_evaluation_data": false
+  },
+  "time_tolerance_sec": 0.02,
+  "alignment": "first_matched_pose_se3_anchor_only",
+  "scale_fit": false,
+  "yaw_axis": "world_z",
+  "translation_threshold_m": 0.05,
+  "yaw_threshold_deg": 5.0,
+  "truth_used_online": false,
+  "notes": "This external-data protocol is source-specific and does not replace the Gazebo direct_xz+yaw90 evaluator used for the frozen warehouse protocol."
+}

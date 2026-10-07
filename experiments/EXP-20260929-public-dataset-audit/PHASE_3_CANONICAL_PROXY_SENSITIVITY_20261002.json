@@ -1,0 +1,1360 @@
+{
+  "cases": [
+    {
+      "case": "tum_window0",
+      "grid": [
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 1,
+          "threshold": 0.6,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 2,
+          "threshold": 0.6,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 3,
+          "threshold": 0.6,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 4,
+          "threshold": 0.6,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 1,
+          "threshold": 0.7,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 2,
+          "threshold": 0.7,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 3,
+          "threshold": 0.7,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 4,
+          "threshold": 0.7,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 1,
+          "threshold": 0.8,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 2,
+          "threshold": 0.8,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 3,
+          "threshold": 0.8,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 4,
+          "threshold": 0.8,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 1,
+          "threshold": 0.9,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 2,
+          "threshold": 0.9,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 3,
+          "threshold": 0.9,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 4,
+          "threshold": 0.9,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        }
+      ],
+      "sources": {
+        "observation": {
+          "identifier": "/home/syf/tum_external_diag_directional_proxy_20261002/window0/orb_slam3.log",
+          "sha256": "a478775adc6bebfb522384bda29615983920d8b5db9cdc6ccd1619d9c6132996"
+        },
+        "reference": {
+          "identifier": "/home/syf/tum_external_diag_directional_proxy_20261002/window0/orb_slam3.log",
+          "sha256": "a478775adc6bebfb522384bda29615983920d8b5db9cdc6ccd1619d9c6132996"
+        }
+      }
+    },
+    {
+      "case": "tum_window2",
+      "grid": [
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 1,
+          "threshold": 0.6,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 2,
+          "threshold": 0.6,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 3,
+          "threshold": 0.6,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 4,
+          "threshold": 0.6,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 1,
+          "threshold": 0.7,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 2,
+          "threshold": 0.7,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 3,
+          "threshold": 0.7,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 4,
+          "threshold": 0.7,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 1,
+          "threshold": 0.8,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 2,
+          "threshold": 0.8,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 3,
+          "threshold": 0.8,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 4,
+          "threshold": 0.8,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 1,
+          "threshold": 0.9,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 2,
+          "threshold": 0.9,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 3,
+          "threshold": 0.9,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 4,
+          "threshold": 0.9,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        }
+      ],
+      "sources": {
+        "observation": {
+          "identifier": "/home/syf/tum_external_diag_directional_proxy_20261002/window2/orb_slam3.log",
+          "sha256": "061b8459fa5a56e9eb99af669fc781cd384d9b5bde76e01a83770662729ba6c8"
+        },
+        "reference": {
+          "identifier": "/home/syf/tum_external_diag_directional_proxy_20261002/window0/orb_slam3.log",
+          "sha256": "a478775adc6bebfb522384bda29615983920d8b5db9cdc6ccd1619d9c6132996"
+        }
+      }
+    },
+    {
+      "case": "tum_window4",
+      "grid": [
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 1,
+          "threshold": 0.6,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 2,
+          "threshold": 0.6,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 3,
+          "threshold": 0.6,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 4,
+          "threshold": 0.6,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 1,
+          "threshold": 0.7,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 2,
+          "threshold": 0.7,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 3,
+          "threshold": 0.7,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 4,
+          "threshold": 0.7,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 1,
+          "threshold": 0.8,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 2,
+          "threshold": 0.8,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 3,
+          "threshold": 0.8,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 4,
+          "threshold": 0.8,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 1,
+          "threshold": 0.9,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 2,
+          "threshold": 0.9,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 3,
+          "threshold": 0.9,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 4,
+          "threshold": 0.9,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        }
+      ],
+      "sources": {
+        "observation": {
+          "identifier": "/home/syf/tum_external_diag_directional_proxy_20261002/window4/orb_slam3.log",
+          "sha256": "01d9769378bac349c295df685228b7d24202fa8828b11ecdbaedecf3d70dacbe"
+        },
+        "reference": {
+          "identifier": "/home/syf/tum_external_diag_directional_proxy_20261002/window0/orb_slam3.log",
+          "sha256": "a478775adc6bebfb522384bda29615983920d8b5db9cdc6ccd1619d9c6132996"
+        }
+      }
+    },
+    {
+      "case": "openloris_office1_4_window56",
+      "grid": [
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 1,
+          "threshold": 0.6,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 2,
+          "threshold": 0.6,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 3,
+          "threshold": 0.6,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 4,
+          "threshold": 0.6,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 1,
+          "threshold": 0.7,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 2,
+          "threshold": 0.7,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 3,
+          "threshold": 0.7,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 4,
+          "threshold": 0.7,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 1,
+          "threshold": 0.8,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 2,
+          "threshold": 0.8,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 3,
+          "threshold": 0.8,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 4,
+          "threshold": 0.8,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.06896551724137931,
+          "candidate_frame_count": 2,
+          "confirmed_segment_count": 2,
+          "confirmed_segment_lengths": [
+            1,
+            1
+          ],
+          "temporal_confirm_frames": 1,
+          "threshold": 0.9,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.06896551724137931,
+          "candidate_frame_count": 2,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 2,
+          "threshold": 0.9,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.06896551724137931,
+          "candidate_frame_count": 2,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 3,
+          "threshold": 0.9,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.06896551724137931,
+          "candidate_frame_count": 2,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 4,
+          "threshold": 0.9,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        }
+      ],
+      "sources": {
+        "observation": {
+          "identifier": "/home/syf/openloris_external/office1-4_vm_bundle_v2/diag_window56_directional_proxy_20261002/orb_slam3.log",
+          "sha256": "14d1f23828f38a513a625e7af428df6c3640d66215f08c5d32c6b28540fa46cb"
+        },
+        "reference": {
+          "identifier": "/home/syf/openloris_external/office1-4_vm_bundle_v2/diag_run_directional_proxy_20261002/orb_slam3.log",
+          "sha256": "6b2a274690b12d1df57b5af5b8a11427cbecd639bdb949b74a3eb267114683dd"
+        }
+      }
+    },
+    {
+      "case": "openloris_office1_5_window57_fixed",
+      "grid": [
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.2413793103448276,
+          "candidate_frame_count": 7,
+          "confirmed_segment_count": 6,
+          "confirmed_segment_lengths": [
+            1,
+            1,
+            2,
+            1,
+            1,
+            1
+          ],
+          "temporal_confirm_frames": 1,
+          "threshold": 0.6,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.2413793103448276,
+          "candidate_frame_count": 7,
+          "confirmed_segment_count": 1,
+          "confirmed_segment_lengths": [
+            2
+          ],
+          "temporal_confirm_frames": 2,
+          "threshold": 0.6,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.2413793103448276,
+          "candidate_frame_count": 7,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 3,
+          "threshold": 0.6,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.2413793103448276,
+          "candidate_frame_count": 7,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 4,
+          "threshold": 0.6,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.9655172413793104,
+          "candidate_frame_count": 28,
+          "confirmed_segment_count": 1,
+          "confirmed_segment_lengths": [
+            28
+          ],
+          "temporal_confirm_frames": 1,
+          "threshold": 0.7,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.9655172413793104,
+          "candidate_frame_count": 28,
+          "confirmed_segment_count": 1,
+          "confirmed_segment_lengths": [
+            28
+          ],
+          "temporal_confirm_frames": 2,
+          "threshold": 0.7,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.9655172413793104,
+          "candidate_frame_count": 28,
+          "confirmed_segment_count": 1,
+          "confirmed_segment_lengths": [
+            28
+          ],
+          "temporal_confirm_frames": 3,
+          "threshold": 0.7,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.9655172413793104,
+          "candidate_frame_count": 28,
+          "confirmed_segment_count": 1,
+          "confirmed_segment_lengths": [
+            28
+          ],
+          "temporal_confirm_frames": 4,
+          "threshold": 0.7,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 1.0,
+          "candidate_frame_count": 29,
+          "confirmed_segment_count": 1,
+          "confirmed_segment_lengths": [
+            29
+          ],
+          "temporal_confirm_frames": 1,
+          "threshold": 0.8,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 1.0,
+          "candidate_frame_count": 29,
+          "confirmed_segment_count": 1,
+          "confirmed_segment_lengths": [
+            29
+          ],
+          "temporal_confirm_frames": 2,
+          "threshold": 0.8,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 1.0,
+          "candidate_frame_count": 29,
+          "confirmed_segment_count": 1,
+          "confirmed_segment_lengths": [
+            29
+          ],
+          "temporal_confirm_frames": 3,
+          "threshold": 0.8,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 1.0,
+          "candidate_frame_count": 29,
+          "confirmed_segment_count": 1,
+          "confirmed_segment_lengths": [
+            29
+          ],
+          "temporal_confirm_frames": 4,
+          "threshold": 0.8,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 1.0,
+          "candidate_frame_count": 29,
+          "confirmed_segment_count": 1,
+          "confirmed_segment_lengths": [
+            29
+          ],
+          "temporal_confirm_frames": 1,
+          "threshold": 0.9,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 1.0,
+          "candidate_frame_count": 29,
+          "confirmed_segment_count": 1,
+          "confirmed_segment_lengths": [
+            29
+          ],
+          "temporal_confirm_frames": 2,
+          "threshold": 0.9,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 1.0,
+          "candidate_frame_count": 29,
+          "confirmed_segment_count": 1,
+          "confirmed_segment_lengths": [
+            29
+          ],
+          "temporal_confirm_frames": 3,
+          "threshold": 0.9,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 1.0,
+          "candidate_frame_count": 29,
+          "confirmed_segment_count": 1,
+          "confirmed_segment_lengths": [
+            29
+          ],
+          "temporal_confirm_frames": 4,
+          "threshold": 0.9,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        }
+      ],
+      "sources": {
+        "observation": {
+          "identifier": "/home/syf/openloris_external/office1-5_vm_bundle_v2/diag_window57_directional_proxy_20261002/orb_slam3.log",
+          "sha256": "2337d7f83c3483fb156f9846f867e7d4210b2e167b7e55d542b78bc47102f36f"
+        },
+        "reference": {
+          "identifier": "/home/syf/openloris_external/office1-5_vm_bundle_v2/diag_run_directional_proxy_20261002/orb_slam3.log",
+          "sha256": "b27317bd021c22a94e5cba3bb5b0da9018d58178674d332144e30a266fbd4cc4"
+        }
+      }
+    },
+    {
+      "case": "openloris_office1_5_window58",
+      "grid": [
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.13793103448275862,
+          "candidate_frame_count": 4,
+          "confirmed_segment_count": 3,
+          "confirmed_segment_lengths": [
+            1,
+            2,
+            1
+          ],
+          "temporal_confirm_frames": 1,
+          "threshold": 0.6,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.13793103448275862,
+          "candidate_frame_count": 4,
+          "confirmed_segment_count": 1,
+          "confirmed_segment_lengths": [
+            2
+          ],
+          "temporal_confirm_frames": 2,
+          "threshold": 0.6,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.13793103448275862,
+          "candidate_frame_count": 4,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 3,
+          "threshold": 0.6,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.13793103448275862,
+          "candidate_frame_count": 4,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 4,
+          "threshold": 0.6,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.6551724137931034,
+          "candidate_frame_count": 19,
+          "confirmed_segment_count": 4,
+          "confirmed_segment_lengths": [
+            15,
+            2,
+            1,
+            1
+          ],
+          "temporal_confirm_frames": 1,
+          "threshold": 0.7,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.6551724137931034,
+          "candidate_frame_count": 19,
+          "confirmed_segment_count": 2,
+          "confirmed_segment_lengths": [
+            15,
+            2
+          ],
+          "temporal_confirm_frames": 2,
+          "threshold": 0.7,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.6551724137931034,
+          "candidate_frame_count": 19,
+          "confirmed_segment_count": 1,
+          "confirmed_segment_lengths": [
+            15
+          ],
+          "temporal_confirm_frames": 3,
+          "threshold": 0.7,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.6551724137931034,
+          "candidate_frame_count": 19,
+          "confirmed_segment_count": 1,
+          "confirmed_segment_lengths": [
+            15
+          ],
+          "temporal_confirm_frames": 4,
+          "threshold": 0.7,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.8275862068965517,
+          "candidate_frame_count": 24,
+          "confirmed_segment_count": 3,
+          "confirmed_segment_lengths": [
+            19,
+            2,
+            3
+          ],
+          "temporal_confirm_frames": 1,
+          "threshold": 0.8,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.8275862068965517,
+          "candidate_frame_count": 24,
+          "confirmed_segment_count": 3,
+          "confirmed_segment_lengths": [
+            19,
+            2,
+            3
+          ],
+          "temporal_confirm_frames": 2,
+          "threshold": 0.8,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.8275862068965517,
+          "candidate_frame_count": 24,
+          "confirmed_segment_count": 2,
+          "confirmed_segment_lengths": [
+            19,
+            3
+          ],
+          "temporal_confirm_frames": 3,
+          "threshold": 0.8,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.8275862068965517,
+          "candidate_frame_count": 24,
+          "confirmed_segment_count": 1,
+          "confirmed_segment_lengths": [
+            19
+          ],
+          "temporal_confirm_frames": 4,
+          "threshold": 0.8,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.9655172413793104,
+          "candidate_frame_count": 28,
+          "confirmed_segment_count": 2,
+          "confirmed_segment_lengths": [
+            24,
+            4
+          ],
+          "temporal_confirm_frames": 1,
+          "threshold": 0.9,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.9655172413793104,
+          "candidate_frame_count": 28,
+          "confirmed_segment_count": 2,
+          "confirmed_segment_lengths": [
+            24,
+            4
+          ],
+          "temporal_confirm_frames": 2,
+          "threshold": 0.9,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.9655172413793104,
+          "candidate_frame_count": 28,
+          "confirmed_segment_count": 2,
+          "confirmed_segment_lengths": [
+            24,
+            4
+          ],
+          "temporal_confirm_frames": 3,
+          "threshold": 0.9,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.9655172413793104,
+          "candidate_frame_count": 28,
+          "confirmed_segment_count": 2,
+          "confirmed_segment_lengths": [
+            24,
+            4
+          ],
+          "temporal_confirm_frames": 4,
+          "threshold": 0.9,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        }
+      ],
+      "sources": {
+        "observation": {
+          "identifier": "/home/syf/openloris_external/office1-5_vm_bundle_v2/diag_window58_directional_proxy_20261002/orb_slam3.log",
+          "sha256": "a9d0af1f77f685032c494796ac21e8fc7823487aae63eac234683967a8c1e047"
+        },
+        "reference": {
+          "identifier": "/home/syf/openloris_external/office1-5_vm_bundle_v2/diag_run_directional_proxy_20261002/orb_slam3.log",
+          "sha256": "b27317bd021c22a94e5cba3bb5b0da9018d58178674d332144e30a266fbd4cc4"
+        }
+      }
+    },
+    {
+      "case": "openloris_office1_7_window61",
+      "grid": [
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.034482758620689655,
+          "candidate_frame_count": 1,
+          "confirmed_segment_count": 1,
+          "confirmed_segment_lengths": [
+            1
+          ],
+          "temporal_confirm_frames": 1,
+          "threshold": 0.6,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.034482758620689655,
+          "candidate_frame_count": 1,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 2,
+          "threshold": 0.6,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.034482758620689655,
+          "candidate_frame_count": 1,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 3,
+          "threshold": 0.6,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.034482758620689655,
+          "candidate_frame_count": 1,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "temporal_confirm_frames": 4,
+          "threshold": 0.6,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.1724137931034483,
+          "candidate_frame_count": 5,
+          "confirmed_segment_count": 1,
+          "confirmed_segment_lengths": [
+            5
+          ],
+          "temporal_confirm_frames": 1,
+          "threshold": 0.7,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.1724137931034483,
+          "candidate_frame_count": 5,
+          "confirmed_segment_count": 1,
+          "confirmed_segment_lengths": [
+            5
+          ],
+          "temporal_confirm_frames": 2,
+          "threshold": 0.7,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.1724137931034483,
+          "candidate_frame_count": 5,
+          "confirmed_segment_count": 1,
+          "confirmed_segment_lengths": [
+            5
+          ],
+          "temporal_confirm_frames": 3,
+          "threshold": 0.7,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.1724137931034483,
+          "candidate_frame_count": 5,
+          "confirmed_segment_count": 1,
+          "confirmed_segment_lengths": [
+            5
+          ],
+          "temporal_confirm_frames": 4,
+          "threshold": 0.7,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.3448275862068966,
+          "candidate_frame_count": 10,
+          "confirmed_segment_count": 2,
+          "confirmed_segment_lengths": [
+            2,
+            8
+          ],
+          "temporal_confirm_frames": 1,
+          "threshold": 0.8,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.3448275862068966,
+          "candidate_frame_count": 10,
+          "confirmed_segment_count": 2,
+          "confirmed_segment_lengths": [
+            2,
+            8
+          ],
+          "temporal_confirm_frames": 2,
+          "threshold": 0.8,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.3448275862068966,
+          "candidate_frame_count": 10,
+          "confirmed_segment_count": 1,
+          "confirmed_segment_lengths": [
+            8
+          ],
+          "temporal_confirm_frames": 3,
+          "threshold": 0.8,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.3448275862068966,
+          "candidate_frame_count": 10,
+          "confirmed_segment_count": 1,
+          "confirmed_segment_lengths": [
+            8
+          ],
+          "temporal_confirm_frames": 4,
+          "threshold": 0.8,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.6551724137931034,
+          "candidate_frame_count": 19,
+          "confirmed_segment_count": 3,
+          "confirmed_segment_lengths": [
+            1,
+            8,
+            10
+          ],
+          "temporal_confirm_frames": 1,
+          "threshold": 0.9,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.6551724137931034,
+          "candidate_frame_count": 19,
+          "confirmed_segment_count": 2,
+          "confirmed_segment_lengths": [
+            8,
+            10
+          ],
+          "temporal_confirm_frames": 2,
+          "threshold": 0.9,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.6551724137931034,
+          "candidate_frame_count": 19,
+          "confirmed_segment_count": 2,
+          "confirmed_segment_lengths": [
+            8,
+            10
+          ],
+          "temporal_confirm_frames": 3,
+          "threshold": 0.9,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        },
+        {
+          "candidate_coverage_of_valid_three_axis_records": 0.6551724137931034,
+          "candidate_frame_count": 19,
+          "confirmed_segment_count": 2,
+          "confirmed_segment_lengths": [
+            8,
+            10
+          ],
+          "temporal_confirm_frames": 4,
+          "threshold": 0.9,
+          "unknown_count": 1,
+          "valid_three_axis_count": 29
+        }
+      ],
+      "sources": {
+        "observation": {
+          "identifier": "/home/syf/openloris_external/office1-7_vm_bundle_v2/diag_window61_directional_proxy_20261002/orb_slam3.log",
+          "sha256": "d733e8c472a011bbfc809cc9fc7f775c3d2124d531bece09d2e92a89226cd372"
+        },
+        "reference": {
+          "identifier": "/home/syf/openloris_external/office1-7_vm_bundle_v2/diag_run_directional_proxy_20261002/orb_slam3.log",
+          "sha256": "4071c2a449977b83e2d55c2c1d4a877cc3009331e0cee2751315d031ca14ca94"
+        }
+      }
+    }
+  ],
+  "claim_boundary": "The grid reports dependence on exploratory analysis parameters; it neither selects a threshold nor establishes detection performance.",
+  "declared_grid": {
+    "minimum_weak_axes": 2,
+    "temporal_confirm_frames": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "thresholds": [
+      0.6,
+      0.7,
+      0.8,
+      0.9
+    ]
+  },
+  "groundtruth_used": false,
+  "status": "PASS_DESCRIPTIVE_PROXY_SENSITIVITY_GRID",
+  "unknown_policy": "A missing axis is UNKNOWN, cannot become a candidate, and breaks temporal continuity."
+}

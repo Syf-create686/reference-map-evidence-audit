@@ -1,0 +1,703 @@
+{
+  "cases": [
+    {
+      "case": "tum_window0",
+      "observation_record_count": 30,
+      "reference_record_count": 30,
+      "rules": {
+        "arithmetic_mean": {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "unknown_count": 1
+        },
+        "directional_only": {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "unknown_count": 1
+        },
+        "full_union": {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "unknown_count": 1
+        },
+        "geometric_mean": {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "unknown_count": 1
+        },
+        "geometry_only": {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "unknown_count": 1
+        },
+        "geometry_or_directional": {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "unknown_count": 1
+        },
+        "strict_joint": {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "unknown_count": 1
+        },
+        "support_only": {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "unknown_count": 1
+        },
+        "support_or_directional": {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "unknown_count": 1
+        },
+        "support_or_geometry": {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "unknown_count": 1
+        }
+      },
+      "sources": {
+        "observation": {
+          "identifier": "/home/syf/tum_external_diag_directional_proxy_20261002/window0/orb_slam3.log",
+          "sha256": "a478775adc6bebfb522384bda29615983920d8b5db9cdc6ccd1619d9c6132996"
+        },
+        "reference": {
+          "identifier": "/home/syf/tum_external_diag_directional_proxy_20261002/window0/orb_slam3.log",
+          "sha256": "a478775adc6bebfb522384bda29615983920d8b5db9cdc6ccd1619d9c6132996"
+        }
+      }
+    },
+    {
+      "case": "tum_window2",
+      "observation_record_count": 30,
+      "reference_record_count": 30,
+      "rules": {
+        "arithmetic_mean": {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "unknown_count": 1
+        },
+        "directional_only": {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "unknown_count": 1
+        },
+        "full_union": {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "unknown_count": 1
+        },
+        "geometric_mean": {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "unknown_count": 1
+        },
+        "geometry_only": {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "unknown_count": 1
+        },
+        "geometry_or_directional": {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "unknown_count": 1
+        },
+        "strict_joint": {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "unknown_count": 1
+        },
+        "support_only": {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "unknown_count": 1
+        },
+        "support_or_directional": {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "unknown_count": 1
+        },
+        "support_or_geometry": {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "unknown_count": 1
+        }
+      },
+      "sources": {
+        "observation": {
+          "identifier": "/home/syf/tum_external_diag_directional_proxy_20261002/window2/orb_slam3.log",
+          "sha256": "061b8459fa5a56e9eb99af669fc781cd384d9b5bde76e01a83770662729ba6c8"
+        },
+        "reference": {
+          "identifier": "/home/syf/tum_external_diag_directional_proxy_20261002/window0/orb_slam3.log",
+          "sha256": "a478775adc6bebfb522384bda29615983920d8b5db9cdc6ccd1619d9c6132996"
+        }
+      }
+    },
+    {
+      "case": "tum_window4",
+      "observation_record_count": 30,
+      "reference_record_count": 30,
+      "rules": {
+        "arithmetic_mean": {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "unknown_count": 1
+        },
+        "directional_only": {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "unknown_count": 1
+        },
+        "full_union": {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "unknown_count": 1
+        },
+        "geometric_mean": {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "unknown_count": 1
+        },
+        "geometry_only": {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "unknown_count": 1
+        },
+        "geometry_or_directional": {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "unknown_count": 1
+        },
+        "strict_joint": {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "unknown_count": 1
+        },
+        "support_only": {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "unknown_count": 1
+        },
+        "support_or_directional": {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "unknown_count": 1
+        },
+        "support_or_geometry": {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "unknown_count": 1
+        }
+      },
+      "sources": {
+        "observation": {
+          "identifier": "/home/syf/tum_external_diag_directional_proxy_20261002/window4/orb_slam3.log",
+          "sha256": "01d9769378bac349c295df685228b7d24202fa8828b11ecdbaedecf3d70dacbe"
+        },
+        "reference": {
+          "identifier": "/home/syf/tum_external_diag_directional_proxy_20261002/window0/orb_slam3.log",
+          "sha256": "a478775adc6bebfb522384bda29615983920d8b5db9cdc6ccd1619d9c6132996"
+        }
+      }
+    },
+    {
+      "case": "openloris_office1_4_window56",
+      "observation_record_count": 30,
+      "reference_record_count": 30,
+      "rules": {
+        "arithmetic_mean": {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "unknown_count": 1
+        },
+        "directional_only": {
+          "candidate_coverage_of_valid_three_axis_records": 0.6896551724137931,
+          "candidate_frame_count": 20,
+          "confirmed_segment_count": 2,
+          "confirmed_segment_lengths": [
+            3,
+            17
+          ],
+          "unknown_count": 1
+        },
+        "full_union": {
+          "candidate_coverage_of_valid_three_axis_records": 0.6896551724137931,
+          "candidate_frame_count": 20,
+          "confirmed_segment_count": 2,
+          "confirmed_segment_lengths": [
+            3,
+            17
+          ],
+          "unknown_count": 1
+        },
+        "geometric_mean": {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "unknown_count": 1
+        },
+        "geometry_only": {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "unknown_count": 1
+        },
+        "geometry_or_directional": {
+          "candidate_coverage_of_valid_three_axis_records": 0.6896551724137931,
+          "candidate_frame_count": 20,
+          "confirmed_segment_count": 2,
+          "confirmed_segment_lengths": [
+            3,
+            17
+          ],
+          "unknown_count": 1
+        },
+        "strict_joint": {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "unknown_count": 1
+        },
+        "support_only": {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "unknown_count": 1
+        },
+        "support_or_directional": {
+          "candidate_coverage_of_valid_three_axis_records": 0.6896551724137931,
+          "candidate_frame_count": 20,
+          "confirmed_segment_count": 2,
+          "confirmed_segment_lengths": [
+            3,
+            17
+          ],
+          "unknown_count": 1
+        },
+        "support_or_geometry": {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "unknown_count": 1
+        }
+      },
+      "sources": {
+        "observation": {
+          "identifier": "/home/syf/openloris_external/office1-4_vm_bundle_v2/diag_window56_directional_proxy_20261002/orb_slam3.log",
+          "sha256": "14d1f23828f38a513a625e7af428df6c3640d66215f08c5d32c6b28540fa46cb"
+        },
+        "reference": {
+          "identifier": "/home/syf/openloris_external/office1-4_vm_bundle_v2/diag_run_directional_proxy_20261002/orb_slam3.log",
+          "sha256": "6b2a274690b12d1df57b5af5b8a11427cbecd639bdb949b74a3eb267114683dd"
+        }
+      }
+    },
+    {
+      "case": "openloris_office1_5_window57_fixed",
+      "observation_record_count": 30,
+      "reference_record_count": 30,
+      "rules": {
+        "arithmetic_mean": {
+          "candidate_coverage_of_valid_three_axis_records": 1.0,
+          "candidate_frame_count": 29,
+          "confirmed_segment_count": 1,
+          "confirmed_segment_lengths": [
+            29
+          ],
+          "unknown_count": 1
+        },
+        "directional_only": {
+          "candidate_coverage_of_valid_three_axis_records": 1.0,
+          "candidate_frame_count": 29,
+          "confirmed_segment_count": 1,
+          "confirmed_segment_lengths": [
+            29
+          ],
+          "unknown_count": 1
+        },
+        "full_union": {
+          "candidate_coverage_of_valid_three_axis_records": 1.0,
+          "candidate_frame_count": 29,
+          "confirmed_segment_count": 1,
+          "confirmed_segment_lengths": [
+            29
+          ],
+          "unknown_count": 1
+        },
+        "geometric_mean": {
+          "candidate_coverage_of_valid_three_axis_records": 1.0,
+          "candidate_frame_count": 29,
+          "confirmed_segment_count": 1,
+          "confirmed_segment_lengths": [
+            29
+          ],
+          "unknown_count": 1
+        },
+        "geometry_only": {
+          "candidate_coverage_of_valid_three_axis_records": 0.5517241379310345,
+          "candidate_frame_count": 16,
+          "confirmed_segment_count": 3,
+          "confirmed_segment_lengths": [
+            3,
+            3,
+            6
+          ],
+          "unknown_count": 1
+        },
+        "geometry_or_directional": {
+          "candidate_coverage_of_valid_three_axis_records": 1.0,
+          "candidate_frame_count": 29,
+          "confirmed_segment_count": 1,
+          "confirmed_segment_lengths": [
+            29
+          ],
+          "unknown_count": 1
+        },
+        "strict_joint": {
+          "candidate_coverage_of_valid_three_axis_records": 1.0,
+          "candidate_frame_count": 29,
+          "confirmed_segment_count": 1,
+          "confirmed_segment_lengths": [
+            29
+          ],
+          "unknown_count": 1
+        },
+        "support_only": {
+          "candidate_coverage_of_valid_three_axis_records": 1.0,
+          "candidate_frame_count": 29,
+          "confirmed_segment_count": 1,
+          "confirmed_segment_lengths": [
+            29
+          ],
+          "unknown_count": 1
+        },
+        "support_or_directional": {
+          "candidate_coverage_of_valid_three_axis_records": 1.0,
+          "candidate_frame_count": 29,
+          "confirmed_segment_count": 1,
+          "confirmed_segment_lengths": [
+            29
+          ],
+          "unknown_count": 1
+        },
+        "support_or_geometry": {
+          "candidate_coverage_of_valid_three_axis_records": 1.0,
+          "candidate_frame_count": 29,
+          "confirmed_segment_count": 1,
+          "confirmed_segment_lengths": [
+            29
+          ],
+          "unknown_count": 1
+        }
+      },
+      "sources": {
+        "observation": {
+          "identifier": "/home/syf/openloris_external/office1-5_vm_bundle_v2/diag_window57_directional_proxy_20261002/orb_slam3.log",
+          "sha256": "2337d7f83c3483fb156f9846f867e7d4210b2e167b7e55d542b78bc47102f36f"
+        },
+        "reference": {
+          "identifier": "/home/syf/openloris_external/office1-5_vm_bundle_v2/diag_run_directional_proxy_20261002/orb_slam3.log",
+          "sha256": "b27317bd021c22a94e5cba3bb5b0da9018d58178674d332144e30a266fbd4cc4"
+        }
+      }
+    },
+    {
+      "case": "openloris_office1_5_window58",
+      "observation_record_count": 30,
+      "reference_record_count": 30,
+      "rules": {
+        "arithmetic_mean": {
+          "candidate_coverage_of_valid_three_axis_records": 1.0,
+          "candidate_frame_count": 29,
+          "confirmed_segment_count": 1,
+          "confirmed_segment_lengths": [
+            29
+          ],
+          "unknown_count": 1
+        },
+        "directional_only": {
+          "candidate_coverage_of_valid_three_axis_records": 0.6896551724137931,
+          "candidate_frame_count": 20,
+          "confirmed_segment_count": 1,
+          "confirmed_segment_lengths": [
+            19
+          ],
+          "unknown_count": 1
+        },
+        "full_union": {
+          "candidate_coverage_of_valid_three_axis_records": 1.0,
+          "candidate_frame_count": 29,
+          "confirmed_segment_count": 1,
+          "confirmed_segment_lengths": [
+            29
+          ],
+          "unknown_count": 1
+        },
+        "geometric_mean": {
+          "candidate_coverage_of_valid_three_axis_records": 1.0,
+          "candidate_frame_count": 29,
+          "confirmed_segment_count": 1,
+          "confirmed_segment_lengths": [
+            29
+          ],
+          "unknown_count": 1
+        },
+        "geometry_only": {
+          "candidate_coverage_of_valid_three_axis_records": 0.41379310344827586,
+          "candidate_frame_count": 12,
+          "confirmed_segment_count": 2,
+          "confirmed_segment_lengths": [
+            3,
+            3
+          ],
+          "unknown_count": 1
+        },
+        "geometry_or_directional": {
+          "candidate_coverage_of_valid_three_axis_records": 0.8275862068965517,
+          "candidate_frame_count": 24,
+          "confirmed_segment_count": 2,
+          "confirmed_segment_lengths": [
+            19,
+            3
+          ],
+          "unknown_count": 1
+        },
+        "strict_joint": {
+          "candidate_coverage_of_valid_three_axis_records": 0.8275862068965517,
+          "candidate_frame_count": 24,
+          "confirmed_segment_count": 2,
+          "confirmed_segment_lengths": [
+            19,
+            3
+          ],
+          "unknown_count": 1
+        },
+        "support_only": {
+          "candidate_coverage_of_valid_three_axis_records": 1.0,
+          "candidate_frame_count": 29,
+          "confirmed_segment_count": 1,
+          "confirmed_segment_lengths": [
+            29
+          ],
+          "unknown_count": 1
+        },
+        "support_or_directional": {
+          "candidate_coverage_of_valid_three_axis_records": 1.0,
+          "candidate_frame_count": 29,
+          "confirmed_segment_count": 1,
+          "confirmed_segment_lengths": [
+            29
+          ],
+          "unknown_count": 1
+        },
+        "support_or_geometry": {
+          "candidate_coverage_of_valid_three_axis_records": 1.0,
+          "candidate_frame_count": 29,
+          "confirmed_segment_count": 1,
+          "confirmed_segment_lengths": [
+            29
+          ],
+          "unknown_count": 1
+        }
+      },
+      "sources": {
+        "observation": {
+          "identifier": "/home/syf/openloris_external/office1-5_vm_bundle_v2/diag_window58_directional_proxy_20261002/orb_slam3.log",
+          "sha256": "a9d0af1f77f685032c494796ac21e8fc7823487aae63eac234683967a8c1e047"
+        },
+        "reference": {
+          "identifier": "/home/syf/openloris_external/office1-5_vm_bundle_v2/diag_run_directional_proxy_20261002/orb_slam3.log",
+          "sha256": "b27317bd021c22a94e5cba3bb5b0da9018d58178674d332144e30a266fbd4cc4"
+        }
+      }
+    },
+    {
+      "case": "openloris_office1_7_window61",
+      "observation_record_count": 30,
+      "reference_record_count": 30,
+      "rules": {
+        "arithmetic_mean": {
+          "candidate_coverage_of_valid_three_axis_records": 0.1724137931034483,
+          "candidate_frame_count": 5,
+          "confirmed_segment_count": 1,
+          "confirmed_segment_lengths": [
+            3
+          ],
+          "unknown_count": 1
+        },
+        "directional_only": {
+          "candidate_coverage_of_valid_three_axis_records": 0.8620689655172413,
+          "candidate_frame_count": 25,
+          "confirmed_segment_count": 2,
+          "confirmed_segment_lengths": [
+            16,
+            9
+          ],
+          "unknown_count": 1
+        },
+        "full_union": {
+          "candidate_coverage_of_valid_three_axis_records": 0.8620689655172413,
+          "candidate_frame_count": 25,
+          "confirmed_segment_count": 2,
+          "confirmed_segment_lengths": [
+            16,
+            9
+          ],
+          "unknown_count": 1
+        },
+        "geometric_mean": {
+          "candidate_coverage_of_valid_three_axis_records": 0.4827586206896552,
+          "candidate_frame_count": 14,
+          "confirmed_segment_count": 2,
+          "confirmed_segment_lengths": [
+            7,
+            5
+          ],
+          "unknown_count": 1
+        },
+        "geometry_only": {
+          "candidate_coverage_of_valid_three_axis_records": 0.3448275862068966,
+          "candidate_frame_count": 10,
+          "confirmed_segment_count": 1,
+          "confirmed_segment_lengths": [
+            8
+          ],
+          "unknown_count": 1
+        },
+        "geometry_or_directional": {
+          "candidate_coverage_of_valid_three_axis_records": 0.8620689655172413,
+          "candidate_frame_count": 25,
+          "confirmed_segment_count": 2,
+          "confirmed_segment_lengths": [
+            16,
+            9
+          ],
+          "unknown_count": 1
+        },
+        "strict_joint": {
+          "candidate_coverage_of_valid_three_axis_records": 0.3448275862068966,
+          "candidate_frame_count": 10,
+          "confirmed_segment_count": 1,
+          "confirmed_segment_lengths": [
+            8
+          ],
+          "unknown_count": 1
+        },
+        "support_only": {
+          "candidate_coverage_of_valid_three_axis_records": 0.0,
+          "candidate_frame_count": 0,
+          "confirmed_segment_count": 0,
+          "confirmed_segment_lengths": [],
+          "unknown_count": 1
+        },
+        "support_or_directional": {
+          "candidate_coverage_of_valid_three_axis_records": 0.8620689655172413,
+          "candidate_frame_count": 25,
+          "confirmed_segment_count": 2,
+          "confirmed_segment_lengths": [
+            16,
+            9
+          ],
+          "unknown_count": 1
+        },
+        "support_or_geometry": {
+          "candidate_coverage_of_valid_three_axis_records": 0.3448275862068966,
+          "candidate_frame_count": 10,
+          "confirmed_segment_count": 1,
+          "confirmed_segment_lengths": [
+            8
+          ],
+          "unknown_count": 1
+        }
+      },
+      "sources": {
+        "observation": {
+          "identifier": "/home/syf/openloris_external/office1-7_vm_bundle_v2/diag_window61_directional_proxy_20261002/orb_slam3.log",
+          "sha256": "d733e8c472a011bbfc809cc9fc7f775c3d2124d531bece09d2e92a89226cd372"
+        },
+        "reference": {
+          "identifier": "/home/syf/openloris_external/office1-7_vm_bundle_v2/diag_run_directional_proxy_20261002/orb_slam3.log",
+          "sha256": "4071c2a449977b83e2d55c2c1d4a877cc3009331e0cee2751315d031ca14ca94"
+        }
+      }
+    }
+  ],
+  "claim_boundary": "Rules are internal descriptive comparators, not diagnostic-performance baselines or detector outcomes.",
+  "groundtruth_used": false,
+  "parameters": {
+    "minimum_weak_axes_for_strict_joint": 2,
+    "relative_reference": "per-axis median of each declared reference log",
+    "temporal_confirm_frames": 3,
+    "threshold": 0.8
+  },
+  "status": "PASS_DESCRIPTIVE_CANONICAL_RULE_COMPARISON",
+  "unknown_policy": "Missing axes are UNKNOWN and interrupt every rule's temporal continuity."
+}

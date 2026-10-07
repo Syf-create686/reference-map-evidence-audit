@@ -1,0 +1,82 @@
+{
+  "schema": "directional_geometry_proxy_definition_v1",
+  "definition_version": "1.0.0",
+  "status": "FROZEN",
+  "date": "2026-10-02",
+  "purpose": "Define the third descriptive evidence axis for offline analysis without changing the tracker, matcher, map, or online decision logic.",
+  "canonical_field": "directional_geometry_proxy",
+  "runtime_marker": "M2_DIAG_DIRECTIONAL_PROXY",
+  "descriptive_label": "rotational-block spectral proxy",
+  "legacy_fields": {
+    "directional_observability_ratio": "Legacy six-DoF ratio. It remains a separately named compatibility field and is not the canonical proxy.",
+    "M2_DIAG_OBSERVABILITY": "Legacy runtime marker. It must not be relabeled as M2_DIAG_DIRECTIONAL_PROXY."
+  },
+  "definition": {
+    "input": "Valid projected map points in the current camera frame with positive finite depth.",
+    "minimum_valid_points": 6,
+    "median_depth": {
+      "value": "median of valid positive camera-point depths",
+      "role": [
+        "Validity gate: a nonpositive or nonfinite median produces UNKNOWN.",
+        "Audit field emitted with each runtime marker.",
+        "Translation-column scaling in the retained implementation."
+      ],
+      "non_role": "It does not affect the delivered rotational-block value because that value uses only rotational Jacobian columns."
+    },
+    "jacobian": "For each valid point, construct the native 2x6 image-projection Jacobian J_i.",
+    "retained_implementation": "Scale columns 0..2 of each J_i by the median depth, accumulate H = sum_i J_i^T J_i, then extract H_rr = H[3:6, 3:6].",
+    "delivered_value": "d_t = lambda_min(H_rr) / lambda_max(H_rr)",
+    "validity": "lambda_max(H_rr) must be positive and finite; otherwise d_t is UNKNOWN.",
+    "scale_property": "Under global scene scaling, the rotational block is invariant because its Jacobian terms depend on normalized bearings. This property is due to the rotational-block construction, not to the retained translation-column scaling."
+  },
+  "output_fields": [
+    "directional_geometry_proxy",
+    "directional_geometry_proxy_valid_points",
+    "directional_geometry_proxy_median_depth_m",
+    "directional_geometry_proxy_rotation_singular_min",
+    "directional_geometry_proxy_rotation_singular_max"
+  ],
+  "unknown_policy": {
+    "runtime_value": "nan",
+    "offline_value": "null in JSON and None in Python",
+    "minimum_support_enforcement": "The runtime extension and both native parsers must emit or retain the canonical proxy only when valid_points >= 6; otherwise the canonical value is UNKNOWN.",
+    "temporal_policy": "UNKNOWN cannot be interpreted as nominal evidence and cannot bridge a candidate-confirmation sequence."
+  },
+  "implementation_anchors": {
+    "source_extension": "tools/extend_m2_directional_proxy.py",
+    "native_parser": "tools/parse_m2_directional_proxy_log.py",
+    "openloris_parser": "tools/parse_openloris_orb_observability.py",
+    "synthetic_protocol": "protocols/DIRECTIONAL_GEOMETRY_PROXY_SYNTHETIC_VALIDATION_V1_20261002.json",
+    "synthetic_result": "experiments/EXP-20260929-public-dataset-audit/DIRECTIONAL_GEOMETRY_PROXY_SYNTHETIC_VALIDATION_20261002.json"
+  },
+  "evidence_boundary": {
+    "allowed": [
+      "Descriptive evidence-pattern comparison",
+      "Controlled geometric-response supplement",
+      "Offline reference-window normalization"
+    ],
+    "prohibited_current_claims": [
+      "Validated event boundary",
+      "Calibrated detection performance",
+      "Recovery benefit",
+      "Formal system-theoretic quantity",
+      "Cross-scene generalization"
+    ],
+    "method_gap_status": "OPEN"
+  },
+  "manuscript_terminology": {
+    "preferred": [
+      "directional geometry proxy",
+      "directional evidence proxy",
+      "rotational-block spectral proxy"
+    ],
+    "forbidden_as_positive_method_claims": [
+      "observability",
+      "Fisher information",
+      "confidence",
+      "validated alarm",
+      "event detector"
+    ]
+  },
+  "groundtruth_policy": "Ground truth is excluded from the proxy computation and may be used only offline for separate trajectory or label audits."
+}

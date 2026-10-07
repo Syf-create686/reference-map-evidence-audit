@@ -1,0 +1,45 @@
+{
+  "schema": "openloris_office_e3_rgb_occlusion_run_v2",
+  "date": "2026-10-04",
+  "status": "FROZEN_BEFORE_EXECUTION",
+  "parent_protocol": "protocols/OPENLORIS_OFFICE_E3_RGB_OCCLUSION_INTERVENTION_V2_20261004.json",
+  "supersedes_failed_run": "protocols/OPENLORIS_OFFICE_E3_RGB_OCCLUSION_RUN_V1_20261004.json",
+  "scientific_role": "CONTROLLED_INPUT_RESPONSE_ONLY",
+  "runner": {
+    "path": "tools/run_openloris_reference_map_intervention.py",
+    "sha256": "85610BD4EC977140EB05AE448003617466D972EDCA4FF9A65ED85F04A60BE2F6"
+  },
+  "run": {
+    "sequence_id": "office1-3_rgb_occlusion",
+    "pair_count": 360,
+    "association_sha256": "012328daaa42aab917ccc5dfe99570350340f386bdfe029cb76a86b2f1a7d80e",
+    "dataset_path": "/mnt/codex_openloris_office_e3_rgb_occlusion_20261004_v2/input/office1-3_rgb_occlusion",
+    "reference_atlas_path": "/mnt/codex_openloris_office_e0_20261003/run_build_office1_1_e0/T0_reference.osa",
+    "reference_atlas_sha256": "e3c23d9016639e06b30d7ba5db4c7ee2273213243ea89c2864ad1d7769e394c7",
+    "output_path": "/mnt/codex_openloris_office_e3_rgb_occlusion_20261004_v2/run_revisit_office1_3_rgb_occlusion_runnerfix"
+  },
+  "runtime": {
+    "entry_path": "/mnt/codex_orbslam3_m2_e0_20261003/Examples/RGB-D/rgbd_tum_reference",
+    "entry_sha256": "9b130a6cd2cfb6c9acb0cecc8f7e127084b5576d115aa9c8d0bb6f5cdd34d9b4",
+    "orb_root": "/mnt/codex_orbslam3_m2_e0_20261003",
+    "library_sha256": "c7de0d7b539c5b44c49b369ab3403d17c21b9604d4cf6ca5b9e29dcaab695d19",
+    "vocabulary_sha256": "f8dd027f7a6cb88129821341194d7f2c75b77b3394257ddd0d2229863d1a3570",
+    "settings_path": "/home/syf/openloris_external/runner/protocols/OPENLORIS_D435I_RGBD_ORB3.yaml",
+    "settings_sha256": "1e48f0a503850822488e16b61d40ce75864f397063b33bfbf30335ebead419bf",
+    "mode": "revisit",
+    "atlas_stem": "T0_reference",
+    "timeout_sec": 300
+  },
+  "diagnostics": {
+    "tracking_health_env": "ORB_SLAM3_TRACKING_HEALTH_CSV",
+    "relocalization_audit_env": "ORB_SLAM3_RELOCALIZATION_AUDIT_CSV",
+    "required_tracking_health_rows": 360,
+    "groundtruth_used_online": false
+  },
+  "stopping_rules": {
+    "preflight_mismatch": "do not run",
+    "returncode_or_map_identity_failure": "retain output and stop",
+    "same_execution_fault_twice": "stop and audit before another run",
+    "low_support_or_unfavorable_response": "retain as result; do not tune or replace interval"
+  }
+}

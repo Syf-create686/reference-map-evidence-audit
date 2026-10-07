@@ -1,0 +1,28 @@
+{
+  "schema": "directional_geometry_proxy_synthetic_validation_v1",
+  "status": "FROZEN_BEFORE_EXECUTION",
+  "date": "2026-10-02",
+  "seed": 20261002,
+  "point_count": 100,
+  "camera_model": "normalized_pinhole_fx_fy_1",
+  "depth_m": 2.0,
+  "global_scale_factors": [0.5, 1.0, 2.0, 5.0],
+  "configurations": [
+    "wide_bearing",
+    "clustered_bearing",
+    "horizontal_line",
+    "vertical_line"
+  ],
+  "metrics": [
+    "raw_six_dof_singular_ratio",
+    "depth_scaled_six_dof_singular_ratio",
+    "rotation_block_singular_ratio"
+  ],
+  "acceptance": {
+    "depth_scaled_scale_invariance_max_abs_delta": 1e-10,
+    "rotation_block_scale_invariance_max_abs_delta": 1e-10,
+    "clustered_bearing_lower_than_wide_bearing": true
+  },
+  "online_orbslam_or_gt_used": false,
+  "purpose": "Controlled geometric response validation only; not event detection or localization performance."
+}

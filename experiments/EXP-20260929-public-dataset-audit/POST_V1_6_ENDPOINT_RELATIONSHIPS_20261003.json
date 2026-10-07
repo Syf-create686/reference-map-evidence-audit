@@ -1,0 +1,749 @@
+{
+  "schema": "post_v1_6_endpoint_relationships_v1",
+  "status": "DESCRIPTIVE_ONLY",
+  "runs": [
+    {
+      "run_id": "openloris_office1_4_reference",
+      "sequence": "office1-4",
+      "correlations": {
+        "association_support": {
+          "translation_error_m": {
+            "n": 29,
+            "spearman_rho": -0.2118226600985221
+          },
+          "rotation_error_deg_so3": {
+            "n": 29,
+            "spearman_rho": -0.23300492610837434
+          }
+        },
+        "geometric_retention": {
+          "translation_error_m": {
+            "n": 29,
+            "spearman_rho": -0.338423645320197
+          },
+          "rotation_error_deg_so3": {
+            "n": 29,
+            "spearman_rho": -0.251231527093596
+          }
+        },
+        "directional_proxy": {
+          "translation_error_m": {
+            "n": 29,
+            "spearman_rho": 0.8714285714285712
+          },
+          "rotation_error_deg_so3": {
+            "n": 29,
+            "spearman_rho": 0.8812807881773397
+          }
+        },
+        "spatial_entropy_proxy": {
+          "translation_error_m": {
+            "n": 29,
+            "spearman_rho": -0.28866995073891616
+          },
+          "rotation_error_deg_so3": {
+            "n": 29,
+            "spearman_rho": -0.26305418719211815
+          }
+        },
+        "grid_occupancy_proxy": {
+          "translation_error_m": {
+            "n": 29,
+            "spearman_rho": 0.1807015805810502
+          },
+          "rotation_error_deg_so3": {
+            "n": 29,
+            "spearman_rho": 0.20328927815368153
+          }
+        }
+      },
+      "candidate_groups": {
+        "true": {
+          "n": 1,
+          "translation_error_m": {
+            "median": 0.030593566488908767,
+            "maximum": 0.030593566488908767
+          },
+          "rotation_error_deg_so3": {
+            "median": 0.3229764540697935,
+            "maximum": 0.3229764540697935
+          }
+        },
+        "false": {
+          "n": 28,
+          "translation_error_m": {
+            "median": 0.0387171812288933,
+            "maximum": 0.043383620221689706
+          },
+          "rotation_error_deg_so3": {
+            "median": 0.6205585497255615,
+            "maximum": 0.7591022674987854
+          }
+        }
+      }
+    },
+    {
+      "run_id": "openloris_office1_4_window56",
+      "sequence": "office1-4",
+      "correlations": {
+        "association_support": {
+          "translation_error_m": {
+            "n": 24,
+            "spearman_rho": -0.13478260869565215
+          },
+          "rotation_error_deg_so3": {
+            "n": 24,
+            "spearman_rho": -0.15391304347826085
+          }
+        },
+        "geometric_retention": {
+          "translation_error_m": {
+            "n": 24,
+            "spearman_rho": -0.7452173913043478
+          },
+          "rotation_error_deg_so3": {
+            "n": 24,
+            "spearman_rho": -0.617391304347826
+          }
+        },
+        "directional_proxy": {
+          "translation_error_m": {
+            "n": 24,
+            "spearman_rho": -0.8043478260869565
+          },
+          "rotation_error_deg_so3": {
+            "n": 24,
+            "spearman_rho": -0.6339130434782608
+          }
+        },
+        "spatial_entropy_proxy": {
+          "translation_error_m": {
+            "n": 24,
+            "spearman_rho": -0.7547826086956521
+          },
+          "rotation_error_deg_so3": {
+            "n": 24,
+            "spearman_rho": -0.6452173913043477
+          }
+        },
+        "grid_occupancy_proxy": {
+          "translation_error_m": {
+            "n": 24,
+            "spearman_rho": 0.045501575519329006
+          },
+          "rotation_error_deg_so3": {
+            "n": 24,
+            "spearman_rho": 0.1001034661425238
+          }
+        }
+      },
+      "candidate_groups": {
+        "true": {
+          "n": 0,
+          "translation_error_m": null,
+          "rotation_error_deg_so3": null
+        },
+        "false": {
+          "n": 29,
+          "translation_error_m": {
+            "median": 0.06662271867217699,
+            "maximum": 0.11041331520912259
+          },
+          "rotation_error_deg_so3": {
+            "median": 0.5488915020398932,
+            "maximum": 0.6703923257795427
+          }
+        }
+      }
+    },
+    {
+      "run_id": "openloris_office1_5_reference",
+      "sequence": "office1-5",
+      "correlations": {
+        "association_support": {
+          "translation_error_m": {
+            "n": 29,
+            "spearman_rho": -0.18033999069101514
+          },
+          "rotation_error_deg_so3": {
+            "n": 29,
+            "spearman_rho": -0.14141414570579602
+          }
+        },
+        "geometric_retention": {
+          "translation_error_m": {
+            "n": 29,
+            "spearman_rho": -0.6507389162561574
+          },
+          "rotation_error_deg_so3": {
+            "n": 29,
+            "spearman_rho": -0.6413793103448274
+          }
+        },
+        "directional_proxy": {
+          "translation_error_m": {
+            "n": 29,
+            "spearman_rho": 0.5123152709359605
+          },
+          "rotation_error_deg_so3": {
+            "n": 29,
+            "spearman_rho": 0.5655172413793101
+          }
+        },
+        "spatial_entropy_proxy": {
+          "translation_error_m": {
+            "n": 29,
+            "spearman_rho": 0.5896551724137931
+          },
+          "rotation_error_deg_so3": {
+            "n": 29,
+            "spearman_rho": 0.6423645320197043
+          }
+        },
+        "grid_occupancy_proxy": {
+          "translation_error_m": {
+            "n": 29,
+            "spearman_rho": 0.14917354742965408
+          },
+          "rotation_error_deg_so3": {
+            "n": 29,
+            "spearman_rho": 0.2651974176527183
+          }
+        }
+      },
+      "candidate_groups": {
+        "true": {
+          "n": 0,
+          "translation_error_m": null,
+          "rotation_error_deg_so3": null
+        },
+        "false": {
+          "n": 29,
+          "translation_error_m": {
+            "median": 0.007788132137152067,
+            "maximum": 0.013558563106895035
+          },
+          "rotation_error_deg_so3": {
+            "median": 0.15392900489843256,
+            "maximum": 0.30863377945616993
+          }
+        }
+      }
+    },
+    {
+      "run_id": "openloris_office1_5_window57",
+      "sequence": "office1-5",
+      "correlations": {
+        "association_support": {
+          "translation_error_m": {
+            "n": 29,
+            "spearman_rho": -0.7625615763546796
+          },
+          "rotation_error_deg_so3": {
+            "n": 29,
+            "spearman_rho": -0.7620689655172412
+          }
+        },
+        "geometric_retention": {
+          "translation_error_m": {
+            "n": 29,
+            "spearman_rho": -0.5192118226600984
+          },
+          "rotation_error_deg_so3": {
+            "n": 29,
+            "spearman_rho": -0.5201970443349753
+          }
+        },
+        "directional_proxy": {
+          "translation_error_m": {
+            "n": 29,
+            "spearman_rho": 0.0024630541871921174
+          },
+          "rotation_error_deg_so3": {
+            "n": 29,
+            "spearman_rho": -0.0024630541871921174
+          }
+        },
+        "spatial_entropy_proxy": {
+          "translation_error_m": {
+            "n": 29,
+            "spearman_rho": 0.32216748768472897
+          },
+          "rotation_error_deg_so3": {
+            "n": 29,
+            "spearman_rho": 0.3236453201970443
+          }
+        },
+        "grid_occupancy_proxy": {
+          "translation_error_m": {
+            "n": 29,
+            "spearman_rho": -0.232249261301835
+          },
+          "rotation_error_deg_so3": {
+            "n": 29,
+            "spearman_rho": -0.23657846902347007
+          }
+        }
+      },
+      "candidate_groups": {
+        "true": {
+          "n": 29,
+          "translation_error_m": {
+            "median": 0.061176231897057926,
+            "maximum": 0.09761526750900974
+          },
+          "rotation_error_deg_so3": {
+            "median": 2.5554109749819998,
+            "maximum": 4.5347917103796105
+          }
+        },
+        "false": {
+          "n": 0,
+          "translation_error_m": null,
+          "rotation_error_deg_so3": null
+        }
+      }
+    },
+    {
+      "run_id": "openloris_office1_5_window58",
+      "sequence": "office1-5",
+      "correlations": {
+        "association_support": {
+          "translation_error_m": {
+            "n": 29,
+            "spearman_rho": -0.531527093596059
+          },
+          "rotation_error_deg_so3": {
+            "n": 29,
+            "spearman_rho": -0.5320197044334974
+          }
+        },
+        "geometric_retention": {
+          "translation_error_m": {
+            "n": 29,
+            "spearman_rho": -0.5285714285714285
+          },
+          "rotation_error_deg_so3": {
+            "n": 29,
+            "spearman_rho": -0.5261083743842363
+          }
+        },
+        "directional_proxy": {
+          "translation_error_m": {
+            "n": 29,
+            "spearman_rho": 0.84679802955665
+          },
+          "rotation_error_deg_so3": {
+            "n": 29,
+            "spearman_rho": 0.8482758620689654
+          }
+        },
+        "spatial_entropy_proxy": {
+          "translation_error_m": {
+            "n": 29,
+            "spearman_rho": 0.7990147783251229
+          },
+          "rotation_error_deg_so3": {
+            "n": 29,
+            "spearman_rho": 0.7999999999999998
+          }
+        },
+        "grid_occupancy_proxy": {
+          "translation_error_m": {
+            "n": 29,
+            "spearman_rho": 0.26556279792074194
+          },
+          "rotation_error_deg_so3": {
+            "n": 29,
+            "spearman_rho": 0.27106261917945557
+          }
+        }
+      },
+      "candidate_groups": {
+        "true": {
+          "n": 24,
+          "translation_error_m": {
+            "median": 0.04213006324473832,
+            "maximum": 0.08346058476589474
+          },
+          "rotation_error_deg_so3": {
+            "median": 2.139068921121976,
+            "maximum": 4.0795524573956286
+          }
+        },
+        "false": {
+          "n": 5,
+          "translation_error_m": {
+            "median": 0.06616310780563162,
+            "maximum": 0.07520824279423755
+          },
+          "rotation_error_deg_so3": {
+            "median": 3.28003916535436,
+            "maximum": 3.7928375064724045
+          }
+        }
+      }
+    },
+    {
+      "run_id": "openloris_office1_7_reference",
+      "sequence": "office1-7",
+      "correlations": {
+        "association_support": {
+          "translation_error_m": {
+            "n": 29,
+            "spearman_rho": 0.25153979575891594
+          },
+          "rotation_error_deg_so3": {
+            "n": 29,
+            "spearman_rho": -0.13155950140574055
+          }
+        },
+        "geometric_retention": {
+          "translation_error_m": {
+            "n": 29,
+            "spearman_rho": 0.017736174540246764
+          },
+          "rotation_error_deg_so3": {
+            "n": 29,
+            "spearman_rho": -0.2189924884205469
+          }
+        },
+        "directional_proxy": {
+          "translation_error_m": {
+            "n": 29,
+            "spearman_rho": 0.08029556650246304
+          },
+          "rotation_error_deg_so3": {
+            "n": 29,
+            "spearman_rho": -0.280295566502463
+          }
+        },
+        "spatial_entropy_proxy": {
+          "translation_error_m": {
+            "n": 29,
+            "spearman_rho": 0.39704433497536934
+          },
+          "rotation_error_deg_so3": {
+            "n": 29,
+            "spearman_rho": 0.05714285714285713
+          }
+        },
+        "grid_occupancy_proxy": {
+          "translation_error_m": {
+            "n": 29,
+            "spearman_rho": null
+          },
+          "rotation_error_deg_so3": {
+            "n": 29,
+            "spearman_rho": null
+          }
+        }
+      },
+      "candidate_groups": {
+        "true": {
+          "n": 0,
+          "translation_error_m": null,
+          "rotation_error_deg_so3": null
+        },
+        "false": {
+          "n": 29,
+          "translation_error_m": {
+            "median": 0.001249140077163926,
+            "maximum": 0.003177636477667826
+          },
+          "rotation_error_deg_so3": {
+            "median": 0.06355571921408182,
+            "maximum": 0.0923831473110263
+          }
+        }
+      }
+    },
+    {
+      "run_id": "openloris_office1_7_window61",
+      "sequence": "office1-7",
+      "correlations": {
+        "association_support": {
+          "translation_error_m": {
+            "n": 29,
+            "spearman_rho": -0.03621135635300381
+          },
+          "rotation_error_deg_so3": {
+            "n": 29,
+            "spearman_rho": -0.019460524842770756
+          }
+        },
+        "geometric_retention": {
+          "translation_error_m": {
+            "n": 29,
+            "spearman_rho": -0.841871921182266
+          },
+          "rotation_error_deg_so3": {
+            "n": 29,
+            "spearman_rho": -0.8591133004926107
+          }
+        },
+        "directional_proxy": {
+          "translation_error_m": {
+            "n": 29,
+            "spearman_rho": 0.01773399014778325
+          },
+          "rotation_error_deg_so3": {
+            "n": 29,
+            "spearman_rho": 0.04827586206896551
+          }
+        },
+        "spatial_entropy_proxy": {
+          "translation_error_m": {
+            "n": 29,
+            "spearman_rho": 0.3778325123152709
+          },
+          "rotation_error_deg_so3": {
+            "n": 29,
+            "spearman_rho": 0.3980295566502462
+          }
+        },
+        "grid_occupancy_proxy": {
+          "translation_error_m": {
+            "n": 29,
+            "spearman_rho": -0.26932262955322356
+          },
+          "rotation_error_deg_so3": {
+            "n": 29,
+            "spearman_rho": -0.25744454617887236
+          }
+        }
+      },
+      "candidate_groups": {
+        "true": {
+          "n": 10,
+          "translation_error_m": {
+            "median": 0.06496262470693906,
+            "maximum": 0.0816774776851654
+          },
+          "rotation_error_deg_so3": {
+            "median": 0.9760042397513762,
+            "maximum": 1.0530193441056996
+          }
+        },
+        "false": {
+          "n": 19,
+          "translation_error_m": {
+            "median": 0.021039233364897533,
+            "maximum": 0.05171462793468302
+          },
+          "rotation_error_deg_so3": {
+            "median": 0.4383254210685452,
+            "maximum": 0.893715550221103
+          }
+        }
+      }
+    },
+    {
+      "run_id": "openloris_office1_1_cohort",
+      "sequence": "office1-1",
+      "correlations": {
+        "association_support": {
+          "translation_error_m": {
+            "n": 29,
+            "spearman_rho": -0.6527093596059111
+          },
+          "rotation_error_deg_so3": {
+            "n": 29,
+            "spearman_rho": -0.5325123152709358
+          }
+        },
+        "geometric_retention": {
+          "translation_error_m": {
+            "n": 29,
+            "spearman_rho": -0.7950738916256156
+          },
+          "rotation_error_deg_so3": {
+            "n": 29,
+            "spearman_rho": -0.6054187192118224
+          }
+        },
+        "directional_proxy": {
+          "translation_error_m": {
+            "n": 29,
+            "spearman_rho": -0.7241379310344827
+          },
+          "rotation_error_deg_so3": {
+            "n": 29,
+            "spearman_rho": -0.5339901477832512
+          }
+        },
+        "spatial_entropy_proxy": {
+          "translation_error_m": {
+            "n": 29,
+            "spearman_rho": -0.673399014778325
+          },
+          "rotation_error_deg_so3": {
+            "n": 29,
+            "spearman_rho": -0.5290640394088668
+          }
+        },
+        "grid_occupancy_proxy": {
+          "translation_error_m": {
+            "n": 29,
+            "spearman_rho": null
+          },
+          "rotation_error_deg_so3": {
+            "n": 29,
+            "spearman_rho": null
+          }
+        }
+      },
+      "candidate_groups": {
+        "true": {
+          "n": 0,
+          "translation_error_m": null,
+          "rotation_error_deg_so3": null
+        },
+        "false": {
+          "n": 0,
+          "translation_error_m": null,
+          "rotation_error_deg_so3": null
+        }
+      }
+    },
+    {
+      "run_id": "openloris_office1_2_cohort",
+      "sequence": "office1-2",
+      "correlations": {
+        "association_support": {
+          "translation_error_m": {
+            "n": 29,
+            "spearman_rho": 0.04926108374384235
+          },
+          "rotation_error_deg_so3": {
+            "n": 29,
+            "spearman_rho": 0.4596059113300492
+          }
+        },
+        "geometric_retention": {
+          "translation_error_m": {
+            "n": 29,
+            "spearman_rho": -0.37684729064039396
+          },
+          "rotation_error_deg_so3": {
+            "n": 29,
+            "spearman_rho": -0.13793103448275862
+          }
+        },
+        "directional_proxy": {
+          "translation_error_m": {
+            "n": 29,
+            "spearman_rho": 0.4428571428571427
+          },
+          "rotation_error_deg_so3": {
+            "n": 29,
+            "spearman_rho": 0.595566502463054
+          }
+        },
+        "spatial_entropy_proxy": {
+          "translation_error_m": {
+            "n": 29,
+            "spearman_rho": 0.4975369458128077
+          },
+          "rotation_error_deg_so3": {
+            "n": 29,
+            "spearman_rho": 0.6674876847290638
+          }
+        },
+        "grid_occupancy_proxy": {
+          "translation_error_m": {
+            "n": 29,
+            "spearman_rho": 0.6634850537789516
+          },
+          "rotation_error_deg_so3": {
+            "n": 29,
+            "spearman_rho": 0.6468318432657749
+          }
+        }
+      },
+      "candidate_groups": {
+        "true": {
+          "n": 0,
+          "translation_error_m": null,
+          "rotation_error_deg_so3": null
+        },
+        "false": {
+          "n": 0,
+          "translation_error_m": null,
+          "rotation_error_deg_so3": null
+        }
+      }
+    },
+    {
+      "run_id": "openloris_office1_6_cohort",
+      "sequence": "office1-6",
+      "correlations": {
+        "association_support": {
+          "translation_error_m": {
+            "n": 29,
+            "spearman_rho": -0.20998155556952136
+          },
+          "rotation_error_deg_so3": {
+            "n": 29,
+            "spearman_rho": -0.11435615232894121
+          }
+        },
+        "geometric_retention": {
+          "translation_error_m": {
+            "n": 29,
+            "spearman_rho": 0.2615763546798029
+          },
+          "rotation_error_deg_so3": {
+            "n": 29,
+            "spearman_rho": 0.33152709359605903
+          }
+        },
+        "directional_proxy": {
+          "translation_error_m": {
+            "n": 29,
+            "spearman_rho": -0.17044334975369455
+          },
+          "rotation_error_deg_so3": {
+            "n": 29,
+            "spearman_rho": -0.041871921182266
+          }
+        },
+        "spatial_entropy_proxy": {
+          "translation_error_m": {
+            "n": 29,
+            "spearman_rho": -0.28226600985221667
+          },
+          "rotation_error_deg_so3": {
+            "n": 29,
+            "spearman_rho": -0.3660098522167487
+          }
+        },
+        "grid_occupancy_proxy": {
+          "translation_error_m": {
+            "n": 29,
+            "spearman_rho": null
+          },
+          "rotation_error_deg_so3": {
+            "n": 29,
+            "spearman_rho": null
+          }
+        }
+      },
+      "candidate_groups": {
+        "true": {
+          "n": 0,
+          "translation_error_m": null,
+          "rotation_error_deg_so3": null
+        },
+        "false": {
+          "n": 0,
+          "translation_error_m": null,
+          "rotation_error_deg_so3": null
+        }
+      }
+    }
+  ],
+  "analysis_unit_warning": "Correlations are within-run descriptions. Frames are not independent replicates; no pooled p-values are reported.",
+  "predictor_direction": "Lower evidence may correspond to higher error; the sign is interpreted per metric, not as a universal score.",
+  "method_boundary": "No threshold was selected from these outcomes and no candidate is called an event."
+}

@@ -1,0 +1,58 @@
+{
+  "status": "PASS_EXPLORATORY_NEW_PROXY_RELATIVE_COMPARISON",
+  "threshold": 0.8,
+  "temporal_confirm_frames": 3,
+  "threshold_role": "exploratory_only_not_validated",
+  "cases": {
+    "office1-4/w56": {
+      "reference": "office1-4/window0",
+      "association_reference_median": 0.54972156,
+      "geometry_reference_median": 0.74235808,
+      "direction_reference_median": 0.10754013,
+      "counts": {
+        "association": 0,
+        "geometry": 0,
+        "direction": 20,
+        "strict_joint": 0
+      }
+    },
+    "office1-5/w57": {
+      "reference": "office1-5/window0",
+      "association_reference_median": 0.50956938,
+      "geometry_reference_median": 0.66510172,
+      "direction_reference_median": 0.12564968,
+      "counts": {
+        "association": 29,
+        "geometry": 16,
+        "direction": 29,
+        "strict_joint": 29
+      }
+    },
+    "office1-5/w58": {
+      "reference": "office1-5/window0",
+      "association_reference_median": 0.50956938,
+      "geometry_reference_median": 0.66510172,
+      "direction_reference_median": 0.12564968,
+      "counts": {
+        "association": 29,
+        "geometry": 12,
+        "direction": 20,
+        "strict_joint": 24
+      }
+    },
+    "office1-7/w61": {
+      "reference": "office1-7/window0",
+      "association_reference_median": 0.38510809,
+      "geometry_reference_median": 0.8375,
+      "direction_reference_median": 0.07959297,
+      "counts": {
+        "association": 0,
+        "geometry": 10,
+        "direction": 25,
+        "strict_joint": 10
+      }
+    }
+  },
+  "groundtruth_used": false,
+  "event_alarm_evaluation": false
+}

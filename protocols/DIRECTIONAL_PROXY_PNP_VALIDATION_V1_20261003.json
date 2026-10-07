@@ -1,0 +1,97 @@
+{
+  "schema": "directional_proxy_pnp_validation_v1",
+  "date": "2026-10-03",
+  "status": "FROZEN_BEFORE_EXECUTION",
+  "purpose": "Test whether the rotational-block proxy responds to bearing geometry in an independently solved PnP problem, while exposing point-count, image-noise, outlier, and camera-intrinsic boundaries.",
+  "scientific_role": "BOUNDED_SYNTHETIC_METHOD_JUSTIFICATION",
+  "seed": 20261003,
+  "trials_per_condition": 200,
+  "true_pose": {
+    "rotation_vector_rad": [0.0, 0.0, 0.0],
+    "translation_m": [0.0, 0.0, 0.0]
+  },
+  "nominal": {
+    "layout": "wide_bearing",
+    "point_count": 100,
+    "depth_range_m": [1.8, 2.2],
+    "pixel_noise_sigma": 1.0,
+    "outlier_fraction": 0.0,
+    "camera": {
+      "fx": 611.4509887695313,
+      "fy": 611.4857177734375,
+      "cx": 433.2039794921875,
+      "cy": 249.4730224609375,
+      "width": 848,
+      "height": 480,
+      "distortion": [0.0, 0.0, 0.0, 0.0, 0.0]
+    }
+  },
+  "bearing_layouts": {
+    "wide_bearing": "normalized x uniform [-0.50,0.50], normalized y uniform [-0.35,0.35]",
+    "clustered_bearing": "normalized x/y Gaussian sigma 0.01",
+    "horizontal_line": "normalized x uniform [-0.50,0.50], normalized y Gaussian sigma 0.005",
+    "vertical_line": "normalized x Gaussian sigma 0.005, normalized y uniform [-0.35,0.35]"
+  },
+  "one_factor_sweeps": [
+    {
+      "name": "bearing_layout",
+      "values": ["wide_bearing", "clustered_bearing", "horizontal_line", "vertical_line"]
+    },
+    {
+      "name": "point_count",
+      "values": [25, 50, 100, 200]
+    },
+    {
+      "name": "pixel_noise_sigma",
+      "values": [0.25, 0.5, 1.0, 2.0, 4.0]
+    },
+    {
+      "name": "outlier_fraction",
+      "values": [0.0, 0.05, 0.1, 0.2]
+    },
+    {
+      "name": "uniform_focal_scale",
+      "values": [0.5, 1.0, 2.0]
+    },
+    {
+      "name": "fy_over_nominal_fy",
+      "values": [0.75, 1.0, 1.25]
+    }
+  ],
+  "solver": {
+    "implementation": "cv2.solvePnP",
+    "flag": "SOLVEPNP_ITERATIVE",
+    "ransac": false,
+    "initial_guess": false,
+    "outlier_policy": "For the outlier sweep, replace the declared fraction of image observations with uniform image coordinates; do not change the proxy input geometry.",
+    "valid_trial": "solvePnP returns true and finite rotation/translation vectors"
+  },
+  "proxy": {
+    "formula": "lambda_min(H_rr)/lambda_max(H_rr) from the same pinhole rotational Jacobian block as the runtime implementation",
+    "uses_no_noisy_image_measurement": true,
+    "uses_no_groundtruth_pose_error": true
+  },
+  "outputs": [
+    "per-trial proxy",
+    "rotation error in degrees",
+    "translation error in meters",
+    "solve success",
+    "condition median, RMSE, 2.5th percentile, and 97.5th percentile",
+    "Spearman rho without frame-level or trial-level significance claims"
+  ],
+  "predeclared_checks": {
+    "minimum_solve_success_fraction_per_condition": 0.95,
+    "geometry_response": "median proxy for wide_bearing must exceed clustered_bearing",
+    "independent_rotation_response": "median rotation error for wide_bearing must be lower than clustered_bearing at nominal settings",
+    "boundary_point_count": "report whether error changes with count while the normalized spectral proxy remains similar",
+    "boundary_noise": "report error growth although the geometry-only proxy is unchanged for paired geometry",
+    "boundary_outliers": "report error growth although the geometry-only proxy does not encode corrupted match measurements",
+    "boundary_intrinsics": "report uniform focal-scale invariance of the ratio and any anisotropic-intrinsic dependence"
+  },
+  "decision": {
+    "pass": "The proxy may remain a descriptive directional-geometry axis with the recorded boundaries; it is not confidence, covariance, or formal observability.",
+    "fail": "Remove the third axis from the core incremental-value claim and reassess whether a two-axis protocol is sufficient.",
+    "no_threshold_tuning": true,
+    "no_event_or_recovery_claim": true
+  }
+}

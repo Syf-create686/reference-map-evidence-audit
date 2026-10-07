@@ -1,0 +1,536 @@
+{
+  "schema": "post_v1_6_existing_endpoint_audit_v1",
+  "status": "EXISTING_DATA_REANALYSIS",
+  "method_scope": "All retained public runs initialize a fresh atlas; these are short-window RGB-D SLAM observations, not reference-map localization validation.",
+  "protocol": {
+    "sha256": "72b8d50ab6edacd8e37b079a35dfb5f23ecc6ae2f68e8be94bdd28b67c622016",
+    "schema": "openloris_office_evaluation_v1",
+    "truth_pose_convention": "T_world_base_link",
+    "estimate_pose_convention": "T_world_d400_color_optical_frame",
+    "truth_to_color_extrinsic": {
+      "parent_frame": "base_link",
+      "child_frame": "d400_color_optical_frame",
+      "T_parent_child": [
+        [
+          0.009979281625266734,
+          0.006534810370862454,
+          0.9999288525348518,
+          0.226483684909
+        ],
+        [
+          -0.9998201465484614,
+          0.016192923276330706,
+          0.009872371528334367,
+          -0.0511419403565
+        ],
+        [
+          -0.016127257115523985,
+          -0.9998475311212125,
+          0.006695228804608445,
+          0.916
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "source": "OpenLORIS office1-1 trans_matrix.yaml",
+      "fitted_on_evaluation_data": false
+    },
+    "time_tolerance_sec": 0.02,
+    "alignment": "first_matched_pose_se3_anchor_only",
+    "scale_fit": false,
+    "yaw_axis": "world_z",
+    "translation_threshold_m": 0.05,
+    "yaw_threshold_deg": 5.0,
+    "truth_used_online": false,
+    "notes": "This external-data protocol is source-specific and does not replace the Gazebo direct_xz+yaw90 evaluator used for the frozen warehouse protocol."
+  },
+  "runs": [
+    {
+      "run_id": "openloris_office1_4_reference",
+      "sequence": "office1-4",
+      "role": "reference",
+      "scratch_atlas": true,
+      "load_atlas_configured": false,
+      "counts": {
+        "input": 30,
+        "trajectory": 30,
+        "estimate_mapped_to_input": 30,
+        "gt_paired_to_input": 30,
+        "joint_estimate_gt": 30,
+        "complete_evidence": 29,
+        "candidate": 1,
+        "candidate_unknown": 1,
+        "spatial_entropy_available": 29
+      },
+      "ape_translation_m": {
+        "count": 30,
+        "rmse": 0.03636418535001992,
+        "median": 0.03812938167596332,
+        "max": 0.043383620221689706
+      },
+      "ape_rotation_deg_so3": {
+        "count": 30,
+        "rmse": 0.5722050079280953,
+        "median": 0.5950574775354776,
+        "max": 0.7591022674987854
+      },
+      "rpe_1frame_translation_m": {
+        "count": 29,
+        "rmse": 0.0037373820447626875,
+        "median": 0.0011441678433845978,
+        "max": 0.009343916267040737
+      },
+      "rpe_1frame_rotation_deg": {
+        "count": 29,
+        "rmse": 0.08649650438474277,
+        "median": 0.06229716526548563,
+        "max": 0.251818588535513
+      },
+      "sources": {
+        "log_sha256": "6b2a274690b12d1df57b5af5b8a11427cbecd639bdb949b74a3eb267114683dd",
+        "trajectory_sha256": "da34429fd21b164f1dc4608f058adc55aea23f2b04f1dffd912e7bc34b8de8be",
+        "associations_sha256": "63ea2ae0ce330832c477db918f845713603fbdefb98fff2944922b4acf7f0185",
+        "gt_sha256": "a5fe84dbf72e5896e675aff996a8353168eb4e238580d2bdd93c36e8ab8cf94d"
+      }
+    },
+    {
+      "run_id": "openloris_office1_4_window56",
+      "sequence": "office1-4",
+      "role": "exploratory_case",
+      "scratch_atlas": true,
+      "load_atlas_configured": false,
+      "counts": {
+        "input": 30,
+        "trajectory": 30,
+        "estimate_mapped_to_input": 30,
+        "gt_paired_to_input": 25,
+        "joint_estimate_gt": 25,
+        "complete_evidence": 29,
+        "candidate": 0,
+        "candidate_unknown": 1,
+        "spatial_entropy_available": 29
+      },
+      "ape_translation_m": {
+        "count": 25,
+        "rmse": 0.06990134973234273,
+        "median": 0.06471351810718504,
+        "max": 0.11041331520912259
+      },
+      "ape_rotation_deg_so3": {
+        "count": 25,
+        "rmse": 0.5090725065166586,
+        "median": 0.5449349281489394,
+        "max": 0.6703923257795427
+      },
+      "rpe_1frame_translation_m": {
+        "count": 23,
+        "rmse": 0.0044342736867602085,
+        "median": 0.004393029195872638,
+        "max": 0.007828661301221633
+      },
+      "rpe_1frame_rotation_deg": {
+        "count": 23,
+        "rmse": 0.10376046498694161,
+        "median": 0.07254141028475149,
+        "max": 0.2502302365214519
+      },
+      "sources": {
+        "log_sha256": "14d1f23828f38a513a625e7af428df6c3640d66215f08c5d32c6b28540fa46cb",
+        "trajectory_sha256": "46b51975efa7d49ab0de1274e23b214c523b0952febb2d3726b1528e65124cef",
+        "associations_sha256": "d2473aee4b56ac07ea2c6fe469bf618648f43cf60fc7ef66fc3eefc3aac32438",
+        "gt_sha256": "a5fe84dbf72e5896e675aff996a8353168eb4e238580d2bdd93c36e8ab8cf94d"
+      }
+    },
+    {
+      "run_id": "openloris_office1_5_reference",
+      "sequence": "office1-5",
+      "role": "reference",
+      "scratch_atlas": true,
+      "load_atlas_configured": false,
+      "counts": {
+        "input": 30,
+        "trajectory": 30,
+        "estimate_mapped_to_input": 30,
+        "gt_paired_to_input": 30,
+        "joint_estimate_gt": 30,
+        "complete_evidence": 29,
+        "candidate": 0,
+        "candidate_unknown": 1,
+        "spatial_entropy_available": 29
+      },
+      "ape_translation_m": {
+        "count": 30,
+        "rmse": 0.007553056171490183,
+        "median": 0.00748071562776251,
+        "max": 0.013558563106895035
+      },
+      "ape_rotation_deg_so3": {
+        "count": 30,
+        "rmse": 0.15985244595968384,
+        "median": 0.14206612022543091,
+        "max": 0.30863377945616993
+      },
+      "rpe_1frame_translation_m": {
+        "count": 29,
+        "rmse": 0.003463267897579424,
+        "median": 0.002516908703590243,
+        "max": 0.00702479003469759
+      },
+      "rpe_1frame_rotation_deg": {
+        "count": 29,
+        "rmse": 0.1030176438643687,
+        "median": 0.08185639796718815,
+        "max": 0.20156094955166823
+      },
+      "sources": {
+        "log_sha256": "b27317bd021c22a94e5cba3bb5b0da9018d58178674d332144e30a266fbd4cc4",
+        "trajectory_sha256": "4c26ef83394d4529e4cfcaa1b6a9eca4474c357336cf0c5e13bd998f1cc0f22f",
+        "associations_sha256": "08b31e13c1e25f373a2abd009a0ab8ab7bbdb03754c16ca34a6f8baf6e038ccb",
+        "gt_sha256": "a3b829dd85a5a021753ca28b3950b1356fc516a6f58242530d6c260384ad2a30"
+      }
+    },
+    {
+      "run_id": "openloris_office1_5_window57",
+      "sequence": "office1-5",
+      "role": "exploratory_case",
+      "scratch_atlas": true,
+      "load_atlas_configured": false,
+      "counts": {
+        "input": 30,
+        "trajectory": 30,
+        "estimate_mapped_to_input": 30,
+        "gt_paired_to_input": 30,
+        "joint_estimate_gt": 30,
+        "complete_evidence": 29,
+        "candidate": 29,
+        "candidate_unknown": 1,
+        "spatial_entropy_available": 29
+      },
+      "ape_translation_m": {
+        "count": 30,
+        "rmse": 0.06357889917407601,
+        "median": 0.05994300730314398,
+        "max": 0.09761526750900974
+      },
+      "ape_rotation_deg_so3": {
+        "count": 30,
+        "rmse": 2.7854906096052114,
+        "median": 2.5182206852664537,
+        "max": 4.5347917103796105
+      },
+      "rpe_1frame_translation_m": {
+        "count": 29,
+        "rmse": 0.0043506794008207495,
+        "median": 0.004008182991168841,
+        "max": 0.006567488694102129
+      },
+      "rpe_1frame_rotation_deg": {
+        "count": 29,
+        "rmse": 0.221127158285839,
+        "median": 0.19898945497607973,
+        "max": 0.3465921987716091
+      },
+      "sources": {
+        "log_sha256": "2337d7f83c3483fb156f9846f867e7d4210b2e167b7e55d542b78bc47102f36f",
+        "trajectory_sha256": "794bd9f87b08f9ba99bccff4982db89d75c8563de842a88a9c6eae1077d72919",
+        "associations_sha256": "015754434673798d9b5616c762ff43551aa8438b64124a400adc9fca67783f1d",
+        "gt_sha256": "a3b829dd85a5a021753ca28b3950b1356fc516a6f58242530d6c260384ad2a30"
+      }
+    },
+    {
+      "run_id": "openloris_office1_5_window58",
+      "sequence": "office1-5",
+      "role": "exploratory_case",
+      "scratch_atlas": true,
+      "load_atlas_configured": false,
+      "counts": {
+        "input": 30,
+        "trajectory": 30,
+        "estimate_mapped_to_input": 30,
+        "gt_paired_to_input": 30,
+        "joint_estimate_gt": 30,
+        "complete_evidence": 29,
+        "candidate": 24,
+        "candidate_unknown": 1,
+        "spatial_entropy_available": 29
+      },
+      "ape_translation_m": {
+        "count": 30,
+        "rmse": 0.051469476093693935,
+        "median": 0.0456714595206419,
+        "max": 0.08346058476589474
+      },
+      "ape_rotation_deg_so3": {
+        "count": 30,
+        "rmse": 2.5669103064007426,
+        "median": 2.3506996516920413,
+        "max": 4.0795524573956286
+      },
+      "rpe_1frame_translation_m": {
+        "count": 29,
+        "rmse": 0.0036191105622846815,
+        "median": 0.0031517059751493826,
+        "max": 0.006447475527340732
+      },
+      "rpe_1frame_rotation_deg": {
+        "count": 29,
+        "rmse": 0.19553405573131719,
+        "median": 0.19435282761235886,
+        "max": 0.3290759567673259
+      },
+      "sources": {
+        "log_sha256": "a9d0af1f77f685032c494796ac21e8fc7823487aae63eac234683967a8c1e047",
+        "trajectory_sha256": "fb90dcfeb79780fb2959fb811a31a8896d8b309807516a01197763a6a9daf682",
+        "associations_sha256": "6fc7b517a5a6776f9a0413da1e46cc902348b257f2c05e981179d8e5c553d74e",
+        "gt_sha256": "a3b829dd85a5a021753ca28b3950b1356fc516a6f58242530d6c260384ad2a30"
+      }
+    },
+    {
+      "run_id": "openloris_office1_7_reference",
+      "sequence": "office1-7",
+      "role": "reference",
+      "scratch_atlas": true,
+      "load_atlas_configured": false,
+      "counts": {
+        "input": 30,
+        "trajectory": 30,
+        "estimate_mapped_to_input": 30,
+        "gt_paired_to_input": 30,
+        "joint_estimate_gt": 30,
+        "complete_evidence": 29,
+        "candidate": 0,
+        "candidate_unknown": 1,
+        "spatial_entropy_available": 29
+      },
+      "ape_translation_m": {
+        "count": 30,
+        "rmse": 0.001455660594092965,
+        "median": 0.0012481121141659614,
+        "max": 0.003177636477667826
+      },
+      "ape_rotation_deg_so3": {
+        "count": 30,
+        "rmse": 0.06213653047472268,
+        "median": 0.06337038451871052,
+        "max": 0.0923831473110263
+      },
+      "rpe_1frame_translation_m": {
+        "count": 29,
+        "rmse": 0.000941442052341952,
+        "median": 0.0008160651834154827,
+        "max": 0.001837678205050456
+      },
+      "rpe_1frame_rotation_deg": {
+        "count": 29,
+        "rmse": 0.03534089919238656,
+        "median": 0.029853584241577944,
+        "max": 0.05911348385927864
+      },
+      "sources": {
+        "log_sha256": "4071c2a449977b83e2d55c2c1d4a877cc3009331e0cee2751315d031ca14ca94",
+        "trajectory_sha256": "8084296f2742db9dcae5a4ec326c648867cf3420487a9b43e92532ca5cde3482",
+        "associations_sha256": "ae1f7938440c21ab4849c1300580d75043252c74c86f6200b3b099c940ed1166",
+        "gt_sha256": "2c3f3985f457fea50001fb0ce51c9a4f0560494127b12f3ec8cad0f038160a60"
+      }
+    },
+    {
+      "run_id": "openloris_office1_7_window61",
+      "sequence": "office1-7",
+      "role": "exploratory_case",
+      "scratch_atlas": true,
+      "load_atlas_configured": false,
+      "counts": {
+        "input": 30,
+        "trajectory": 30,
+        "estimate_mapped_to_input": 30,
+        "gt_paired_to_input": 30,
+        "joint_estimate_gt": 30,
+        "complete_evidence": 29,
+        "candidate": 10,
+        "candidate_unknown": 1,
+        "spatial_entropy_available": 29
+      },
+      "ape_translation_m": {
+        "count": 30,
+        "rmse": 0.04293816182309335,
+        "median": 0.03216440006795199,
+        "max": 0.0816774776851654
+      },
+      "ape_rotation_deg_so3": {
+        "count": 30,
+        "rmse": 0.6838108774301428,
+        "median": 0.5876640571169026,
+        "max": 1.0530193441056996
+      },
+      "rpe_1frame_translation_m": {
+        "count": 29,
+        "rmse": 0.004065538114668653,
+        "median": 0.0036167212509152402,
+        "max": 0.007339324079758401
+      },
+      "rpe_1frame_rotation_deg": {
+        "count": 29,
+        "rmse": 0.21920146320365727,
+        "median": 0.19109776572648396,
+        "max": 0.4529539518089402
+      },
+      "sources": {
+        "log_sha256": "d733e8c472a011bbfc809cc9fc7f775c3d2124d531bece09d2e92a89226cd372",
+        "trajectory_sha256": "755addff3e9df8d05cd23b853cdc98dbd9b675da9d61ad1c0919eef11040e426",
+        "associations_sha256": "e71210c9352cc4b08a1cd78be2321791cd6f7d19c2c5fd290d3b480cb1b76203",
+        "gt_sha256": "2c3f3985f457fea50001fb0ce51c9a4f0560494127b12f3ec8cad0f038160a60"
+      }
+    },
+    {
+      "run_id": "openloris_office1_1_cohort",
+      "sequence": "office1-1",
+      "role": "previously_seen_sequence_disjoint_descriptive_cohort",
+      "scratch_atlas": true,
+      "load_atlas_configured": false,
+      "counts": {
+        "input": 30,
+        "trajectory": 30,
+        "estimate_mapped_to_input": 30,
+        "gt_paired_to_input": 30,
+        "joint_estimate_gt": 30,
+        "complete_evidence": 29,
+        "candidate": 0,
+        "candidate_unknown": 30,
+        "spatial_entropy_available": 29
+      },
+      "ape_translation_m": {
+        "count": 30,
+        "rmse": 0.00617678266236733,
+        "median": 0.006590794100599201,
+        "max": 0.007809426484278149
+      },
+      "ape_rotation_deg_so3": {
+        "count": 30,
+        "rmse": 0.13436562119396772,
+        "median": 0.136804073268619,
+        "max": 0.18235621852439973
+      },
+      "rpe_1frame_translation_m": {
+        "count": 29,
+        "rmse": 0.0015436990671673892,
+        "median": 0.0011675354217013864,
+        "max": 0.0035759175182519514
+      },
+      "rpe_1frame_rotation_deg": {
+        "count": 29,
+        "rmse": 0.051488151810021754,
+        "median": 0.039382974636812104,
+        "max": 0.10164458138114915
+      },
+      "sources": {
+        "log_sha256": "87f9eaa9ccdafafc7fc964b7dc0a0dffd0bd146f7fb168ce4229124086855145",
+        "trajectory_sha256": "14164014dae05ed6d17fa47006f23f89a7a6c7158f2b5422dbf4f3c9314f3171",
+        "associations_sha256": "3c1a356624ba299b5a56fbd87575a91b86e6d9534f228912fe2cbf9734ab3ab1",
+        "gt_sha256": "20db51ef8eda1fc9d05d62060f0f644ee150254e22ae706dedb8e3f6100fa5bc"
+      }
+    },
+    {
+      "run_id": "openloris_office1_2_cohort",
+      "sequence": "office1-2",
+      "role": "previously_seen_sequence_disjoint_descriptive_cohort",
+      "scratch_atlas": true,
+      "load_atlas_configured": false,
+      "counts": {
+        "input": 30,
+        "trajectory": 30,
+        "estimate_mapped_to_input": 30,
+        "gt_paired_to_input": 30,
+        "joint_estimate_gt": 30,
+        "complete_evidence": 29,
+        "candidate": 0,
+        "candidate_unknown": 30,
+        "spatial_entropy_available": 29
+      },
+      "ape_translation_m": {
+        "count": 30,
+        "rmse": 0.006429105686170634,
+        "median": 0.00634947209599934,
+        "max": 0.009658069976221647
+      },
+      "ape_rotation_deg_so3": {
+        "count": 30,
+        "rmse": 0.17713017396168898,
+        "median": 0.16702220950535596,
+        "max": 0.4369201275628641
+      },
+      "rpe_1frame_translation_m": {
+        "count": 29,
+        "rmse": 0.0025212640840120157,
+        "median": 0.0020573630009091647,
+        "max": 0.004878214369679969
+      },
+      "rpe_1frame_rotation_deg": {
+        "count": 29,
+        "rmse": 0.13864213333847705,
+        "median": 0.07334748600527005,
+        "max": 0.4526332069365761
+      },
+      "sources": {
+        "log_sha256": "32383739b0627142326012ad7701e5b008c9a3f86f594dbc6097684f5c9016cf",
+        "trajectory_sha256": "f4590f45f69af3935e0270599ce43b8014cf0b762c5716811c34d5fb3122287a",
+        "associations_sha256": "da2ba55d334793c8433f3eabbd4755f7aa87f76e248469eb401d89fac8812b93",
+        "gt_sha256": "7abd146e1f3c7683721253a501c665f2d61c52767c0d1a997d5a05d0dfb7de86"
+      }
+    },
+    {
+      "run_id": "openloris_office1_6_cohort",
+      "sequence": "office1-6",
+      "role": "previously_seen_sequence_disjoint_descriptive_cohort",
+      "scratch_atlas": true,
+      "load_atlas_configured": false,
+      "counts": {
+        "input": 30,
+        "trajectory": 30,
+        "estimate_mapped_to_input": 30,
+        "gt_paired_to_input": 30,
+        "joint_estimate_gt": 30,
+        "complete_evidence": 29,
+        "candidate": 0,
+        "candidate_unknown": 30,
+        "spatial_entropy_available": 29
+      },
+      "ape_translation_m": {
+        "count": 30,
+        "rmse": 0.00032004822726640716,
+        "median": 0.00021205152049638747,
+        "max": 0.0008172855129795128
+      },
+      "ape_rotation_deg_so3": {
+        "count": 30,
+        "rmse": 0.0182655507257035,
+        "median": 0.016734805510177385,
+        "max": 0.03629169270941955
+      },
+      "rpe_1frame_translation_m": {
+        "count": 29,
+        "rmse": 0.00039085009175055554,
+        "median": 0.0003422324545538863,
+        "max": 0.0008007384550027738
+      },
+      "rpe_1frame_rotation_deg": {
+        "count": 29,
+        "rmse": 0.014928495515047437,
+        "median": 0.011237736674118263,
+        "max": 0.02760830324945564
+      },
+      "sources": {
+        "log_sha256": "4c1b84b77a2148b598ee7585384b3d026b93f13c217f001dacca8cf365ba033b",
+        "trajectory_sha256": "0f5ab92471f03fa26296a47f9c4b3cf542557a50a8a477691fa1fd9ec40d268a",
+        "associations_sha256": "57ecdd88fbbb584da1cda9f2b0905a1188d25e9a85f12114a3a217b1e270bb21",
+        "gt_sha256": "c1b7dec3915100731e3857debeaeeb3abbfd0ca3c47c2589abfd7443deb20682"
+      }
+    }
+  ],
+  "row_count": 300,
+  "analysis_unit_warning": "Frames are repeated observations; run/sequence is the replication unit.",
+  "groundtruth_online": false
+}
